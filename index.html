@@ -1,0 +1,12 @@
+---
+layout: base
+---
+<h1 class="center">Vem ska plugga?</h1>
+<div class="pick">
+  {%- for kid in site.children %}
+  <a class="pick-btn" href="{{ '/' | append: kid.id | append: '/' | relative_url }}">
+    <span class="pick-emoji">{{ kid.emoji }}</span>
+    <span>{{ kid.name }}</span>
+  </a>
+  {%- endfor %}
+</div>

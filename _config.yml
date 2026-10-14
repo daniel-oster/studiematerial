@@ -1,0 +1,23 @@
+title: Studiematerial
+lang: sv
+baseurl: "/studiematerial"
+url: "https://daniel-oster.github.io"
+
+# Barnen. Lägg till fler här vid behov.
+children:
+  - id: sarah
+    name: Sarah
+    emoji: "🌻"
+  - id: annabelle
+    name: Annabelle
+    emoji: "🦋"
+
+exclude:
+  - README.md
+  - _mallar
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: material

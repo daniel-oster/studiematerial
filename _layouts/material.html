@@ -1,0 +1,42 @@
+---
+layout: base
+---
+<article class="material">
+  <h1>{{ page.title }}</h1>
+  {%- if page.subject or page.test_date %}
+  <p class="meta">{{ page.subject }}{% if page.subject and page.test_date %} · {% endif %}{% if page.test_date %}Prov {{ page.test_date }}{% endif %}</p>
+  {%- endif %}
+  {%- if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
+
+  {%- if page.pdfs %}
+  <section class="pdfs">
+    <h2>PDF:er att skriva ut</h2>
+    <ul>
+      {%- for f in page.pdfs %}
+      <li><a href="{{ f.file }}" target="_blank" rel="noopener">📄 {{ f.title }}</a></li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+
+  {%- if page.terms %}
+  <section class="terms">
+    <div class="terms-head">
+      <h2>Begrepp</h2>
+      <button type="button" class="toggle" onclick="document.body.classList.toggle('quiz');this.textContent=document.body.classList.contains('quiz')?'Visa förklaringar':'Förhör mig (dölj förklaringar)'">Förhör mig (dölj förklaringar)</button>
+    </div>
+    <dl>
+      {%- for t in page.terms %}
+      <div class="term" onclick="this.classList.toggle('open')">
+        <dt>{{ t.term }}</dt>
+        <dd>{{ t.definition | markdownify }}</dd>
+      </div>
+      {%- endfor %}
+    </dl>
+  </section>
+  {%- endif %}
+
+  <div class="content">{{ content }}</div>
+
+  {% include material-list.html child=page.child parent=page.id %}
+</article>

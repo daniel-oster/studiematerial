@@ -1,0 +1,7 @@
+---
+layout: base
+---
+{%- assign kid = site.children | where: "id", page.child | first -%}
+<h1>{{ kid.emoji }} {{ kid.name }}s studiematerial</h1>
+{{ content }}
+{% include material-list.html child=page.child empty="Inget material här än." %}
