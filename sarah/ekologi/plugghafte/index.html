@@ -1,0 +1,1629 @@
+---
+layout: null
+title: Från fotosyntes till fotavtryck
+id: sarah-ekologi-plugghafte
+child: sarah
+parent: sarah-ekologi
+subject: Naturkunskap 1b · Kapitel 2
+order: 2
+description: Hela kapitlet med svar på E-nivå och högre nivå, minnesknep, lampor, faktafrågor, begrepp och förhörsläge. Plugghäftet finns som PDF.
+---
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Från fotosyntes till fotavtryck</title>
+<meta name="description" content="Plugga inför provet i Naturkunskap 1b, kapitel 2: ekologi och hållbar utveckling. E-svar, svar på högre nivå, minnesknep och förhör.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Familjen+Grotesk:wght@400;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<style>
+/* Layout: en läskolumn, samma familj som systersidan "Ekologins 44 begrepp". Varje del har en egen accent,
+   E-svaret står öppet, högre nivå fälls ut, och trafikljusen följer med mellan Läs och Förhör. */
+:root{
+  --paper:#F2F5F1; --surface:#FBFCFA; --ink:#16302B; --muted:#53685F; --line:#D5DFD9;
+  --water:#1A6370; --water-soft:#DAEAEB; --moss:#46702F; --moss-soft:#E2ECD9;
+  --plum:#6B3F7A; --plum-soft:#EFE5F2; --rust:#8F431A; --rust-soft:#F6E7DC;
+  --marker:#F6DC6E; --marker-soft:#FBF2C9; --stone-soft:#E4E8E4; --warn:#A23B22; --warn-soft:#F8E6E0;
+  --go:#2E8A4F; --wait:#B98606; --stop:#B8432F; --on-acc:#F2F5F1;
+  --f-display:"Familjen Grotesk","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Literata",Georgia,"Times New Roman",serif;
+  --f-hand:"Caveat","Segoe Print","Bradley Hand",cursive;
+  --acc:var(--water); --acc-soft:var(--water-soft);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0D1618; --surface:#132124; --ink:#E0EAE5; --muted:#99AEA7; --line:#283B3E;
+    --water:#74C3CA; --water-soft:#1A3337; --moss:#A6C988; --moss-soft:#1E3021;
+    --plum:#D2AEDF; --plum-soft:#2B2031; --rust:#EBA57E; --rust-soft:#2E2019;
+    --marker:rgba(219,176,52,.38); --marker-soft:rgba(219,176,52,.13); --stone-soft:#22302F; --warn:#F09A84; --warn-soft:#33201B;
+    --go:#7FCB95; --wait:#E8C25A; --stop:#F0907A; --on-acc:#0D1618; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0D1618; --surface:#132124; --ink:#E0EAE5; --muted:#99AEA7; --line:#283B3E;
+  --water:#74C3CA; --water-soft:#1A3337; --moss:#A6C988; --moss-soft:#1E3021;
+  --plum:#D2AEDF; --plum-soft:#2B2031; --rust:#EBA57E; --rust-soft:#2E2019;
+  --marker:rgba(219,176,52,.38); --marker-soft:rgba(219,176,52,.13); --stone-soft:#22302F; --warn:#F09A84; --warn-soft:#33201B;
+  --go:#7FCB95; --wait:#E8C25A; --stop:#F0907A; --on-acc:#0D1618; color-scheme:dark;
+}
+@media (prefers-reduced-motion: no-preference){ html{scroll-behavior:smooth} }
+/* Grundregler som artefaktskalet annars ger, så att filen fungerar fristående (GitHub Pages) */
+[hidden]{display:none!important}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.6;-webkit-text-size-adjust:100%}
+.inner{max-width:44rem;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3,h4{font-family:var(--f-display);text-wrap:balance;line-height:1.15}
+a{color:var(--water)}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--water);outline-offset:2px;border-radius:6px}
+b,strong{font-weight:700}
+.muted{color:var(--muted)} .small{font-size:.9rem}
+svg.defs{position:absolute;width:0;height:0;overflow:hidden}
+mark{color:inherit;background:linear-gradient(transparent 38%,var(--marker) 38%,var(--marker) 94%,transparent 94%);-webkit-box-decoration-break:clone;box-decoration-break:clone;padding:0 .12em}
+
+/* Delarnas accenter */
+#del1{--acc:var(--moss);--acc-soft:var(--moss-soft)}
+#del2{--acc:var(--water);--acc-soft:var(--water-soft)}
+#del3{--acc:var(--plum);--acc-soft:var(--plum-soft)}
+#del4{--acc:var(--rust);--acc-soft:var(--rust-soft)}
+#del5{--acc:var(--muted);--acc-soft:var(--stone-soft)}
+#kvallen{--acc:var(--ink);--acc-soft:var(--marker-soft)}
+
+/* Topbar */
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--paper);border-bottom:1px solid var(--line)}
+.topbar .inner{display:flex;flex-direction:column;gap:.5rem;padding-block:.55rem}
+.toprow{display:flex;align-items:center;justify-content:space-between;gap:.75rem}
+.brand{color:inherit;text-decoration:none;font-family:var(--f-display);font-weight:700;font-size:.95rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.seg{display:flex;background:var(--stone-soft);border-radius:999px;padding:3px;flex-shrink:0}
+.seg button{border:0;background:transparent;font-family:var(--f-display);font-weight:600;font-size:.95rem;padding:.4rem 1rem;border-radius:999px;cursor:pointer;min-height:36px}
+.seg button[aria-pressed="true"]{background:var(--water);color:var(--on-acc)}
+.partnav{display:flex;gap:.4rem;overflow-x:auto;scrollbar-width:none;padding-bottom:2px;margin-inline:-4px;padding-inline:4px}
+.partnav::-webkit-scrollbar{display:none}
+.partnav a{flex-shrink:0;text-decoration:none;font-family:var(--f-display);font-size:.85rem;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:.25rem .7rem;white-space:nowrap}
+.partnav a b{color:var(--water);margin-right:.3rem;font-variant-numeric:tabular-nums}
+.partnav a.on{background:var(--water);border-color:var(--water);color:var(--on-acc)}
+.partnav a.on b{color:var(--on-acc)}
+
+/* Hero */
+.hero{padding-block:2.25rem 1rem}
+.eyebrow{font-family:var(--f-display);font-weight:700;font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);margin:0}
+.hero .eyebrow{color:var(--water)}
+.hero h1{font-size:clamp(2.1rem,8vw,3.1rem);margin:.4rem 0 .8rem;letter-spacing:-.01em}
+.hero h1 span{display:block;color:var(--moss)}
+.lead{font-size:1.08rem;margin:0 0 1.25rem}
+.howto{list-style:none;padding:0;margin:0 0 1.5rem;display:grid;gap:.5rem;font-size:.95rem}
+.howto li{display:grid;grid-template-columns:1.6rem minmax(0,1fr);gap:.4rem}
+.howto li::before{content:"✓";font-family:var(--f-display);font-weight:700;color:var(--moss)}
+.levels{display:grid;gap:.6rem;margin:0 0 1.75rem}
+@media (min-width:600px){.levels{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.levels div{border:1px solid var(--line);border-radius:12px;padding:.7rem .85rem;background:var(--surface);font-size:.92rem;line-height:1.45}
+.levels .tag,.levels .hand{display:inline-block;margin-bottom:.25rem}
+
+/* Lampräknare */
+.tally{border:1px solid var(--line);border-radius:14px;background:var(--surface);padding:.9rem 1rem;margin:0 0 2rem;display:grid;gap:.6rem}
+.tally h2{font-size:1.1rem;margin:0}
+.tcount{display:flex;flex-wrap:wrap;gap:.4rem .9rem;font-family:var(--f-display);font-size:.95rem;font-variant-numeric:tabular-nums}
+.tcount span{display:inline-flex;align-items:center;gap:.35rem}
+.tcount i{width:.8rem;height:.8rem;border-radius:50%;display:inline-block;border:2px solid}
+.tcount .g i{background:var(--go);border-color:var(--go)} .tcount .y i{background:var(--wait);border-color:var(--wait)} .tcount .r i{background:var(--stop);border-color:var(--stop)} .tcount .o i{border-color:var(--muted)}
+.tbar{display:flex;height:8px;border-radius:4px;overflow:hidden;background:var(--line)}
+.tbar i{display:block;height:100%}
+.tbar .g{background:var(--go)} .tbar .y{background:var(--wait)} .tbar .r{background:var(--stop)}
+.tally .row{display:flex;flex-wrap:wrap;gap:.4rem}
+
+/* Stigen */
+.route-h{font-size:1.25rem;margin:0 0 .25rem}
+.route-sub{margin:0 0 1rem;color:var(--muted);font-size:.95rem}
+.route{list-style:none;margin:0;padding:0;position:relative}
+.route::before{content:"";position:absolute;left:15px;top:16px;bottom:16px;border-left:2px dotted var(--water)}
+.route a{display:grid;grid-template-columns:32px minmax(0,1fr);gap:.85rem;padding:.45rem 0;text-decoration:none;color:var(--ink)}
+.route .dot{width:32px;height:32px;border-radius:50%;background:var(--surface);border:2px solid var(--water);display:grid;place-items:center;font-family:var(--f-display);font-weight:700;color:var(--water);position:relative;font-variant-numeric:tabular-nums}
+.route .q{font-family:var(--f-display);font-weight:600;font-size:1.05rem;line-height:1.3;display:block}
+.route .t{font-size:.88rem;color:var(--muted);display:block;line-height:1.4}
+
+/* Delar */
+.part{scroll-margin-top:7.5rem;padding-top:3.25rem}
+.part-head h2{font-size:clamp(1.75rem,6vw,2.3rem);margin:.35rem 0 .35rem;color:var(--ink)}
+.part-head .sub{font-family:var(--f-display);color:var(--muted);margin:0 0 .6rem;font-size:1rem}
+.facit{display:inline-block;font-family:var(--f-display);font-size:.78rem;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:.1rem .6rem}
+.gk{margin:1.4rem 0 1.25rem}
+.hand{font-family:var(--f-hand);font-weight:600;color:var(--acc);font-size:1.35rem;line-height:1}
+.gk p{font-family:var(--f-display);font-weight:600;font-size:1.22rem;line-height:1.45;margin:.25rem 0 0}
+.intro{margin:1rem 0 0}
+
+.item{display:grid;grid-template-columns:2.9rem minmax(0,1fr);gap:0 .9rem;padding-block:1.4rem;border-top:1px solid var(--line);scroll-margin-top:7.5rem}
+.num{font-family:var(--f-display);text-align:right;color:var(--muted);font-size:.68rem;letter-spacing:.04em;padding-top:.1rem;line-height:1.2}
+.num b{display:block;font-size:1.35rem;color:var(--acc);letter-spacing:0;font-variant-numeric:tabular-nums;margin-bottom:.15rem}
+.body{min-width:0}
+.item h3{font-size:1.3rem;margin:0 0 .55rem}
+.item .sub{font-size:.9rem;color:var(--muted);margin:-.3rem 0 .6rem;font-style:italic}
+.lvl{margin:0 0 .75rem}
+.tag{display:inline-block;font-family:var(--f-display);font-weight:700;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;border-radius:999px;padding:.12rem .55rem;margin-bottom:.35rem;line-height:1.5}
+.tag-e{background:var(--acc);color:var(--on-acc)}
+.tag-h{border:1.5px solid var(--acc);color:var(--acc)}
+.e-svar p,.u-e p{margin:0 0 .5rem}
+.knep{background:var(--marker-soft);border-radius:10px;padding:.6rem .8rem;margin:0 0 .75rem;font-size:.97rem;line-height:1.5}
+.knep .hand{color:var(--ink);margin-right:.25rem;font-size:1.3rem}
+.term .tk .hand,.gk .hand{color:var(--acc)}
+
+details>summary{list-style:none;cursor:pointer}
+details>summary::-webkit-details-marker{display:none}
+.hi>summary,.challenge details>summary{display:inline-flex;align-items:center;gap:.4rem;font-family:var(--f-display);font-weight:600;font-size:.95rem;color:var(--acc);background:var(--acc-soft);border-radius:999px;padding:.45rem .95rem;min-height:40px}
+.hi>summary::before,.challenge details>summary::before{content:"+";font-weight:700}
+.hi[open]>summary::before,.challenge details[open]>summary::before{content:"−"}
+details .when-open{display:none}
+details[open]>summary .when-open{display:inline}
+details[open]>summary .when-closed{display:none}
+.hi[open]>summary,.challenge details[open]>summary{margin-bottom:.85rem}
+.hi-body{border-left:2px solid var(--acc-soft);padding-left:.9rem}
+ol.chain-n{list-style:none;counter-reset:s;padding:0;margin:0 0 .5rem}
+ol.chain-n>li{counter-increment:s;position:relative;padding-left:2rem;margin:0 0 .55rem;font-size:.97rem}
+ol.chain-n>li::before{content:counter(s);position:absolute;left:0;top:.15rem;width:1.35rem;height:1.35rem;border-radius:50%;background:var(--acc);color:var(--on-acc);font-family:var(--f-display);font-weight:700;font-size:.75rem;display:grid;place-items:center}
+
+/* Trafikljus */
+.lights{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem;margin-top:.9rem}
+.lq{font-family:var(--f-display);font-size:.85rem;color:var(--muted);margin-right:.2rem}
+.lights button{display:inline-flex;align-items:center;gap:.35rem;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:.25rem .7rem;font-family:var(--f-display);font-size:.85rem;cursor:pointer;min-height:34px}
+.lights button i{width:.75rem;height:.75rem;border-radius:50%;border:2px solid currentColor;display:inline-block}
+.lights button[data-v="g"] i{color:var(--go)} .lights button[data-v="y"] i{color:var(--wait)} .lights button[data-v="r"] i{color:var(--stop)}
+.lights button[aria-pressed="true"]{border-color:var(--ink);font-weight:700}
+.lights button[aria-pressed="true"] i{background:currentColor}
+[data-light="g"]>.num b::after,[data-light="y"]>.num b::after,[data-light="r"]>.num b::after{content:"";display:block;width:.6rem;height:.6rem;border-radius:50%;margin:.3rem 0 0 auto}
+[data-light="g"]>.num b::after{background:var(--go)} [data-light="y"]>.num b::after{background:var(--wait)} [data-light="r"]>.num b::after{background:var(--stop)}
+body.gom #las [data-card][data-light="g"]{display:none}
+
+/* Rutor och småformat från plugghäftet */
+.box{border-radius:10px;padding:.7rem .9rem;margin:.6rem 0 .4rem;font-size:.93rem}
+.box strong{display:block;font-family:var(--f-display);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.15rem}
+.box p{margin:0}
+.note{background:var(--water-soft)} .note strong{color:var(--water)}
+.formula{display:inline-block;font-family:var(--f-display);font-weight:600;background:var(--surface);border:1.5px solid var(--acc);border-radius:8px;padding:.1rem .55rem;margin:.2rem 0;font-size:.93rem}
+.chips{display:flex;flex-wrap:wrap;align-items:center;gap:.3rem;margin:.45rem 0 .6rem}
+.chip{border:1.5px solid var(--acc);border-radius:8px;padding:.15rem .5rem;background:var(--surface);text-align:center;line-height:1.2;font-family:var(--f-display);font-weight:600;font-size:.88rem}
+.chip small{display:block;font-size:.7rem;color:var(--muted);font-weight:400}
+.arr{color:var(--acc);font-family:var(--f-display);font-weight:700}
+ul.tight,ol.tight{margin:.3rem 0 .4rem;padding-left:1.3rem}
+ul.tight li,ol.tight li{margin-bottom:.35rem}
+.tbl-wrap{overflow-x:auto;margin:.3rem 0 .6rem}
+table{border-collapse:collapse;width:100%;font-size:.9rem}
+table.mini th,table.mini td{text-align:left;padding:.4rem .5rem;border-bottom:1px solid var(--line);vertical-align:top}
+table.mini th{font-family:var(--f-display);font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+table.mini td.sig{font-family:var(--f-display);font-weight:700;color:var(--acc);white-space:nowrap}
+table.pmtable,table.grid4{border-collapse:separate;border-spacing:.35rem;min-width:30rem;margin:-.35rem}
+table.pmtable th,table.grid4 th{font-family:var(--f-display);font-size:.76rem;text-transform:uppercase;letter-spacing:.05em;color:var(--acc);text-align:left;vertical-align:top;padding:.2rem .3rem}
+table.pmtable td,table.grid4 td{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:.5rem .65rem;vertical-align:top;line-height:1.45}
+table.pmtable td:nth-child(2){background:var(--moss-soft);border-color:transparent}
+table.pmtable td:nth-child(3){background:var(--warn-soft);border-color:transparent}
+table.grid4 th small{text-transform:none;letter-spacing:0;color:var(--muted);font-weight:400}
+.model{background:var(--surface);border-left:3px solid var(--acc);border-radius:0 8px 8px 0;padding:.6rem .85rem;margin:.6rem 0 0;font-size:.95rem}
+.keybox{background:var(--acc-soft);border-radius:10px;padding:.65rem .85rem;margin-top:.7rem;font-size:.95rem}
+.aside{font-size:.93rem;background:var(--stone-soft);border-radius:8px;padding:.55rem .8rem;margin:.6rem 0 0}
+.steps5{display:grid;gap:.45rem}
+.steps5>div{border:1px solid var(--line);border-radius:10px;padding:.55rem .8rem;background:var(--surface);font-size:.95rem}
+.steps5>div span{display:block;font-family:var(--f-display);font-weight:700;font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:var(--acc)}
+
+/* Figurer */
+.fig{margin:.5rem 0 1rem;padding:.85rem;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.fig-small{max-width:22rem}
+.fig svg,.fig-kol svg,.fig-mid svg{display:block;width:100%;height:auto;fill:var(--ink)}
+.fig svg text,.figrow svg text{font-family:var(--f-display)}
+.figrow{display:flex;flex-wrap:wrap;gap:.9rem;align-items:center;margin:.4rem 0 .8rem}
+.figrow>*{min-width:0}
+.figrow.top{align-items:flex-start}
+.figrow.top>div:first-child{flex:1 1 15rem}
+.figrow>ol{flex:1 1 13rem}
+.fig-kol,.fig-mid,.fig-wide,.fig-web{flex:1 1 18rem;max-width:28rem;padding:.6rem;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.fig-web,.fig-wide{max-width:32rem;flex-basis:100%}
+.pyr{display:grid;grid-template-columns:minmax(0,1fr) 9.5rem;gap:.8rem;align-items:center}
+@media (max-width:480px){.pyr{grid-template-columns:1fr}}
+.pyr-stack{display:grid;gap:.2rem}
+.slab{width:var(--w);margin-inline:auto;background:var(--water-soft);border-radius:6px;text-align:center;padding:.3rem .3rem;font-family:var(--f-display);font-size:.85rem;line-height:1.25}
+.slab b{display:block} .slab span{color:var(--muted);font-variant-numeric:tabular-nums}
+.slab.prod{background:var(--moss-soft)}
+.pyr-side p{margin:0 0 .5rem;font-family:var(--f-display);font-size:.82rem;line-height:1.35;color:var(--muted)}
+.pyr-side b{display:block;font-size:.95rem}
+.up-r b{color:var(--warn)} .down-g b{color:var(--moss)}
+.tarta{display:grid;gap:.25rem;justify-items:center}
+.lag{border-radius:10px;text-align:center;padding:.45rem .6rem;font-family:var(--f-display);font-size:.82rem;line-height:1.3;color:var(--muted)}
+.lag b{display:block;color:var(--ink);font-size:.95rem}
+.lag.top{width:52%;background:var(--marker-soft);border:1.5px solid var(--marker)}
+.lag.mid{width:76%;background:var(--water-soft)}
+.lag.bot{width:100%;background:var(--moss-soft)}
+
+/* Del 3 */
+.compare{display:grid;gap:.7rem;margin:1rem 0 0}
+.cmp{border-radius:12px;padding:.8rem .95rem}
+.cmp p{margin:0}
+.cmp.e{background:var(--stone-soft)}
+.cmp.h{background:var(--plum-soft);border:1.5px solid var(--plum)}
+.cmp-l{font-family:var(--f-display);font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:.3rem!important}
+.cmp.h .cmp-l{color:var(--plum)}
+.n{display:inline-grid;place-items:center;min-width:1.2rem;height:1.2rem;border-radius:999px;background:var(--plum);color:var(--on-acc);font-family:var(--f-display);font-size:.7rem;font-weight:700;margin:0 .2rem 0 .1rem;vertical-align:.1rem}
+.legend{font-family:var(--f-display);font-size:.82rem;color:var(--muted);margin-top:.5rem!important}
+.h-mid{font-size:1.25rem;margin:2rem 0 .2rem}
+.domino{list-style:none;padding:0;margin:.7rem 0 0;display:grid;gap:.5rem;grid-template-columns:repeat(auto-fit,minmax(7.5rem,1fr))}
+.domino li{border:1.5px solid var(--acc);border-radius:10px;padding:.55rem .6rem;background:var(--surface);text-align:center}
+.domino b{display:block;font-family:var(--f-display);font-size:1.05rem;color:var(--acc);line-height:1.2}
+.domino small{display:block;font-family:var(--f-display);font-size:.78rem;color:var(--muted);line-height:1.3;margin-top:.2rem}
+.two{display:grid;gap:.8rem;margin-top:1.6rem}
+@media (min-width:640px){.two{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.panel{border:1px solid var(--line);border-radius:12px;padding:.85rem 1rem;background:var(--surface)}
+.panel h3{font-size:1.1rem;margin:0 0 .5rem;color:var(--acc)}
+.checks{list-style:none;padding:0;margin:0;display:grid;gap:.3rem;font-size:.95rem}
+.checks li{padding-left:1.6rem;position:relative}
+.checks li::before{content:"";position:absolute;left:0;top:.3rem;width:.95rem;height:.95rem;border:1.5px solid var(--acc);border-radius:3px}
+.signal{display:flex;flex-wrap:wrap;gap:.3rem;margin:0 0 .6rem}
+.signal span{border:1px solid var(--acc);color:var(--acc);border-radius:999px;padding:.05rem .55rem;font-family:var(--f-display);font-size:.85rem}
+.four{display:grid;grid-template-columns:5.5rem repeat(2,minmax(0,1fr));gap:.35rem;margin-top:.7rem;font-family:var(--f-display);font-size:.85rem}
+.four .fl{font-weight:700;color:var(--acc);font-size:.76rem;text-transform:uppercase;letter-spacing:.05em;align-self:end}
+.four .cell{border:1.5px dashed var(--acc);border-radius:8px;padding:.5rem .55rem;min-height:4rem;color:var(--muted)}
+.challenge{border:1.5px dashed var(--acc);border-radius:14px;background:var(--surface);padding:1.1rem .9rem 1.1rem .5rem;margin-block:1.25rem}
+.challenge + .challenge{margin-top:1.25rem}
+.goal{font-size:.88rem;color:var(--muted);margin:0 0 .3rem}
+.goal .hand{font-size:1.15rem;margin-right:.2rem}
+.why{font-family:var(--f-display);font-size:.88rem;color:var(--acc);border-top:1px solid var(--line);padding-top:.55rem;margin:.8rem 0 0}
+
+/* Del 4 */
+.fq-sec{font-size:1.15rem;margin:1.8rem 0 .5rem;color:var(--acc)}
+.fq-list{border-top:1px solid var(--line)}
+.fq{border-bottom:1px solid var(--line);scroll-margin-top:7.5rem}
+.fq>summary{display:grid;grid-template-columns:2.2rem minmax(0,1fr) auto;gap:.6rem;padding:.7rem 0;align-items:baseline}
+.fq>summary::after{content:"Visa";font-family:var(--f-display);font-size:.8rem;color:var(--acc);border:1px solid var(--acc);border-radius:999px;padding:0 .5rem}
+.fq[open]>summary::after{content:"Dölj"}
+.fn{font-family:var(--f-display);font-weight:700;color:var(--acc);text-align:right;font-variant-numeric:tabular-nums}
+.fqq{font-family:var(--f-display);font-weight:600;font-size:1rem;line-height:1.35}
+.star{color:var(--wait)}
+.fa-wrap{padding:0 0 .9rem 2.8rem}
+.fa{margin:0;background:var(--acc-soft);border-radius:10px;padding:.6rem .8rem;font-size:.97rem}
+.fq .lights{margin-top:.55rem}
+
+/* Del 5 */
+.terms{display:grid;gap:.7rem;margin-top:1rem}
+@media (min-width:640px){.terms{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.term{border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:.8rem .9rem;scroll-margin-top:7.5rem}
+.term h3{font-size:1.15rem;margin:0 0 .3rem}
+.term .def{margin:0 0 .35rem;font-size:.95rem;line-height:1.5}
+.term .tk{margin:0;font-family:var(--f-display);font-size:.9rem;color:var(--muted)}
+.term .tk .hand{font-size:1.15rem}
+.term .lights{margin-top:.6rem}
+.term .lq{display:none}
+.term[data-light="g"]{border-color:var(--go)} .term[data-light="y"]{border-color:var(--wait)} .term[data-light="r"]{border-color:var(--stop)}
+
+/* Kvällen före */
+.hooks{display:grid;gap:.5rem;grid-template-columns:repeat(auto-fill,minmax(13rem,1fr));margin-top:1rem}
+.hooks div{border-radius:10px;padding:.6rem .75rem;font-size:.9rem;line-height:1.4;font-family:var(--f-display);color:var(--muted)}
+.hooks b{display:block;color:var(--ink);font-size:.98rem;margin-bottom:.1rem}
+.k-e{background:var(--moss-soft)} .k-h{background:var(--water-soft)}
+.small-d b{font-size:.95rem}
+.nums{display:grid;gap:.5rem;grid-template-columns:repeat(auto-fill,minmax(9.5rem,1fr));margin:.8rem 0 0}
+.nums div{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:.55rem .7rem}
+.nums dt{font-family:var(--f-display);font-weight:700;font-size:1.3rem;line-height:1.1;font-variant-numeric:tabular-nums}
+.nums dd{margin:.15rem 0 0;font-family:var(--f-display);font-size:.82rem;color:var(--muted);line-height:1.35}
+.foot{font-size:.85rem;color:var(--muted);margin:3rem 0 3rem;border-top:1px solid var(--line);padding-top:1rem}
+.pdflink{margin:0 0 1.5rem}
+.pdflink a{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--f-display);font-weight:600;font-size:.98rem;text-decoration:none;color:var(--on-acc);background:var(--water);border-radius:999px;padding:.6rem 1.1rem;min-height:44px}
+
+/* Förhör */
+.quiz{padding-block:1.75rem 4rem}
+.quiz h2{font-size:2rem;margin:0 0 .3rem}
+.qcontrols{display:grid;gap:.6rem;margin:1rem 0 1.1rem}
+.qparts,.qopts{display:flex;flex-wrap:wrap;gap:.35rem}
+.pill{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:.3rem .8rem;font-family:var(--f-display);font-size:.9rem;cursor:pointer;min-height:36px;font-variant-numeric:tabular-nums}
+.pill[aria-pressed="true"]{background:var(--water);border-color:var(--water);color:var(--on-acc)}
+.qprog{display:grid;gap:.35rem;margin-bottom:.9rem;font-family:var(--f-display);font-size:.92rem}
+.card{min-height:16rem;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:1.25rem 1.2rem;display:flex;flex-direction:column;gap:.6rem;cursor:pointer}
+.card .meta{font-family:var(--f-display);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0}
+.card .front{font-family:var(--f-display);font-weight:700;font-size:1.45rem;line-height:1.25;margin:0;text-wrap:balance}
+.card .ask{font-family:var(--f-display);color:var(--water);font-size:.95rem;margin:0}
+.card .back{border-top:1px dashed var(--line);padding-top:.75rem;display:grid;gap:.6rem;font-size:.97rem}
+.card .back>*{margin:0}
+.card .back .fa,.card .back .knep{margin:0}
+.card .hint{margin-top:auto;font-family:var(--f-display);font-size:.85rem;color:var(--muted)}
+.card .goto{font-family:var(--f-display);font-size:.88rem}
+.qactions{display:flex;gap:.5rem;margin-top:.8rem}
+.qactions .btn{flex:1}
+.btn{font-family:var(--f-display);font-weight:600;font-size:1rem;padding:.7rem .6rem;border-radius:12px;border:1.5px solid var(--ink);background:transparent;cursor:pointer;min-height:48px}
+.btn.primary{background:var(--water);border-color:var(--water);color:var(--on-acc)}
+.btn.r{border-color:var(--stop);color:var(--stop)} .btn.y{border-color:var(--wait);color:var(--ink)} .btn.g{background:var(--go);border-color:var(--go);color:var(--on-acc)}
+.linkbtn{background:none;border:0;color:var(--muted);text-decoration:underline;font-family:var(--f-display);font-size:.88rem;cursor:pointer;margin-top:1.5rem;padding:.4rem 0;min-height:36px}
+.card.done{text-align:center;justify-content:center;align-items:center;cursor:default}
+
+@media (max-width:480px){
+  .item{grid-template-columns:2.3rem minmax(0,1fr);gap:0 .6rem}
+  .num b{font-size:1.1rem}
+  .fa-wrap{padding-left:0}
+  .four{grid-template-columns:4.2rem repeat(2,minmax(0,1fr))}
+}
+@media print{
+  .topbar,#forhor,.lights,.tally,.hi>summary,.challenge details>summary,.fq>summary::after{display:none!important}
+  body{background:#fff;color:#000;font-size:11pt}
+  .item,.term,.challenge,.fq{break-inside:avoid}
+  .part{padding-top:1.5rem}
+}
+</style>
+</head>
+<body>
+<svg class="defs" width="0" height="0" aria-hidden="true" focusable="false">
+<defs>
+  <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+    <path style="fill:var(--ink)" d="M0,0 L10,5 L0,10 z"/>
+  </marker>
+  <marker id="ahr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+    <path style="fill:var(--warn)" d="M0,0 L10,5 L0,10 z"/>
+  </marker>
+  <marker id="ahg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+    <path style="fill:var(--moss)" d="M0,0 L10,5 L0,10 z"/>
+  </marker>
+</defs>
+</svg>
+<header class="topbar">
+  <div class="inner">
+    <div class="toprow">
+      <a class="brand" href="../">← Ekologi</a>
+      <div class="seg" role="group" aria-label="Läge">
+        <button type="button" id="tab-las" aria-pressed="true">Läs</button>
+        <button type="button" id="tab-forhor" aria-pressed="false">Förhör</button>
+      </div>
+    </div>
+    <nav class="partnav" id="partnav" aria-label="Delar">
+      <a href="#del1"><b>1</b>Ekologi</a>
+      <a href="#del2"><b>2</b>Hållbar utveckling</a>
+      <a href="#del3"><b>3</b>Högre nivå</a>
+      <a href="#del4"><b>4</b>Faktafrågor</a>
+      <a href="#del5"><b>5</b>Begrepp</a>
+      <a href="#kvallen"><b>★</b>Kvällen före</a>
+    </nav>
+  </div>
+</header>
+
+<main id="las">
+<div class="inner">
+<section class="hero" id="start">
+  <p class="eyebrow">Naturkunskap 1b · Kapitel 2 · <span style="white-space:nowrap">bokens s. 28–63</span></p>
+  <h1>Från fotosyntes <span>till fotavtryck</span></h1>
+  <p class="lead">Allt du ska kunna inför provet om ekologi och hållbar utveckling. Varje punkt på lärarens lista får ett kort svar för E, ett svar i flera steg för högre betyg och ett minnesknep som är lite fånigt med flit.</p>
+  <p class="pdflink" id="pdflink"><a href="plugghafte-naturkunskap-1b-kap-2.pdf" target="_blank" rel="noopener" download><span aria-hidden="true">↓</span> Ladda ner plugghäftet att skriva ut (PDF)</a></p>
+  <ul class="howto">
+    <li>Läs E-svaret och säg det högt med egna ord. Det är grunden du måste kunna.</li>
+    <li>Fäll ut ”Högre nivå” när E sitter. Där förklaras sambanden i flera steg, som läraren vill se för högre betyg.</li>
+    <li>Tänd en lampa på varje punkt: grön = kan, gul = osäker, röd = kan inte än. Plugga rött först.</li>
+    <li>Testa dig i Förhör. Lamporna följer med, och kort som lyser grönt försvinner ur högen.</li>
+    <li>Kvällen före provet: läs sista delen. Hela kapitlet får plats på en sida.</li>
+  </ul>
+  <div class="levels">
+    <div><span class="tag tag-e" style="--acc:var(--moss)">E-nivå · grunden</span><br>Det du <b>måste</b> kunna. Kort och exakt, med de viktigaste orden markerade.</div>
+    <div><span class="tag tag-h" style="--acc:var(--plum)">Högre nivå · samband</span><br>Samma sak i <b>flera steg</b>: orsak, följd och nästa följd.</div>
+    <div><span class="hand" style="--acc:var(--ink)">Minnesknep</span><br>En bild eller ramsa som får det att fastna. Ju fånigare, desto bättre.</div>
+  </div>
+  <div class="tally" aria-live="polite">
+    <h2>Dina lampor</h2>
+    <div class="tcount" id="tcount"></div>
+    <div class="tbar" id="tbar"></div>
+    <div class="row">
+      <button type="button" class="pill" id="gom" aria-pressed="false">Göm det som lyser grönt</button>
+      <button type="button" class="pill" id="allhi" aria-pressed="false">Fäll ut alla svar på högre nivå</button>
+    </div>
+    <p class="muted small" style="margin:0">Lamporna sparas bara i den här webbläsaren.</p>
+  </div>
+
+  <h2 class="route-h">Vägen genom kapitlet</h2>
+  <p class="route-sub">Fem delar och en sista kväll. Ta dem i ordning.</p>
+  <ol class="route">
+    <li><a href="#del1"><span class="dot">1</span><span><span class="q">Hur hänger naturen ihop?</span><span class="t">Ekosystem, fotosyntes, näringskedjor, samspel och kretslopp</span></span></a></li>
+    <li><a href="#del2"><span class="dot">2</span><span><span class="q">Hur gör vi så att det räcker?</span><span class="t">Hållbar utveckling, tre perspektiv, planetära gränser, bärkraft</span></span></a></li>
+    <li><a href="#del3"><span class="dot">3</span><span><span class="q">Hur skriver jag för högre betyg?</span><span class="t">Kedjeformeln och åtta övningar med modellsvar</span></span></a></li>
+    <li><a href="#del4"><span class="dot">4</span><span><span class="q">Kan jag bokens frågor?</span><span class="t">Alla 53 faktafrågor från s. 274–275, med svar</span></span></a></li>
+    <li><a href="#del5"><span class="dot">5</span><span><span class="q">Kan jag orden?</span><span class="t">28 begrepp från s. 62 och lärarens lista</span></span></a></li>
+    <li><a href="#kvallen"><span class="dot">★</span><span><span class="q">Kvällen före provet</span><span class="t">Hela kapitlet på en sida</span></span></a></li>
+  </ol>
+</section>
+
+<section class="part" id="del1">
+  <div class="part-head"><p class="eyebrow">Del 1</p><h2>Ekologi</h2><p class="sub">Hur hänger naturen ihop?</p><span class="facit">Lärarens E-lista · boken s. 35–45</span></div>
+<div class="gk"><span class="hand">Knepet för hela delen</span><p><mark>Energin har en enkelbiljett. Materien har busskort.</mark></p></div>
+  
+<article class="item" id="E1" data-card data-group="eko" data-front="Vad är ett ekosystem?" data-code="E1">
+  <div class="num"><b>E1</b>s.&nbsp;35, 45</div>
+  <div class="body">
+    <h3>Vad är ett ekosystem?</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back>Ett <b>ekosystem</b> är en <mark>avgränsad bit natur</mark> med alla dess <b>levande</b> och
+        <b>icke levande</b> delar – och hur de <b>påverkar varandra</b>. Det kan vara en sjö, en skog
+        eller bara en stubbe. Den som studerar bestämmer var gränsen går.</div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> <b>Ekosystem = hela fotbollsmatchen.</b> Spelarna är det levande. Planen, vädret och bollen
+        är det icke levande. Själva matchen är samspelet. Du förstår inte matchen genom att bara titta på en spelare.</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary>
+      <div class="hi-body"><ol class="chain-n"><li>Allt i ekosystemet hänger ihop: <b>energi</b> kommer in från <b>solen</b> och lämnar som
+            <b>värme</b>, medan <b>materia</b> (t.ex. kol och vatten) <b>cirkulerar</b> och används om och om igen.</li><li>Ändras en del – t.ex. temperaturen, vattnet eller en art – <b>påverkas flera andra delar</b>, i flera steg.</li><li>Exempel: <b>Östersjön</b> är ett ekosystem där tång, plankton, fiskar, fåglar, sälar, ljus,
+            salt och syre hänger ihop (näringsväven på s. 45).</li></ol></div>
+    </details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item" id="E2" data-card data-group="eko" data-front="Biotiska och abiotiska faktorer – vad är skillnaden? Ge exempel." data-code="E2">
+  <div class="num"><b>E2</b>s.&nbsp;35, 45</div>
+  <div class="body">
+    <h3>Biotiska och abiotiska faktorer – vad är skillnaden? Ge exempel.</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back><b>Biotiska faktorer</b> = det <mark>levande</mark>: växter, djur, svampar, bakterier – t.ex.
+        <b>föda, rovdjur, konkurrenter, parasiter</b>.<br>
+        <b>Abiotiska faktorer</b> = det <mark>icke levande</mark>: <b>ljus, temperatur, vatten, syre,
+        koldioxid, näringsämnen i marken, pH, vind</b>.</div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> Fråga dig: <b>”Kan det dö?”</b> Ja → <b>biotiskt</b> (<i>bio</i> = liv). Har det aldrig levt →
+        <b>abiotiskt</b> (<i>a</i> = inte, som i <i>a</i>typisk). En älg kan dö. En regnskur kan inte dö –
+        hur dramatisk den än är.</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary>
+      <div class="hi-body"><ol class="chain-n"><li>Abiotiskt påverkar biotiskt: <b>varmare havsvatten</b> → korallerna dör → fiskarna i revet
+            förlorar sin <b>livsmiljö</b> → djur som äter fisken får mindre mat.</li><li>Biotiskt påverkar abiotiskt: <b>träd</b> ger <b>skugga och fukt</b> och håller fast jorden.
+            Huggs skogen ner blir marken torrare och varmare, och jorden kan spolas bort (<b>erosion</b>).</li><li>En ändring av <b>en enda faktor</b> kan alltså ge <b>många följder</b> i ekosystemet.</li></ol></div>
+    </details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item" id="E3" data-card data-group="eko" data-front="Producent, konsument och nedbrytare – vilken roll har de?" data-code="E3">
+  <div class="num"><b>E3</b>s.&nbsp;42, 44</div>
+  <div class="body">
+    <h3>Producent, konsument och nedbrytare – vilken roll har de?</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back><b>Producenter</b> = <mark>gröna växter</mark> och alger. De gör sin egen näring med
+        <b>fotosyntes</b> och <b>binder solenergi</b> som kemisk energi.<br>
+        <b>Konsumenter</b> = djur som <mark>äter</mark> andra organismer: <b>växtätare</b> (hare),
+        <b>köttätare</b> (gädda), <b>allätare</b> (gris, råtta, människa).<br>
+        <b>Nedbrytare</b> = <b>svampar, bakterier, maskar</b> m.fl. som <mark>bryter ner döda</mark>
+        växter och djur till enkla ämnen som växterna kan ta upp igen.</div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> <b>Restaurang Naturen:</b> Producenten är <b>kocken</b> som lagar mat av solljus, luft och vatten.
+        Konsumenten är <b>gästen</b> som äter. Nedbrytaren är <b>diskaren</b> som tar hand om resterna och
+        skickar tillbaka råvarorna till köket. Utan diskare – kaos.</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary>
+      <div class="hi-body"><ol class="chain-n"><li>Utan <b>producenter</b> kommer ingen energi in i ekosystemet – alla konsumenter är beroende av dem.</li><li>Utan <b>nedbrytare</b> låses näringsämnena fast i döda kroppar → växterna får <b>näringsbrist</b>
+            → de växer sämre → även <b>konsumenterna</b> får mindre mat.</li><li>Alla tre behövs för att <b>energin ska flöda</b> och <b>materien ska cirkulera</b>.</li></ol></div>
+    </details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item" id="E4" data-card data-group="eko" data-front="Beskriv fotosyntesen och cellandningen i stora drag." data-code="E4">
+  <div class="num"><b>E4</b>s.&nbsp;42–43</div>
+  <div class="body">
+    <h3>Beskriv fotosyntesen och cellandningen i stora drag.</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back><b>Fotosyntes</b> sker i växternas <b>gröna blad</b> (med klorofyll):<br>
+        <span class="formula">koldioxid + vatten + solenergi → socker + syre</span><br>
+        Solenergin lagras som kemisk energi i <b>sockret</b>.<br>
+        <b>Cellandning</b> sker hos <b>djur och växter</b>:<br>
+        <span class="formula">socker + syre → koldioxid + vatten + energi</span><br>
+        Energin <mark>frigörs</mark> och används till rörelse, värme och till att bygga kroppen.</div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> <b>KVE → SS</b>: <b>K</b>oldioxid, <b>V</b>atten, <b>E</b>nergi → <b>S</b>ocker, <b>S</b>yre.
+        Cellandning = <b>SS → KVE</b>, samma sak <b>spolad baklänges</b>. Bonus: ett träd är byggt av
+        <b>luft</b>! Nästan all massa kommer från koldioxiden, inte från jorden (s. 43).</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary>
+      <div class="hi-body"><ol class="chain-n"><li>Cellandningen är <b>fotosyntesen baklänges</b>. Växterna tar upp koldioxid och släpper ut syre,
+            djuren tar upp syre och släpper ut koldioxid. Tillsammans blir det ett <b>kretslopp</b>.</li><li>Energin du använder när du springer kommer alltså <b>från solen</b>, via växterna – kanske från
+            vetekorn som växte i somras (s. 43).</li><li>Gaserna går in och ut genom <b>klyvöppningar</b> i bladen. Till slut blir all energi <b>värme</b>,
+            så solen måste hela tiden fylla på.</li></ol></div>
+    </details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item" id="E5" data-card data-group="eko" data-front="Gör och tolka en enkel näringskedja och näringsväv." data-code="E5">
+  <div class="num"><b>E5</b>s.&nbsp;44–45</div>
+  <div class="body">
+    <h3>Gör och tolka en enkel näringskedja och näringsväv.</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back>En <b>näringskedja</b> visar <mark>vem som äter vem</mark>. Pilen visar <b>vart energin går</b>:
+        <div class="chips">
+          <span class="chip">Blåstång<small>producent</small></span><span class="arr">→</span>
+          <span class="chip">Tånggråsugga<small>växtätare</small></span><span class="arr">→</span>
+          <span class="chip">Abborre<small>köttätare</small></span><span class="arr">→</span>
+          <span class="chip">Gädda<small>toppkonsument</small></span>
+        </div>
+        En <b>näringsväv</b> = <mark>många näringskedjor som hänger ihop</mark>. De flesta djur äter flera
+        olika saker och blir uppätna av flera.</div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> <b>Pilen pekar mot magen!</b> Gräs → hare → räv: pilen går till den som äter. En kedja är ett
+        <b>halsband</b>, en väv är ett <b>spindelnät</b> – klipp en tråd och hela nätet darrar.</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary>
+      <div class="hi-body"><ol class="chain-n"><li>Väven visar <b>beroenden</b>: försvinner en art påverkas både de som <b>åt den</b> (mindre mat)
+            och de som den <b>åt</b> (färre fiender → kan öka).</li><li>En väv med <b>många kopplingar</b> är <b>stabilare</b> än en ensam kedja – djuren kan byta föda.</li><li>Hela resonemanget om vad som händer om <b>blåmusslan</b> försvinner finns i Del 3 (U2).</li></ol></div>
+    </details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item" id="E6" data-card data-group="eko" data-front="Energin flödar genom ekosystemet. Varför finns det mindre energi för varje steg uppåt?" data-code="E6">
+  <div class="num"><b>E6</b>s.&nbsp;43–45</div>
+  <div class="body">
+    <h3>Energin flödar genom ekosystemet. Varför finns det mindre energi för varje steg uppåt?</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back>Energin kommer från <b>solen</b> och <b>flödar genom</b> näringskedjan. I varje steg förs bara
+        <mark>ca 10 %</mark> vidare. Resten använder djuret för att <b>leva, röra sig och hålla värmen</b>
+        (cellandning), och den försvinner till slut som <b>värme</b>.
+        <div class="chips">
+          <span class="chip">1 000 kg<small>alger</small></span><span class="arr">→</span>
+          <span class="chip">100 kg<small>kräftdjur</small></span><span class="arr">→</span>
+          <span class="chip">10 kg<small>småfisk</small></span><span class="arr">→</span>
+          <span class="chip">1 kg<small>gädda</small></span>
+        </div></div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> <b>Glassen som smälter:</b> skicka en glass mellan fyra kompisar en het dag – den sista får en slick.
+        <b>Energi har enkelbiljett, materia har busskort</b> – den åker runt hela tiden.</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary>
+      <div class="hi-body"><ol class="chain-n"><li>Därför blir <b>näringspyramiden smalare uppåt</b>: det finns mindre <b>biomassa</b> av
+            toppkonsumenter. Kedjor har sällan fler än 4–5 steg – sedan finns det för lite energi kvar.</li><li><b>Energi flödar</b> (enkelriktat, måste fyllas på från solen hela tiden), men
+            <b>materia cirkulerar</b> (samma atomer används om och om igen).</li><li>I Del 3 (U3) finns pyramiden – och miljögifterna som gör tvärtom och <b>ökar</b> uppåt!</li></ol></div>
+    </details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item" id="E7" data-card data-group="eko" data-front="Hur kan organismer påverka varandra? (konkurrens, predation, symbios)" data-code="E7">
+  <div class="num"><b>E7</b>s.&nbsp;37–39</div>
+  <div class="body">
+    <h3>Hur kan organismer påverka varandra? (konkurrens, predation, symbios)</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back><table class="mini">
+          <tr><th>Samspel</th><th>Tecken</th><th>Exempel</th></tr>
+          <tr><td><b>Predation</b> – rovdjur äter byte</td><td class="sig">(+, −)</td><td>räven äter haren, örnen tar räven</td></tr>
+          <tr><td><b>Parasitism</b> – lever på en värd</td><td class="sig">(+, −)</td><td>binnikemask, stickmygga, fnöskticka</td></tr>
+          <tr><td><b>Konkurrens</b> – om samma föda/plats</td><td class="sig">(−, −)</td><td>mesar som letar insekter i samma träd</td></tr>
+          <tr><td><b>Mutualism</b> – båda vinner</td><td class="sig">(+, +)</td><td>myror skyddar bladlöss och får söt vätska</td></tr>
+        </table>
+        <b>Symbios</b> = <mark>samlingsnamn för samliv</mark> mellan organismer (i vardagen menar man oftast (+, +)).</div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> Räkna som i matte: <b>(+,+) = bästisar</b>, <b>(+,−) = en vinner, en förlorar</b>,
+        <b>(−,−) = två som slåss om sista pizzabiten</b>. Myrorna är <b>bönder som mjölkar sina kor</b> –
+        bladlössen kallas faktiskt ”myrornas kor”.</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary>
+      <div class="hi-body"><ol class="chain-n"><li>Samspelen styr populationernas storlek: <b>fler harar → mer mat åt rävarna → fler rävar →
+            fler harar äts → färre harar → rävarna svälter → färre rävar → hararna ökar igen.</b></li><li>Konkurrens leder till <b>specialisering</b>: kungsfågeln letar mat längst ut på grenarna,
+            tofsmesen nära stammen. De har olika <b>ekologiska nischer</b> och slipper konkurrera (s. 39).</li><li>En parasit vill helst <b>inte döda</b> sin värd – då förlorar den ju sitt hem och sin mat (s. 39).</li></ol></div>
+    </details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item" id="E8" data-card data-group="eko" data-front="Ämnen som kol och vatten ingår i kretslopp – förklara." data-code="E8">
+  <div class="num"><b>E8</b>s.&nbsp;40–45, 53</div>
+  <div class="body">
+    <h3>Ämnen som kol och vatten ingår i kretslopp – förklara.</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back><b>Materia försvinner inte</b> – den byter form och går runt i <mark>kretslopp</mark>.<br>
+        <b>Vattnets kretslopp</b> (solen är motorn):
+        <div class="chips">
+          <span class="chip">Solen värmer</span><span class="arr">→</span>
+          <span class="chip">Avdunstning<small>hav &amp; växter</small></span><span class="arr">→</span>
+          <span class="chip">Moln</span><span class="arr">→</span>
+          <span class="chip">Nederbörd</span><span class="arr">→</span>
+          <span class="chip">Sjöar, floder,<small>grundvatten</small></span><span class="arr">→</span>
+          <span class="chip">Havet ↺</span>
+        </div>
+        <div class="figrow top"><div><b>Kolets kretslopp:</b> <b>koldioxid</b> i luften → växterna tar upp den i
+        <b>fotosyntesen</b> → kolet blir <b>socker</b> → djuren <b>äter</b> växterna → <b>cellandning</b> släpper
+        ut koldioxid igen. Döda växter och djur bryts ner av <b>nedbrytarna</b> → koldioxid igen.</div>
+        <div class="fig fig-kol">
+<svg class="svg" viewBox="0 0 460 240" xmlns="http://www.w3.org/2000/svg" font-family="Body, DejaVu Sans, sans-serif">
+
+  <g font-size="13.5" text-anchor="middle">
+    <rect style="fill:var(--moss-soft);stroke:var(--moss)" x="150" y="6" width="120" height="34" rx="9" stroke-width="1.6"/>
+    <text x="210" y="28" font-weight="700">CO&#8322; i luften</text>
+    <rect style="fill:var(--surface);stroke:var(--moss)" x="18" y="100" width="134" height="36" rx="9" stroke-width="1.6"/>
+    <text x="85" y="122" font-weight="700">Växter</text>
+    <rect style="fill:var(--surface);stroke:var(--moss)" x="268" y="100" width="134" height="36" rx="9" stroke-width="1.6"/>
+    <text x="335" y="122" font-weight="700">Djur</text>
+    <rect style="fill:var(--surface);stroke:var(--moss)" x="143" y="196" width="134" height="36" rx="9" stroke-width="1.6"/>
+    <text x="210" y="218" font-weight="700">Döda växter &amp; djur</text>
+    <rect style="fill:var(--warn-soft);stroke:var(--warn)" x="306" y="196" width="146" height="36" rx="9" stroke-width="1.6"/>
+    <text x="379" y="212" font-size="11" font-weight="700">Lagrat kol:</text>
+    <text x="379" y="226" font-size="11">torv, olja, kol</text>
+  </g>
+  <g style="stroke:var(--ink)" stroke-width="1.6" fill="none">
+    <path d="M160,42 L104,98" marker-end="url(#ah)"/>
+    <path d="M318,98 L262,42" marker-end="url(#ah)"/>
+    <path d="M154,118 L266,118" marker-end="url(#ah)"/>
+    <path d="M210,194 L210,44" marker-end="url(#ah)"/>
+    <path d="M104,138 L168,194" marker-end="url(#ah)"/>
+    <path d="M318,138 L252,194" marker-end="url(#ah)"/>
+    <path d="M279,214 L304,214" marker-end="url(#ah)"/>
+  </g>
+  <path style="stroke:var(--warn)" d="M440,194 C462,130 430,40 274,22" stroke-width="2" stroke-dasharray="6 4" fill="none" marker-end="url(#ahr)"/>
+  <g style="fill:var(--ink)" font-size="12.5">
+    <text x="124" y="66" text-anchor="end" font-style="italic">fotosyntes</text>
+    <text x="296" y="66" text-anchor="start" font-style="italic">cellandning</text>
+    <text x="182" y="111" text-anchor="middle" font-style="italic">äts</text>
+    <text x="216" y="168" text-anchor="start" font-style="italic">nedbrytare</text>
+    <text x="216" y="181" text-anchor="start" font-style="italic">(cellandning)</text>
+    <text x="118" y="174" text-anchor="end" font-style="italic">dör</text>
+    <text x="304" y="174" text-anchor="start" font-style="italic">dör</text>
+  </g>
+  <g style="fill:var(--warn)" font-size="11" font-weight="700" text-anchor="end">
+    <text x="456" y="150">förbränning</text>
+    <text x="456" y="163">/ utdikning</text>
+  </g>
+</svg>
+</div></div></div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> Vattnet du dricker i dag kan ha varit <b>dinosauriekiss</b> – samma vatten åker karusell i
+        miljontals år. Och kolatomerna i din frukostmacka satt kanske en gång i en mammut.</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary>
+      <div class="hi-body"><ol class="chain-n"><li>Kol kan <b>lagras</b> länge: i <b>torv, skog, olja och kol</b>.</li><li>När vi <b>eldar fossila bränslen</b> eller <b>dikar ut våtmarker</b> (syre når torven → bakterier
+            bryter ner den) flyttas lagrat kol snabbt ut i luften som <b>koldioxid</b> → <b>förstärkt
+            växthuseffekt</b> → <b>högre temperatur</b> (s. 53).</li><li>Problemet är alltså inte kretsloppet i sig, utan att vi flyttar kol från <b>lagret till luften</b>
+            mycket snabbare än växterna hinner ta upp det.</li></ol></div>
+    </details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+  
+<article class="item" id="bonus" data-card data-group="eko" data-front="Bonus: evolution och anpassningar" data-code="Bonus">
+  <div class="num"><b>+</b>s.&nbsp;36–38</div>
+  <div class="body">
+    <p class="eyebrow">Bonus</p><h3>Bonus: evolution och anpassningar</h3><p class="sub">Inte på E-listan, men står i boken och i faktafrågorna.</p>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back>Det föds <b>fler</b> individer än som kan överleva → <b>kamp för tillvaron</b> → de som är
+        <mark>bäst anpassade</mark> till miljön överlever och för sina <b>gener</b> vidare =
+        <b>naturligt urval</b> (Darwin, 1859) → arterna förändras långsamt = <b>evolution</b>.</div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> Naturen är en <b>talangjakt utan jury</b>: miljön röstar ut den som inte passar, och vinnarna
+        får föra sina gener vidare.</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary>
+      <div class="hi-body"><ol class="chain-n"><li><b>Anpassningar:</b> rådjuret – vaksamt, rörliga öron, långa snabba ben för flykt. Lodjuret –
+            framåtriktade ögon, vassa tänder, smygande gång. Båda har <b>kamouflagefärger</b> (s. 37).</li><li><b>Fortplantning:</b> många ägg utan omvårdnad (fiskar – tusentals ägg, nästan alla blir uppätna)
+            eller få ungar med lång omvårdnad (älgkalven följer kon ett helt år) (s. 38).</li><li>Darwin mötte motstånd från <b>kyrkan</b>, eftersom teorin sa att arterna – och människan – inte
+            skapats färdiga utan utvecklats (s. 37).</li></ol></div>
+    </details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+</section>
+
+<section class="part" id="del2">
+  <div class="part-head"><p class="eyebrow">Del 2</p><h2>Hållbar utveckling</h2><p class="sub">Hur gör vi så att det räcker?</p><span class="facit">Lärarens E-lista · boken s. 25–34, 46–61</span></div>
+<div class="gk"><span class="hand">Knepet för hela delen</span><p><mark>Tårtan: botten är naturen, mitten är människorna, toppen är pengarna.</mark></p></div>
+  
+<article class="item" id="H1" data-card data-group="hall" data-front="Vad innebär hållbar utveckling? Förklara med egna ord." data-code="H1">
+  <div class="num"><b>H1</b>s.&nbsp;46–48</div>
+  <div class="body">
+    <h3>Vad innebär hållbar utveckling? Förklara med egna ord.</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back><b>Hållbar utveckling</b> = att vi <mark>tillgodoser våra behov i dag</mark> utan att
+        <mark>förstöra möjligheterna för framtida generationer</mark> att tillgodose sina.<br>
+        FN:s definition (<b>Brundtlandrapporten, 1987</b>): <i>”en utveckling som tillfredsställer dagens
+        behov utan att äventyra möjligheterna för framtida generationer att tillfredsställa sina behov.”</i><br>
+        <b>Med egna ord:</b> vi ska kunna leva bra nu – men lämna en jord där våra barnbarn också kan leva bra.</div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> <b>”Vi lånar jorden av våra barnbarn”</b> (s. 46). Tänk att du lånat din kompis favoritjacka:
+        använd den gärna – men lämna tillbaka den <b>hel</b>.</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary>
+      <div class="hi-body"><ol class="chain-n"><li>Hållbar utveckling sker där <b>tre perspektiv möts</b>: ekologiskt, socialt och ekonomiskt
+            (nästa kort). Det räcker inte att något är bra för naturen om människor far illa – eller om
+            det inte går att betala i längden.</li><li>Frågorna <b>förändras över tid</b> och behöver diskuteras <b>demokratiskt</b>, så att alla
+            får göra sin röst hörd (s. 48).</li><li>Det vi gör i dag får <b>följder för dem som kommer efter oss</b> – precis som tidigare
+            generationers uppfinningar (bilen, datorn) styr hur vi lever nu (s. 46–47).</li></ol></div>
+    </details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item" id="H2" data-card data-group="hall" data-front="De tre perspektiven: ekologisk, social och ekonomisk hållbarhet. Ge exempel." data-code="H2">
+  <div class="num"><b>H2</b>s.&nbsp;48</div>
+  <div class="body">
+    <h3>De tre perspektiven: ekologisk, social och ekonomisk hållbarhet. Ge exempel.</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back><ul class="tight">
+          <li><b>Ekologisk hållbarhet</b> – <mark>naturen</mark> ska må bra: friska ekosystem, biologisk
+          mångfald, rent vatten och ren luft, stabilt klimat. <i>Ex: skydda våtmarker, minska utsläppen av koldioxid.</i></li>
+          <li><b>Social hållbarhet</b> – <mark>människor</mark> ska må bra: hälsa, utbildning, jämställdhet,
+          rättvisa, trygghet, demokrati. <i>Ex: rent dricksvatten och skolgång åt alla, lika rättigheter för kvinnor.</i></li>
+          <li><b>Ekonomisk hållbarhet</b> – <mark>ekonomin</mark> ska fungera på lång sikt: jobb och inkomster
+          <b>utan</b> att naturresurser tar slut eller människor utnyttjas. <i>Ex: återvinning som skapar jobb, delningsekonomi.</i></li>
+        </ul></div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> <b>Tårtan:</b> botten = <b>natur</b>, mitten = <b>människor</b>, toppen = <b>pengar</b>.
+        Ingen bakar en tårta med grädden längst ner!</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary>
+      <div class="hi-body"><figure class="fig">
+<div class="tarta" role="img" aria-label="Tårtmodellen: ekosystemen i botten, sociala system i mitten, ekonomin överst.">
+  <div class="lag top"><b>Ekonomi</b>pengar, jobb</div>
+  <div class="lag mid"><b>Sociala system</b>människor: hälsa, rättvisa, utbildning</div>
+  <div class="lag bot"><b>Ekosystemen</b>naturen, botten som bär upp allt</div>
+</div></figure><ol class="chain-n"><li>Perspektiven <b>hänger ihop</b>. I <b>tårtmodellen</b> (s. 48) är <b>ekosystemen botten</b>, de
+            <b>sociala</b> systemen mitten och <b>ekonomin</b> toppen. Rasar botten, rasar allt.</li><li>Exempel från boken: i många fattiga länder är det <b>kvinnorna</b> som odlar och lagar maten.
+            Får de mer <b>makt och utbildning</b> (socialt) → kan familjerna ta sig ur <b>fattigdomen</b>
+            (ekonomiskt) → och då finns det mer utrymme att sköta marken långsiktigt (ekologiskt).</li><li>Hållbar utveckling sker i <b>skärningspunkten</b>, där alla tre möts (s. 48).</li></ol></div>
+    </details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item" id="H3" data-card data-group="hall" data-front="Något kan vara bra ur ett perspektiv men sämre ur ett annat – ge exempel." data-code="H3">
+  <div class="num"><b>H3</b>s.&nbsp;53–61</div>
+  <div class="body">
+    <h3>Något kan vara bra ur ett perspektiv men sämre ur ett annat – ge exempel.</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back>Samma åtgärd kan vara <mark>bra ur ett perspektiv men dålig ur ett annat</mark>.<br>
+        <i>Ex:</i> <b>Skogsavverkning</b> ger <b>virke, jobb och inkomster</b> (ekonomiskt och socialt +),
+        men <b>livsmiljöer försvinner</b> (ekologiskt −).</div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> Varje lösning är ett <b>mynt med två sidor</b>. Vänd alltid på myntet innan du svarar –
+        läraren letar efter båda sidorna!</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary>
+      <div class="hi-body"><ol class="chain-n"><li><b>Utdikade våtmarker</b> gav Sverige <b>odlingsmark</b> och skogsbruk (ekonomiskt +) – men
+            torven <b>läcker koldioxid</b> och den biologiska mångfalden minskar (ekologiskt −) (s. 53–54).</li><li><b>Sälarna</b> i Östersjön har ökat: på 70-talet fanns bara ca 4 000 gråsälar, i dag över 70 000 sälar (ekologiskt +) – men de
+            <b>konkurrerar med fisket</b> (ekonomiskt −) (s. 61).</li><li>Att <b>exportera avfall</b> till fattigare länder är <b>billigt</b> för rika länder
+            (ekonomiskt +) – men människor där lever med <b>gifter och sjukdomar</b> (socialt −) (s. 57).</li><li><b>Zabaleen</b> i Kairo återvinner ca 80 % av soporna och ger ca 50 000 jobb (ekologiskt och
+            ekonomiskt +) – men gruppen utsätts för <b>förtryck</b> (socialt −) (s. 58).</li><li>Använd mallen: <b>Å ena sidan … Å andra sidan … Därför …</b></li></ol></div>
+    </details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item" id="H4" data-card data-group="hall" data-front="Det vi gör lokalt kan få konsekvenser globalt – förklara." data-code="H4">
+  <div class="num"><b>H4</b>s.&nbsp;49, 56–57</div>
+  <div class="body">
+    <h3>Det vi gör lokalt kan få konsekvenser globalt – förklara.</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back>Det vi gör <mark>här</mark> kan påverka <mark>långt borta</mark>. <b>Koldioxid</b> påverkar
+        <b>hela jordens klimat</b>, oavsett om den släpps ut i Brasilien, Kina eller Sverige (s. 49). Det vi
+        <b>äter, köper och hur vi reser</b> påverkar människor och natur i andra länder.</div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> <b>Frukosttestet:</b> bananen från Ecuador, kaffet från Brasilien, apelsinjuicen från Spanien.
+        Din frukost har <b>rest jorden runt</b> innan den landade på bordet.</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary>
+      <div class="hi-body"><ol class="chain-n"><li>Sverige <b>importerar nästan dubbelt så mycket mat som vi exporterar</b> → vi använder
+            <b>odlingsmark i andra länder</b> (s. 56).</li><li>Köper vi <b>möbler av regnskogsträ</b> bidrar vi till skövling. Äter vi <b>tonfisk</b> kan
+            delfiner fastna i fiskenäten (s. 56).</li><li>Förr var miljöproblemen <b>lokala och synliga</b> (sopor, rök från fabriken). I dag är de ofta
+            <b>globala och osynliga</b> (koldioxid, klimat) (s. 49).</li><li>Tre nivåer: <b>lokalt</b> – fabriksutsläpp, <b>regionalt</b> – försurning, <b>globalt</b> –
+            förstärkt växthuseffekt.</li></ol></div>
+    </details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item" id="H5" data-card data-group="hall" data-front="En förnybar resurs behöver inte vara obegränsad – förklara." data-code="H5">
+  <div class="num"><b>H5</b>s.&nbsp;25, 52–54</div>
+  <div class="body">
+    <h3>En förnybar resurs behöver inte vara obegränsad – förklara.</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back>En <b>förnybar resurs</b> <mark>återbildas</mark> av naturen, t.ex. <b>skog, fisk, vatten och
+        grödor</b>. Men den är <mark>inte obegränsad</mark>: tar vi ut <b>mer än som hinner växa tillbaka</b>
+        tar den slut. (Icke förnybara resurser som <b>olja och kol</b> återbildas inte alls inom mänsklig tid.)</div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> <b>Den magiska pizzan:</b> en ny bit växer fram varje timme. Äter du en bit i timmen räcker den
+        för evigt. Äter du tre bitar i timmen – tom kartong till lunch. <b>Lev på räntan, inte på sparpengarna.</b></p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary>
+      <div class="hi-body"><ol class="chain-n"><li><b>Påskön:</b> skogen kunde växa tillbaka, men invånarna högg snabbare än den växte → skogen tog
+            slut → inga båtar för fiske, <b>jorderosion</b> → för lite mat (s. 25).</li><li><b>Utfiskning:</b> fisk är förnybar, men sjöar och hav kan fiskas tomma (s. 52).</li><li><b>Torv</b> bildas – men under <b>tusentals år</b>. Vi bryter den på några år, så i praktiken
+            fylls lagret inte på (s. 54).</li><li>Nyckeln är <b>takten</b>: uttaget får inte vara större än återväxten.</li></ol></div>
+    </details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item" id="H6" data-card data-group="hall" data-front="Vad är planetära gränser?" data-code="H6">
+  <div class="num"><b>H6</b>s.&nbsp;28–32</div>
+  <div class="body">
+    <h3>Vad är planetära gränser?</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back><b>Planetära gränser</b> är <mark>nio områden</mark> som håller jorden <b>stabil</b> – så som den
+        varit under <b>holocen</b>, de senaste 11 700 åren. Varje område har ett <b>gränsvärde</b>. Överskrids
+        det finns risk för <b>tippningspunkter</b>: plötsliga, oväntade och ofta <b>oåterkalleliga</b>
+        förändringar. Enligt forskning från 2023 har <mark>sex av nio gränser</mark> överskridits.<br>
+        <b>De nio:</b> klimatförändring, biologisk mångfald, kväve- och fosforflöden, havsförsurning,
+        markanvändning, sötvatten, nya kemiska ämnen, ozonskiktet, partiklar i atmosfären.</div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> Jordens <b>instrumentbräda med nio varningslampor</b> – sex lyser redan rött. Ramsa för de nio:
+        <b>3 K + BMS + HOP</b> = <b>K</b>limat, <b>K</b>väve/fosfor, <b>K</b>emiska ämnen ·
+        <b>B</b>iologisk mångfald, <b>M</b>arkanvändning, <b>S</b>ötvatten · <b>H</b>avsförsurning,
+        <b>O</b>zon, <b>P</b>artiklar. Tippningspunkt = <b>droppen som får glaset att rinna över</b>.</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary>
+      <div class="hi-body"><figure class="fig fig-small">
+<svg class="svg" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg" font-family="Body, DejaVu Sans, sans-serif">
+
+  <path style="stroke:var(--warn)" d="M14,118 Q95,20 176,118" stroke-width="3" fill="none"/>
+  <circle style="fill:var(--warn)" cx="95" cy="57" r="12"/>
+  <path style="stroke:var(--ink)" d="M52,54 L77,55" stroke-width="2.2" marker-end="url(#ah)"/>
+  <text x="95" y="143" font-size="18" text-anchor="middle" font-weight="700">Låg resiliens</text>
+  <text x="95" y="22" font-size="16" text-anchor="middle">knuff → rullar iväg</text>
+  <path style="stroke:var(--moss)" d="M220,36 Q302,184 384,36" stroke-width="3" fill="none"/>
+  <circle style="fill:var(--moss)" cx="302" cy="98" r="12"/>
+  <path style="stroke:var(--ink)" d="M258,98 L284,98" stroke-width="2.2" marker-end="url(#ah)"/>
+  <text x="302" y="143" font-size="18" text-anchor="middle" font-weight="700">Hög resiliens</text>
+  <text x="302" y="22" font-size="16" text-anchor="middle">knuff → tillbaka</text>
+</svg>
+</figure><ol class="chain-n"><li><b>Resiliens</b> = hur mycket <b>störning</b> ett system tål och ändå kan <b>återhämta sig</b>
+            (kulan i skålen, se bilden).</li><li>Ett ekosystem som <b>stressats länge</b> får <b>låg resiliens</b> → då räcker en liten förändring
+            för att det ska <b>tippa över</b>: korallrev blir <b>övervuxna av alger</b>, savann blir
+            <b>buskmark</b>, <b>Östersjön</b> fylls av alger och plankton (s. 32).</li><li>Efter en tippningspunkt är det mycket svårt att vända tillbaka. Därför handlar gränserna om att
+            hålla oss på <b>säker sida</b> i tid.</li></ol><div class="box note"><strong>Aktuellt</strong><p>Färskt: Planetary Health Check 2026 säger att <b>sju</b> av nio gränser är passerade. Den
+        sjunde är havsförsurningen. Boken säger sex, så skriv gärna ”minst sex”.</p></div></div>
+    </details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item" id="H7" data-card data-group="hall" data-front="Vad är biologisk mångfald? Varför är den viktig? Ge exempel." data-code="H7">
+  <div class="num"><b>H7</b>s.&nbsp;33, 51–52</div>
+  <div class="body">
+    <h3>Vad är biologisk mångfald? Varför är den viktig? Ge exempel.</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back><b>Biologisk mångfald</b> = <mark>variationen av liv</mark>: många olika <b>arter</b>, variation
+        <b>inom</b> arterna (olika gener) och många olika <b>ekosystem</b>.<br>
+        <i>Ex:</i> en gammal blandskog eller en orörd våtmark har <b>hög</b> mångfald. En <b>monokultur</b> –
+        en enda gröda, som en tallplantering eller ett sojafält – har <b>låg</b> (s. 51).<br>
+        <b>Viktig för att:</b> vi får <b>mat</b> tack vare pollinerande insekter, <b>rent vatten</b> och
+        <b>läkemedel</b> från växter, svampar och mikroorganismer. Ekosystem med hög mångfald är
+        <mark>mer motståndskraftiga</mark> mot förändringar.</div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> <b>Jenga-tornet:</b> varje art är en kloss. Dra ut några – tornet står. Dra ut för många –
+        <b>KRASCH</b>. En monokultur är som ett fotbollslag med <b>bara målvakter</b>: ser stabilt ut tills
+        någon behöver göra mål.</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary>
+      <div class="hi-body"><ol class="chain-n"><li>Hög mångfald → <b>hög resiliens</b>: försvinner en art kan en annan <b>ta över dess roll</b>.
+            I en monokultur kan <b>en skadeinsekt eller sjukdom slå ut allt</b>.</li><li>Hot: skogsavverkning, utfiskning, klimatförändringar, förändrad markanvändning, jakt och
+            <b>invasiva arter</b> (t.ex. mårdhund, lupin, jätteloka). Ca <b>150–200 arter försvinner varje
+            dag</b> och <b>en miljon arter</b> är hotade (s. 33).</li><li>Att rädda mångfalden handlar om att skydda <b>hela ekosystem</b>, inte bara en art.
+            <b>Miljö-DNA (eDNA)</b> – DNA-spår i vatten- eller jordprover – visar snabbt vilka arter som finns (s. 52).</li></ol></div>
+    </details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item" id="H8" data-card data-group="hall" data-front="Vad är ekosystemtjänster? Ge exempel." data-code="H8">
+  <div class="num"><b>H8</b>s.&nbsp;54–55</div>
+  <div class="body">
+    <h3>Vad är ekosystemtjänster? Ge exempel.</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back><b>Ekosystemtjänster</b> = det <mark>naturen gör gratis åt oss</mark> och som vi behöver för att
+        <b>överleva, må bra</b> och för att <b>samhället ska fungera</b>. Fyra typer:
+        <ol class="tight">
+          <li><b>Grundläggande</b> – får allt annat att fungera: <b>fotosyntes, vattnets kretslopp, näringskedjor</b>.</li>
+          <li><b>Reglerande</b> – håller balansen: <b>pollinering</b>, växter som <b>hindrar erosion</b>,
+          fåglar som <b>äter skadeinsekter</b>, våtmarker som <b>renar vatten</b>.</li>
+          <li><b>Försörjande</b> – ger oss saker: <b>syre, rent vatten, mat, virke, råvaror, mediciner</b>.</li>
+          <li><b>Sociala och kulturella</b> – <b>friluftsliv, rekreation, psykisk hälsa</b>, turism, inspiration.</li>
+        </ol></div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> <b>”Gröna Rävar Fixar Saker”</b> = <b>G</b>rundläggande, <b>R</b>eglerande, <b>F</b>örsörjande,
+        <b>S</b>ociala. Naturen är världens bästa hantverkare – och skickar aldrig någon faktura.</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary>
+      <div class="hi-body"><ol class="chain-n"><li>Förstör vi ekosystemen försvinner tjänsterna – och då måste vi ersätta dem själva, ofta
+            <b>dyrt eller omöjligt</b> (tänk dig att handpollinera varje äppelblomma).</li><li><b>Våtmarker</b> ger flera tjänster på en gång: skydd mot <b>översvämning och torka</b>, renare
+            <b>dricksvatten</b>, mindre <b>övergödning</b>, lagrat <b>kol</b> och <b>rekreation</b> (s. 54).
+            Dikar vi ut dem förlorar vi allt detta.</li><li><b>Mer biologisk mångfald → fler och stabilare ekosystemtjänster.</b></li></ol></div>
+    </details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item" id="H9" data-card data-group="hall" data-front="Vad är en population? Hur påverkar begränsande faktorer populationens storlek och bärkraft?" data-code="H9">
+  <div class="num"><b>H9</b>s.&nbsp;29–30, 35–36</div>
+  <div class="body">
+    <h3>Vad är en population? Hur påverkar begränsande faktorer populationens storlek och bärkraft?</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back>En <b>population</b> = en grupp individer av <mark>samma art</mark> som lever i
+        <mark>samma område</mark>.<br>
+        <b>Begränsande faktorer</b> sätter stopp för hur stor populationen kan bli: <b>föda, vatten,
+        utrymme/boplatser, ljus, rovdjur, sjukdomar, konkurrens</b>.<br>
+        <b>Bärkraft</b> = det <mark>största antal individer</mark> ett område kan <b>försörja i längden</b>
+        utan att resurserna tar slut.
+        <div class="figrow"><div class="fig fig-mid">
+<svg class="svg" viewBox="0 0 380 175" xmlns="http://www.w3.org/2000/svg" font-family="Body, DejaVu Sans, sans-serif">
+
+  <path style="stroke:var(--ink)" d="M34,154 L370,154" stroke-width="1.5" marker-end="url(#ah)"/>
+  <path style="stroke:var(--ink)" d="M34,154 L34,10" stroke-width="1.5" marker-end="url(#ah)"/>
+  <text x="366" y="170" font-size="11" text-anchor="end">Tid</text>
+  <text transform="translate(22,84) rotate(-90)" font-size="11" text-anchor="middle">Antal individer</text>
+  <path style="stroke:var(--water)" d="M34,58 L362,58" stroke-width="1.4" stroke-dasharray="6 4"/>
+  <text style="fill:var(--water)" x="40" y="52" font-size="11" font-weight="700">bärkraft</text>
+  <path style="stroke:var(--warn)" d="M36,150 C86,150 110,74 142,55 C157,46 172,50 184,61 C196,71 210,67 222,55 C234,45 248,49 260,60 C272,69 286,65 298,56 C310,49 324,52 338,58" stroke-width="2.6" fill="none"/>
+  <g style="fill:var(--surface)" font-size="11" font-weight="700" text-anchor="middle">
+    <circle style="fill:var(--water)" cx="96" cy="112" r="9"/><text x="96" y="116">1</text>
+    <circle style="fill:var(--water)" cx="160" cy="30" r="9"/><text x="160" y="34">2</text>
+    <circle style="fill:var(--water)" cx="203" cy="86" r="9"/><text x="203" y="90">3</text>
+    <circle style="fill:var(--water)" cx="316" cy="34" r="9"/><text x="316" y="38">4</text>
+  </g>
+</svg>
+</div>
+        <ol class="tight small">
+          <li>Gott om resurser → snabb ökning.</li>
+          <li>För många → resurserna räcker inte → antalet sjunker.</li>
+          <li>Resurserna räcker igen → ökning.</li>
+          <li>Kurvan svänger runt <b>bärkraften</b>.</li>
+        </ol></div></div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> <b>Festen i det lilla köket:</b> fler och fler gäster kommer – tills <b>chipsen tar slut</b>
+        (begränsande faktor). Några går hem. Det fylls på, fler kommer. Antalet gäster <b>svänger runt</b> det
+        köket klarar = <b>bärkraften</b>. Och flugorna? Tacka nästa fågel du ser.</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary>
+      <div class="hi-body"><ol class="chain-n"><li>Utan begränsande faktorer blir det absurt: <b>en enda flughona</b> skulle efter en sommar ha gett
+            100<sup>10</sup> flugor – lika tungt som <b>500 miljoner oljetankrar</b> (s. 36).</li><li>Bärkraften <b>är inte fast</b>: den <b>minskar</b> när vi belastar naturen med miljöpåverkan och
+            <b>ökar</b> med teknik (effektivt jordbruk) eller om vi <b>tär mindre</b> – konsumerar mindre,
+            reser resurssnålare (s. 29–30).</li><li>För människan handlar det inte bara om <b>hur många</b> vi är utan om <b>hur vi lever</b>: de
+            rikaste <b>20 %</b> står för nära <b>80 %</b> av konsumtionen (s. 56). Påskön finns i Del 3 (U5).</li></ol></div>
+    </details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+</section>
+
+<section class="part" id="del3">
+  <div class="part-head"><p class="eyebrow">Del 3</p><h2>Högre nivå</h2><p class="sub">Hur skriver jag för högre betyg?</p><span class="facit">Lärarens lista för högre nivå</span></div>
+<div class="gk"><span class="hand">Knepet för hela delen</span><p><mark>Om … så … vilket leder till … men samtidigt … därför …</mark></p></div>
+  <p class="intro">Läraren vill se att du förklarar <b>varför</b> något händer och <b>vad det leder till</b>, inte bara vad något är. Så här skiljer sig svaren åt:</p>
+  
+<div class="compare">
+  <div class="cmp e"><p class="cmp-l">E-nivå (lärarens exempel): ett steg, beskriver</p>
+    <p>Om en skog avverkas försvinner livsmiljöer och vissa arter kan minska.</p></div>
+  <div class="cmp h"><p class="cmp-l">Högre nivå (lärarens exempel): flera steg och flera perspektiv</p>
+    <p><span class="n">1</span>Om en skog avverkas <span class="n">2</span>försvinner livsmiljöer för flera arter.
+    <span class="n">3</span>Populationerna kan då minska <span class="n">4</span>och arter som är beroende av dem som föda kan också påverkas.
+    <span class="n">5</span>Avverkningen kan samtidigt ge virke, arbetstillfällen och inkomster.
+    <span class="n">6</span>Därför kan avverkning vara positiv ur vissa ekonomiska och sociala perspektiv men negativ ur ett ekologiskt perspektiv.</p>
+    <p class="legend"><span class="n">1</span>orsak <span class="n">2</span>första följden <span class="n">3</span>följden av följden
+    <span class="n">4</span>näringsväven <span class="n">5</span>ett annat perspektiv <span class="n">6</span>avvägning och slutsats</p></div>
+</div>
+
+<h3 class="h-mid">Kedjeformeln</h3>
+<p class="muted">Knuffa första dominobrickan och berätta om varje bricka som faller.</p>
+<ol class="domino">
+  <li><b>Om …</b><small>orsaken eller förändringen</small></li>
+  <li><b>så …</b><small>första följden</small></li>
+  <li><b>vilket leder till …</b><small>fler följder, minst två steg till</small></li>
+  <li><b>men samtidigt …</b><small>ett annat perspektiv eller en nackdel</small></li>
+  <li><b>därför …</b><small>slutsats eller eget förslag</small></li>
+</ol>
+
+<div class="two">
+  <div class="panel"><h3>Checklista för högre nivå</h3>
+    <ul class="checks">
+      <li><b>Flera steg</b>, minst tre länkar i kedjan</li>
+      <li><b>Flera perspektiv</b>: ekologiskt, socialt, ekonomiskt</li>
+      <li><b>Fördelar och nackdelar</b></li>
+      <li><b>Kort och lång sikt</b></li>
+      <li><b>Lokalt och globalt</b></li>
+      <li><b>Rätt begrepp</b>: bärkraft, resiliens, ekosystemtjänst …</li>
+      <li><b>Slutsats</b> eller förslag, med motivering</li>
+    </ul></div>
+  <div class="panel"><h3>Signalord som visar samband</h3>
+    <p class="signal"><span>eftersom</span><span>vilket leder till</span><span>det gör att</span><span>därför</span><span>en följd blir</span><span>å ena sidan</span><span>å andra sidan</span><span>samtidigt</span><span>på kort sikt</span><span>på lång sikt</span><span>lokalt</span><span>globalt</span><span>ur ett ekologiskt perspektiv</span><span>ur ett socialt perspektiv</span><span>ur ett ekonomiskt perspektiv</span></p>
+    <p class="muted small">Skriv <b>”kan”</b> när du resonerar: ”ejdern <i>kan</i> minska”. Det visar att du tänker, inte gissar.</p></div>
+</div>
+
+<h3 class="h-mid">Fyrfältaren</h3>
+<p class="muted">Fyll i alla fyra rutorna, så har du både kort och lång sikt och både lokalt och globalt.</p>
+<div class="four">
+  <span></span><span class="fl">Kort sikt (nu)</span><span class="fl">Lång sikt (om 30–100 år)</span>
+  <span class="fl">Lokalt (här)</span><span class="cell">Vad händer här, direkt?</span><span class="cell">Vad händer här, i framtiden?</span>
+  <span class="fl">Globalt (där)</span><span class="cell">Vad händer i andra länder, direkt?</span><span class="cell">Vad händer i världen, i framtiden?</span>
+</div>
+
+  <h3 class="h-mid">Åtta övningar</h3>
+  <p class="muted">En övning för varje mål på lärarens lista. Skriv ditt eget svar först, öppna sedan och jämför.</p>
+  
+<article class="item challenge" id="U1" data-card data-group="hog" data-front="Mer kväve och fosfor från jordbruket rinner ut i Östersjön. Vad kan hända?" data-code="U1">
+  <div class="num"><b>U1</b>övning</div>
+  <div class="body">
+    <p class="goal"><span class="hand">Lärarens mål</span> Förklara hur en förändring av en biotisk eller abiotisk faktor kan få flera konsekvenser i ett ekosystem.</p>
+    <h3>Mer kväve och fosfor från jordbruket rinner ut i Östersjön. Vad kan hända?</h3>
+    <details><summary><span class="when-closed">Tänk själv först. Visa svaren</span><span class="when-open">Dölj svaren</span></summary>
+      <div class="lvl"><span class="tag tag-e">E-svar</span><div class="u-e" data-back>Det blir mer alger i havet, och det kan bli syrebrist.</div></div>
+      <div class="lvl"><span class="tag tag-h">Svar på högre nivå</span><div class="u-h"><ol class="chain">
+          <li>Mer näring (kväve och fosfor – en <b>abiotisk</b> faktor) → <b>alger och växtplankton växer
+          explosivt</b> (algblomning).</li>
+          <li>Vattnet blir <b>grumligt</b> → ljuset når inte ner → <b>blåstång</b> och bottenväxter dör →
+          djur som bor i tången förlorar mat och skydd.</li>
+          <li>När algerna dör sjunker de till botten → <b>nedbrytarna</b> bryter ner dem och <b>förbrukar syre</b>.</li>
+          <li><b>Syrebrist</b> på botten → bottendjur och fiskägg (t.ex. torskens) dör → <b>färre torskar</b>
+          → sälar och fiskare får mindre.</li>
+          <li>Ekosystemet får <b>lägre resiliens</b> och kan till slut <b>tippa över</b> till ett nytt,
+          algdominerat tillstånd (s. 32).</li>
+          <li><b>Lösning:</b> återställ våtmarker som fångar upp näringen innan den når havet (s. 54).</li>
+        </ol>
+        <p class="aside"><b>Biotisk variant:</b> en invasiv art som <b>lupin</b> sprider sig → konkurrerar ut
+        ängsblommorna → insekter som behöver dem får mindre mat → färre pollinerare och fåglar → lägre mångfald.</p></div></div>
+      <p class="why" data-back><b>Därför blir det högre nivå:</b> flera steg i rad · både abiotiskt och biotiskt · begrepp (nedbrytare, resiliens, tippningspunkt) · förslag på lösning</p>
+    </details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item challenge" id="U2" data-card data-group="hog" data-front="Vad kan hända i Östersjöns näringsväv om blåmusslan försvinner? (s. 45)" data-code="U2">
+  <div class="num"><b>U2</b>övning</div>
+  <div class="body">
+    <p class="goal"><span class="hand">Lärarens mål</span> Använda en näringsväv för att resonera om vad som kan hända om en art ökar, minskar eller försvinner.</p>
+    <h3>Vad kan hända i Östersjöns näringsväv om blåmusslan försvinner? (s. 45)</h3>
+    <details><summary><span class="when-closed">Tänk själv först. Visa svaren</span><span class="when-open">Dölj svaren</span></summary>
+      <div class="lvl"><span class="tag tag-e">E-svar</span><div class="u-e" data-back>Ejdern och flundran får mindre mat och kan minska.</div></div>
+      <div class="lvl"><span class="tag tag-h">Svar på högre nivå</span><div class="u-h"><div class="figrow"><div class="fig fig-web"><svg class="svg" viewBox="0 0 470 250" xmlns="http://www.w3.org/2000/svg" font-family="Body, DejaVu Sans, sans-serif"><g style="stroke:var(--ink)" stroke-width="1.5" fill="none"><path d="M134,215 L147,177" marker-end="url(#ah)"/><path d="M180,229 L268,229" marker-end="url(#ah)"/><path d="M282,217 L196,173" marker-end="url(#ah)"/><path d="M322,215 L328,177" marker-end="url(#ah)"/><path d="M135,149 L88,106" marker-end="url(#ah)"/><path d="M165,149 L205,106" marker-end="url(#ah)"/><path d="M70,78 L70,37" marker-end="url(#ah)"/><path d="M240,79 L312,37" marker-end="url(#ah)"/><path d="M330,149 L330,37" marker-end="url(#ah)"/><path d="M352,149 L388,106" marker-end="url(#ah)"/><path d="M390,79 L352,37" marker-end="url(#ah)"/></g><rect style="fill:var(--surface);stroke:var(--water)" x="22.0" y="10" width="96" height="26" rx="8" stroke-width="1.5"/><text x="70" y="27.5" font-size="12" font-weight="700" text-anchor="middle">Kärrhök</text><rect style="fill:var(--surface);stroke:var(--water)" x="282.0" y="10" width="96" height="26" rx="8" stroke-width="1.5"/><text x="330" y="27.5" font-size="12" font-weight="700" text-anchor="middle">Säl</text><rect style="fill:var(--surface);stroke:var(--water)" x="22.0" y="79" width="96" height="26" rx="8" stroke-width="1.5"/><text x="70" y="96.5" font-size="12" font-weight="700" text-anchor="middle">Ejder</text><rect style="fill:var(--surface);stroke:var(--water)" x="172.0" y="79" width="96" height="26" rx="8" stroke-width="1.5"/><text x="220" y="96.5" font-size="12" font-weight="700" text-anchor="middle">Flundra</text><rect style="fill:var(--surface);stroke:var(--water)" x="352.0" y="79" width="96" height="26" rx="8" stroke-width="1.5"/><text x="400" y="96.5" font-size="12" font-weight="700" text-anchor="middle">Torsk</text><rect style="fill:var(--warn-soft);stroke:var(--warn)" x="98.0" y="150" width="104" height="26" rx="8" stroke-width="1.5"/><text x="150" y="167.5" font-size="12" font-weight="700" text-anchor="middle">Blåmussla</text><path style="stroke:var(--warn)" d="M102.0,152 L198.0,174 M102.0,174 L198.0,152" stroke-width="2" opacity=".75"/><rect style="fill:var(--surface);stroke:var(--water)" x="282.0" y="150" width="96" height="26" rx="8" stroke-width="1.5"/><text x="330" y="167.5" font-size="12" font-weight="700" text-anchor="middle">Sill</text><rect style="fill:var(--surface);stroke:var(--water)" x="78.0" y="216" width="104" height="26" rx="8" stroke-width="1.5"/><text x="130" y="233.5" font-size="12" font-weight="700" text-anchor="middle">Växtplankton</text><rect style="fill:var(--surface);stroke:var(--water)" x="268.0" y="216" width="104" height="26" rx="8" stroke-width="1.5"/><text x="320" y="233.5" font-size="12" font-weight="700" text-anchor="middle">Djurplankton</text></svg></div></div>
+        <ol class="chain">
+          <li><b>Ejdern och flundran</b> förlorar en viktig föda → de kan <b>minska</b> (om de inte kan byta mat).</li>
+          <li>Färre ejdrar → <b>kärrhöken</b> får mindre mat. Färre flundror → <b>sälen</b> får mindre mat →
+          sälen äter mer <b>sill och torsk</b> → de kan minska.</li>
+          <li><b>Växt- och djurplankton</b> blir inte uppätna i samma grad → de kan <b>öka</b>. Mer djurplankton
+          → mer mat åt <b>sillen</b> → sillen kan öka. Samma förändring kan alltså ge <b>motsatta effekter</b>
+          på olika ställen i väven!</li>
+          <li>Blåmusslor <b>filtrerar vattnet</b>. Utan dem kan vattnet bli <b>grumligare</b> och algerna öka –
+          en biotisk förändring ger en abiotisk följd.</li>
+          <li>Hur stor effekten blir beror på hur många <b>andra födoval</b> djuren har. En väv med många
+          kopplingar är mer <b>resilient</b> än en enkel kedja.</li>
+        </ol></div></div>
+      <p class="why" data-back><b>Därför blir det högre nivå:</b> följer flera kedjor både uppåt och nedåt · ser motsatta effekter · säger ”kan” (resonerar) · drar en slutsats</p>
+    </details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item challenge" id="U3" data-card data-group="hog" data-front="Varför finns det så mycket mindre gädda än alger i Östersjön?" data-code="U3">
+  <div class="num"><b>U3</b>övning</div>
+  <div class="body">
+    <p class="goal"><span class="hand">Lärarens mål</span> Förklara sambandet mellan energiflöde och näringspyramider, t.ex. varför det kan finnas mindre biomassa av toppkonsumenter.</p>
+    <h3>Varför finns det så mycket mindre gädda än alger i Östersjön?</h3>
+    <details><summary><span class="when-closed">Tänk själv först. Visa svaren</span><span class="when-open">Dölj svaren</span></summary>
+      <div class="lvl"><span class="tag tag-e">E-svar</span><div class="u-e" data-back>Energi försvinner i varje steg, så det finns mindre energi högst upp.</div></div>
+      <div class="lvl"><span class="tag tag-h">Svar på högre nivå</span><div class="u-h"><figure class="fig">
+<div class="pyr" role="img" aria-label="Näringspyramid: 1000 kilo alger längst ner, 100 kilo kräftdjur, 10 kilo småfisk och 1 kilo gädda högst upp. Miljögifter ökar uppåt.">
+  <div class="pyr-stack">
+    <div class="slab" style="--w:30%"><b>Gädda</b><span>ca 1 kg</span></div>
+    <div class="slab" style="--w:52%"><b>Småfisk</b><span>ca 10 kg</span></div>
+    <div class="slab" style="--w:76%"><b>Kräftdjur</b><span>ca 100 kg</span></div>
+    <div class="slab prod" style="--w:100%"><b>Alger</b><span>ca 1&nbsp;000 kg</span></div>
+  </div>
+  <div class="pyr-side">
+    <p class="up-r"><b>Miljögifter ↑</b>ökar uppåt (DDT, PCB)</p>
+    <p class="down-g"><b>Energi ↓</b>ca 90 % försvinner som värme i varje steg</p>
+  </div>
+</div></figure>
+        <ol class="chain">
+          <li>Bara ca <b>10 %</b> av energin förs vidare till nästa steg. Resten går åt i <b>cellandningen</b>
+          (rörelse, värme) och försvinner som <b>värme</b>; en del lämnar kroppen som avföring.</li>
+          <li>Därför räcker <b>1 000 kg alger</b> bara till ca <b>1 kg gädda</b> → mycket mindre
+          <b>biomassa</b> högst upp → pyramiden blir smal i toppen.</li>
+          <li>Toppkonsumenter blir <b>få</b>, behöver <b>stora områden</b> och är <b>känsliga</b>: händer något
+          längre ner i kedjan drabbas de hårt.</li>
+          <li><b>Miljögifter gör tvärtom – de ökar uppåt!</b> DDT och PCB bryts inte ner utan lagras i fett.
+          Varje djur äter mängder av föda → gifterna <b>koncentreras</b> för varje steg → <b>havsörnen</b> i
+          toppen fick sköra äggskal och var nästan utrotad på 70-talet. Efter förbuden finns i dag ca 700 par (s. 60–61).</li>
+          <li>Hållbarhetskoppling: äter vi <b>lägre i kedjan</b> (mer växter) kan samma åker mätta fler människor.</li>
+        </ol></div></div>
+      <p class="why" data-back><b>Därför blir det högre nivå:</b> förklarar VARFÖR (cellandning, värme) · kopplar till biomassa · lägger till gifterna i kedjan · kopplar till hållbarhet</p>
+    </details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item challenge" id="U4" data-card data-group="hog" data-front="Du köper en t-shirt för 49 kr som tillverkats långt bort. Vilka blir konsekvenserna?" data-code="U4">
+  <div class="num"><b>U4</b>övning</div>
+  <div class="body">
+    <p class="goal"><span class="hand">Lärarens mål</span> Resonera kring konsekvenser på kort och lång sikt samt lokalt och globalt.</p>
+    <h3>Du köper en t-shirt för 49 kr som tillverkats långt bort. Vilka blir konsekvenserna?</h3>
+    <details><summary><span class="when-closed">Tänk själv först. Visa svaren</span><span class="when-open">Dölj svaren</span></summary>
+      <div class="lvl"><span class="tag tag-e">E-svar</span><div class="u-e" data-back>Den är billig för mig, men tillverkningen och transporten är dåliga för miljön.</div></div>
+      <div class="lvl"><span class="tag tag-h">Svar på högre nivå</span><div class="u-h"><table class="grid4">
+          <tr><th></th><th>Kort sikt</th><th>Lång sikt</th></tr>
+          <tr><th>Lokalt<br><small>(här)</small></th>
+          <td>Du sparar pengar och får en ny tröja direkt.</td>
+          <td>Billiga plagg slits snabbt → du köper fler → mer textilavfall (som sedan 2025 måste sorteras ut) (s. 59).</td></tr>
+          <tr><th>Globalt<br><small>(där)</small></th>
+          <td>Bomullsodlingen kräver mycket vatten och kemikalier; långa transporter ger utsläpp.</td>
+          <td>Mer koldioxid → klimatförändringar. Förgiftad mark och vatten och sämre hälsa där kläderna odlas och sys.</td></tr>
+        </table>
+        <p class="model"><b>Modellmening:</b> ”<i>På kort sikt</i> är det bra för min plånbok, men <i>på lång sikt</i>
+        och <i>globalt</i> bidrar det till … eftersom … Ett mer hållbart val vore second hand, eftersom …”</p></div></div>
+      <p class="why" data-back><b>Därför blir det högre nivå:</b> fyller i alla fyra rutorna · kopplar lokalt till globalt · föreslår ett bättre alternativ</p>
+    </details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item challenge" id="U5" data-card data-group="hog" data-front="Vad hände på Påskön – och vad kan vi lära oss?" data-code="U5">
+  <div class="num"><b>U5</b>övning</div>
+  <div class="body">
+    <p class="goal"><span class="hand">Lärarens mål</span> Resonera kring vad som händer när en population närmar sig eller överskrider områdets bärkraft.</p>
+    <h3>Vad hände på Påskön – och vad kan vi lära oss?</h3>
+    <details><summary><span class="when-closed">Tänk själv först. Visa svaren</span><span class="when-open">Dölj svaren</span></summary>
+      <div class="lvl"><span class="tag tag-e">E-svar</span><div class="u-e" data-back>Befolkningen blev för stor för öns resurser, skogen tog slut och befolkningen minskade.</div></div>
+      <div class="lvl"><span class="tag tag-h">Svar på högre nivå</span><div class="u-h"><div class="figrow"><div class="fig fig-wide">
+<svg class="svg" viewBox="0 0 470 170" xmlns="http://www.w3.org/2000/svg" font-family="Body, DejaVu Sans, sans-serif">
+
+  <g>
+    <text x="115" y="14" font-size="12" font-weight="700" text-anchor="middle">Vanligt: svänger runt bärkraften</text>
+    <path style="stroke:var(--ink)" d="M20,150 L215,150" stroke-width="1.3" marker-end="url(#ah)"/>
+    <path style="stroke:var(--ink)" d="M20,150 L20,24" stroke-width="1.3" marker-end="url(#ah)"/>
+    <path style="stroke:var(--water)" d="M20,64 L210,64" stroke-width="1.3" stroke-dasharray="5 4"/>
+    <path style="stroke:var(--warn)" d="M22,146 C55,146 70,78 92,62 C102,55 112,58 120,66 C128,73 138,71 146,62 C154,55 164,58 172,66 C180,72 190,70 200,63" stroke-width="2.4" fill="none"/>
+    <text style="fill:var(--water)" x="206" y="58" font-size="10.5" text-anchor="end">bärkraft</text>
+  </g>
+  <g transform="translate(245,0)">
+    <text x="112" y="14" font-size="12" font-weight="700" text-anchor="middle">Påskön: överskjutning → krasch</text>
+    <path style="stroke:var(--ink)" d="M10,150 L215,150" stroke-width="1.3" marker-end="url(#ah)"/>
+    <path style="stroke:var(--ink)" d="M10,150 L10,24" stroke-width="1.3" marker-end="url(#ah)"/>
+    <path style="stroke:var(--water)" d="M10,64 L104,64" stroke-width="1.3" stroke-dasharray="5 4"/>
+    <path style="stroke:var(--water)" d="M104,64 L118,108 L210,108" stroke-width="1.3" stroke-dasharray="5 4" fill="none"/>
+    <path style="stroke:var(--warn)" d="M12,146 C40,146 60,60 82,36 C92,26 100,30 108,50 C118,80 124,128 140,132 C152,135 158,114 168,110 C178,106 188,112 206,110" stroke-width="2.4" fill="none"/>
+    <text style="fill:var(--warn)" x="70" y="30" font-size="10.5" font-weight="700" text-anchor="end">för många!</text>
+    <text style="fill:var(--warn)" x="150" y="146" font-size="10.5" font-weight="700">krasch</text>
+    <text style="fill:var(--water)" x="210" y="101" font-size="10.5" text-anchor="end" font-weight="700">lägre bärkraft</text>
+    <text style="fill:var(--water)" x="14" y="58" font-size="10.5">bärkraft</text>
+  </g>
+</svg>
+</div></div>
+        <ol class="chain">
+          <li>Gott om skog och odlingsbar jord → befolkningen <b>ökade</b> (steg 1 i bärkraftsdiagrammet).</li>
+          <li>För ca 800 år sedan blev invånarna <b>för många</b> för öns naturtillgångar.</li>
+          <li><b>Skogen tog slut</b> (bränsle och transport av statyerna) → inget virke till <b>båtar</b>
+          (mindre fiske) eller hus.</li>
+          <li>Utan skog → <b>jorderosion</b> → jordbruksmarken försvann → mindre mat. <b>Råttor</b> som följt
+          med människorna skadade ekosystemet ännu mer.</li>
+          <li>Brist → <b>konflikter, krig och slaveri</b> → befolkningen <b>kollapsade</b> (s. 25).</li>
+        </ol>
+        <div class="keybox"><b>Viktig poäng:</b> i det vanliga diagrammet svänger kurvan runt bärkraften. Men om
+        en population <b>överskrider bärkraften kraftigt</b> kan den <b>förstöra själva resurserna</b> (skog,
+        jord) → då <b>sjunker bärkraften</b>, och populationen kan inte komma tillbaka till samma nivå.<br>
+        <b>I dag:</b> 8,2 miljarder människor, kanske 10–12 miljarder år 2100 (s. 26). Tekniken har ökat jordens
+        bärkraft (s. 30), men vi tär också på naturen – sex av nio planetära gränser är redan överskridna.</div></div></div>
+      <p class="why" data-back><b>Därför blir det högre nivå:</b> kedja i många steg · skiljer på svängning och kollaps · kopplar historien till i dag (kort och lång sikt)</p>
+    </details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item challenge" id="U6" data-card data-group="hog" data-front="Bilpool och second hand – vilka är fördelarna och nackdelarna? (s. 59)" data-code="U6">
+  <div class="num"><b>U6</b>övning</div>
+  <div class="body">
+    <p class="goal"><span class="hand">Lärarens mål</span> Kunna beskriva både fördelar och nackdelar med en lösning.</p>
+    <h3>Bilpool och second hand – vilka är fördelarna och nackdelarna? (s. 59)</h3>
+    <details><summary><span class="when-closed">Tänk själv först. Visa svaren</span><span class="when-open">Dölj svaren</span></summary>
+      <div class="lvl"><span class="tag tag-e">E-svar</span><div class="u-e" data-back>Man sparar resurser och pengar, men det kan vara mindre smidigt.</div></div>
+      <div class="lvl"><span class="tag tag-h">Svar på högre nivå</span><div class="u-h"><table class="pmtable two">
+          <tr><th></th><th>Fördelar (+)</th><th>Nackdelar (−)</th></tr>
+          <tr><th>Bilpool</th><td>En egen bil står still 95 % av tiden. Delar fyra på en bil används den 20 %
+          av tiden → bara en bil behöver tillverkas i stället för fyra → mindre råvaror, energi och utsläpp,
+          färre parkeringsplatser, och var och en betalar en fjärdedel.</td>
+          <td>Bilen kan vara upptagen när du behöver den. Fungerar bäst i stan, sämre på landsbygden. Blir det
+          billigt att köra bil kanske man kör mer i stället för att cykla eller åka buss.</td></tr>
+          <tr><th>Second hand</th><td>Sparar material, vatten och kemikalier (t.ex. från bomullsodlingar) och de
+          utsläpp som bildas vid tillverkning och transport. Pengarna går ofta till bistånd.</td>
+          <td>Låga priser kan locka till att köpa fler plagg än man behöver. Tar tid att hitta rätt; plaggen kan
+          vara slitna.</td></tr>
+        </table>
+        <p class="model"><b>Tips:</b> avsluta med en <b>slutsats</b>: ”Fördelarna väger tyngre eftersom …, men
+        lösningen fungerar bäst om …”</p></div></div>
+      <p class="why" data-back><b>Därför blir det högre nivå:</b> visar båda sidor · konkreta siffror från boken · flera perspektiv · avslutar med slutsats</p>
+    </details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item challenge" id="U7" data-card data-group="hog" data-front="Ska Sverige återställa utdikade våtmarker? (s. 53–54)" data-code="U7">
+  <div class="num"><b>U7</b>övning</div>
+  <div class="body">
+    <p class="goal"><span class="hand">Lärarens mål</span> Resonera om en hållbarhetsfråga ur flera perspektiv: ekologiskt, socialt och ekonomiskt.</p>
+    <h3>Ska Sverige återställa utdikade våtmarker? (s. 53–54)</h3>
+    <details><summary><span class="when-closed">Tänk själv först. Visa svaren</span><span class="when-open">Dölj svaren</span></summary>
+      <div class="lvl"><span class="tag tag-e">E-svar</span><div class="u-e" data-back>Det är bra för klimatet och den biologiska mångfalden, men markägare kan förlora mark.</div></div>
+      <div class="lvl"><span class="tag tag-h">Svar på högre nivå</span><div class="u-h"><table class="pmtable">
+          <tr><th></th><th>Fördelar (+)</th><th>Nackdelar (−)</th></tr>
+          <tr><th>Ekologiskt</th><td>Torven slutar läcka koldioxid (utdikade våtmarker står för ca 20 % av
+          Sveriges växthusgaser – lika mycket som biltrafiken). Fler arter, renare vatten, mindre övergödning.</td>
+          <td>Skog eller grödor som vuxit på marken försvinner.</td></tr>
+          <tr><th>Socialt</th><td>Skydd mot översvämning och torka, renare dricksvatten, platser för friluftsliv.</td>
+          <td>Bönder och skogsägare kan förlora sitt arbete; lokala konflikter.</td></tr>
+          <tr><th>Ekonomiskt</th><td>En av de snabbaste klimatåtgärderna (FN:s klimatpanel). Mindre kostnader
+          för översvämningsskador på lång sikt.</td>
+          <td>Mindre mark att odla och avverka → förlorade inkomster. Kostar att genomföra.</td></tr>
+        </table>
+        <p class="model"><b>Modellsvar:</b> <i>Å ena sidan</i> är det bra ur ett ekologiskt perspektiv att återställa
+        våtmarker, <i>eftersom</i> torven då slutar läcka koldioxid – utdikade våtmarker står för ca 20 % av
+        Sveriges växthusgasutsläpp. Fler arter får livsmiljöer och vattnet renas. Det är även socialt bra,
+        <i>eftersom</i> våtmarker skyddar mot översvämningar och torka. <i>Å andra sidan</i> kan bönder och
+        skogsägare förlora mark och inkomster, vilket är negativt ekonomiskt <i>på kort sikt</i>. <i>På lång
+        sikt</i> kan det ändå bli billigare än att betala för klimatskador. <i>Därför</i> tycker jag att man ska
+        återställa våtmarker, men att markägarna ska få ersättning.</p></div></div>
+      <p class="why" data-back><b>Därför blir det högre nivå:</b> alla tre perspektiven · både plus och minus · kort och lång sikt · eget ställningstagande med motivering</p>
+    </details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item challenge" id="U8" data-card data-group="hog" data-front="Föreslå en lösning på matsvinnet och motivera den. (s. 58)" data-code="U8">
+  <div class="num"><b>U8</b>övning</div>
+  <div class="body">
+    <p class="goal"><span class="hand">Lärarens mål</span> Föreslå en lösning på ett hållbarhetsproblem och motivera varför lösningen kan göra utvecklingen mer hållbar.</p>
+    <h3>Föreslå en lösning på matsvinnet och motivera den. (s. 58)</h3>
+    <details><summary><span class="when-closed">Tänk själv först. Visa svaren</span><span class="when-open">Dölj svaren</span></summary>
+      <div class="lvl"><span class="tag tag-e">E-svar</span><div class="u-e" data-back>Man kan planera sina inköp så att man slänger mindre mat.</div></div>
+      <div class="lvl"><span class="tag tag-h">Svar på högre nivå</span><div class="u-h"><div class="steps5">
+          <div><span>1 Problem</span>En tredjedel av all mat i världen slängs. Svenska butiker slänger mat för nästan
+          2 miljarder kr per år. Klimatpåverkan motsvarar var sjätte bil på vägarna.</div>
+          <div><span>2 Lösning</span><b>Hemma:</b> planera inköpen, laga lagom, ät rester, <b>lukta och smaka</b> på
+          mat som passerat bäst före-datum. <b>Butiker:</b> rea ut eller skänk mat som snart går ut.
+          <b>Kommunen:</b> samla in matavfall → <b>biogas och gödsel</b>.</div>
+          <div><span>3 Därför funkar det</span>Mindre mat slängs → mindre mat behöver produceras → mindre odlingsmark,
+          vatten, gödsel och transporter → <b>mindre växthusgaser</b>.</div>
+          <div><span>4 Perspektiv</span><b>Ekologiskt:</b> mindre utsläpp. <b>Ekonomiskt:</b> en barnfamilj kan spara
+          mer än 5 000 kr per år. <b>Socialt:</b> skänkt mat kan hjälpa människor med ont om pengar.</div>
+          <div><span>5 Svårighet</span>Vanor är svåra att ändra, och butikerna kan tjäna mindre. Obs! <b>Bäst före</b>
+          handlar om kvalitet (lukta och smaka). <b>Sista förbrukningsdag</b> (t.ex. färsk kyckling) handlar om
+          säkerhet – den ska man följa.</div>
+        </div></div></div>
+      <p class="why" data-back><b>Därför blir det högre nivå:</b> problem med fakta · konkret förslag · motivering i flera steg · alla tre perspektiven · nämner en svårighet</p>
+    </details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+</section>
+
+<section class="part" id="del4">
+  <div class="part-head"><p class="eyebrow">Del 4</p><h2>Faktafrågor</h2><p class="sub">Kan jag bokens frågor?</p><span class="facit">Boken s. 274–275 · ★ = på lärarens E-lista</span></div>
+<div class="gk"><span class="hand">Knepet för hela delen</span><p><mark>Säg svaret högt innan du öppnar.</mark></p></div>
+  <h3 class="fq-sec">Jorden är vår ö i universum</h3><div class="fq-list"><details class="fq" id="F1" data-card data-group="fakta" data-front="Varför dog befolkningen ut på Påskön?" data-code="Fråga 1">
+  <summary><span class="fn">1</span><span class="fqq">Varför dog befolkningen ut på Påskön?</span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>De blev för många och <b>överutnyttjade naturen</b>: skogen tog slut (bränsle, frakta statyer) → inga båtar eller hus, <b>jorderosion</b>, mindre mat; råttor skadade ekosystemet → konflikter, krig, slaveri.</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F2" data-card data-group="fakta" data-front="Hur många människor räknar man med att det finns på jorden år 2100?" data-code="Fråga 2">
+  <summary><span class="fn">2</span><span class="fqq">Hur många människor räknar man med att det finns på jorden år 2100?</span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>Omkring <b>10–12 miljarder</b> (i dag drygt 8 miljarder).</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F3" data-card data-group="fakta" data-front="Ge exempel på hur människan har utarmat ekosystemen på jorden." data-code="Fråga 3">
+  <summary><span class="fn">3</span><span class="fqq">Ge exempel på hur människan har utarmat ekosystemen på jorden.</span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>2/3 av all odlingsbar mark är uppodlad, ofta som <b>monokulturer</b>; varje månad avverkas skog motsvarande tre Stockholms kommuner; arter flyttas mellan kontinenter; korallreven har halverats på 150 år.</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F4" data-card data-group="fakta" data-front="Varför diskuterar man att införa en ny tidsepok med namnet antropocen?" data-code="Fråga 4">
+  <summary><span class="fn">4</span><span class="fqq">Varför diskuterar man att införa en ny tidsepok med namnet antropocen?</span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>Människan påverkar ekosystemen på land och i hav så mycket (särskilt de senaste 100 åren) att man talar om en ny epok – <b>människans tidsålder</b>, efter holocen.</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F5" data-card data-group="fakta" data-front="Förklara begreppet bärkraft." data-code="Fråga 5">
+  <summary><span class="fn">5</span><span class="fqq">Förklara begreppet bärkraft. <span class="star" title="Står på lärarens E-lista">★</span></span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>Det <b>största antal individer</b> ett område kan försörja i längden utan att resurserna (mark, luft, vatten) tar slut.</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F6" data-card data-group="fakta" data-front="Hur kan vi öka naturens bärkraft?" data-code="Fråga 6">
+  <summary><span class="fn">6</span><span class="fqq">Hur kan vi öka naturens bärkraft? <span class="star" title="Står på lärarens E-lista">★</span></span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>Med <b>teknik</b> (effektivt jordbruk) och genom att <b>tära mindre</b>: konsumera mindre, resa resurssnålare. Den minskar om vi belastar naturen.</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F7" data-card data-group="fakta" data-front="De planetära gränserna innehåller nio olika områden. Vilka är de?" data-code="Fråga 7">
+  <summary><span class="fn">7</span><span class="fqq">De planetära gränserna innehåller nio olika områden. Vilka är de? <span class="star" title="Står på lärarens E-lista">★</span></span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>Klimat, kväve/fosfor, kemiska ämnen, biologisk mångfald, markanvändning, sötvatten, havsförsurning, ozon, partiklar. (<b>3 K + BMS + HOP</b>)</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F8" data-card data-group="fakta" data-front="Förklara begreppen resiliens och tippningspunkt." data-code="Fråga 8">
+  <summary><span class="fn">8</span><span class="fqq">Förklara begreppen resiliens och tippningspunkt. <span class="star" title="Står på lärarens E-lista">★</span></span></summary>
+  <div class="fa-wrap"><p class="fa" data-back><b>Resiliens</b>: hur mycket störning ett system tål och ändå återhämtar sig. <b>Tippningspunkt</b>: gräns där systemet plötsligt och ofta oåterkalleligt ändras (korallrev → alger).</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F9" data-card data-group="fakta" data-front="Hur stor del av däggdjurens totala biomassa utgörs av tama däggdjur?" data-code="Fråga 9">
+  <summary><span class="fn">9</span><span class="fqq">Hur stor del av däggdjurens totala biomassa utgörs av tama däggdjur?</span></summary>
+  <div class="fa-wrap"><p class="fa" data-back><b>60 %</b> (människor 36 %, vilda däggdjur bara 4 %).</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details></div><h3 class="fq-sec">Vår naturliga omvärld – ekologi</h3><div class="fq-list"><details class="fq" id="F10" data-card data-group="fakta" data-front="Vad handlar ämnet ekologi om?" data-code="Fråga 10">
+  <summary><span class="fn">10</span><span class="fqq">Vad handlar ämnet ekologi om? <span class="star" title="Står på lärarens E-lista">★</span></span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>Läran om <b>sambanden</b> mellan djur, växter och deras levande och icke levande omgivning.</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F11" data-card data-group="fakta" data-front="Två olika sätt att studera och beskriva naturen i ekologi?" data-code="Fråga 11">
+  <summary><span class="fn">11</span><span class="fqq">Två olika sätt att studera och beskriva naturen i ekologi?</span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>Utgå från de <b>små delarna</b> (en individ eller art och hur den överlever) – eller se skeendena som delar av ett <b>stort system</b>.</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F12" data-card data-group="fakta" data-front="Vad innefattar begreppet art?" data-code="Fråga 12">
+  <summary><span class="fn">12</span><span class="fqq">Vad innefattar begreppet art? <span class="star" title="Står på lärarens E-lista">★</span></span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>Organismer som under naturliga förhållanden kan para sig och få <b>fruktsam avkomma</b>.</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F13" data-card data-group="fakta" data-front="Ungefär hur många djurarter känner man till på jorden?" data-code="Fråga 13">
+  <summary><span class="fn">13</span><span class="fqq">Ungefär hur många djurarter känner man till på jorden?</span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>Minst <b>1,8 miljoner</b> (det verkliga antalet kan vara 3–30 miljoner).</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F14" data-card data-group="fakta" data-front="Vad menade Darwin med ”kampen för tillvaron”?" data-code="Fråga 14">
+  <summary><span class="fn">14</span><span class="fqq">Vad menade Darwin med ”kampen för tillvaron”?</span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>Det föds fler än som kan överleva, så bara de <b>bäst anpassade</b> till miljön överlever och får avkomma.</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F15" data-card data-group="fakta" data-front="Vad innebär det naturliga urvalet?" data-code="Fråga 15">
+  <summary><span class="fn">15</span><span class="fqq">Vad innebär det naturliga urvalet?</span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>Individer med egenskaper som passar miljön överlever och för sina gener vidare; andra sorteras bort → arterna förändras (<b>evolution</b>).</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F16" data-card data-group="fakta" data-front="Varför mötte Darwin motstånd från kyrkans företrädare?" data-code="Fråga 16">
+  <summary><span class="fn">16</span><span class="fqq">Varför mötte Darwin motstånd från kyrkans företrädare?</span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>Teorin sa att arterna – även människan – inte skapats färdiga utan <b>utvecklats</b>, vilket stred mot skapelseberättelsen.</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F17" data-card data-group="fakta" data-front="Nämn några sätt för djur att undvika predation." data-code="Fråga 17">
+  <summary><span class="fn">17</span><span class="fqq">Nämn några sätt för djur att undvika predation.</span></summary>
+  <div class="fa-wrap"><p class="fa" data-back><b>Kamouflage</b>, vaksamhet, bra hörsel, snabba ben för flykt, leva i <b>flock</b> och hålla utkik tillsammans.</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F18" data-card data-group="fakta" data-front="Nämn några fortplantningsstrategier hos olika djur." data-code="Fråga 18">
+  <summary><span class="fn">18</span><span class="fqq">Nämn några fortplantningsstrategier hos olika djur.</span></summary>
+  <div class="fa-wrap"><p class="fa" data-back><b>Många ägg</b> utan omvårdnad (fiskar, yttre befruktning) – eller <b>få ungar</b> med lång omvårdnad (däggdjur, inre befruktning).</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F19" data-card data-group="fakta" data-front="Vad kallas ett förhållande där två djur har positivt utbyte av varandra?" data-code="Fråga 19">
+  <summary><span class="fn">19</span><span class="fqq">Vad kallas ett förhållande där två djur har positivt utbyte av varandra? <span class="star" title="Står på lärarens E-lista">★</span></span></summary>
+  <div class="fa-wrap"><p class="fa" data-back><b>Mutualism</b> (+, +), t.ex. myror och bladlöss.</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F20" data-card data-group="fakta" data-front="Vad betyder symbios?" data-code="Fråga 20">
+  <summary><span class="fn">20</span><span class="fqq">Vad betyder symbios? <span class="star" title="Står på lärarens E-lista">★</span></span></summary>
+  <div class="fa-wrap"><p class="fa" data-back><b>Samlingsnamn för samliv</b> mellan organismer (i vardagen ofta (+, +)).</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F21" data-card data-group="fakta" data-front="Vad innefattar ordet biosfär?" data-code="Fråga 21">
+  <summary><span class="fn">21</span><span class="fqq">Vad innefattar ordet biosfär?</span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>Den del av jorden där det finns <b>liv</b> (levande materia).</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F22" data-card data-group="fakta" data-front="Hur stor del av jordens yta är täckt av vatten?" data-code="Fråga 22">
+  <summary><span class="fn">22</span><span class="fqq">Hur stor del av jordens yta är täckt av vatten?</span></summary>
+  <div class="fa-wrap"><p class="fa" data-back><b>71 %</b>.</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F23" data-card data-group="fakta" data-front="Redogör för vattnets kretslopp." data-code="Fråga 23">
+  <summary><span class="fn">23</span><span class="fqq">Redogör för vattnets kretslopp. <span class="star" title="Står på lärarens E-lista">★</span></span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>Solen värmer → <b>avdunstning</b> (hav) och transpiration (växter) → moln → <b>nederbörd</b> → sjöar, floder, glaciärer, grundvatten → tillbaka till havet.</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F24" data-card data-group="fakta" data-front="Vad är orsaken till jordbävningar och vulkanutbrott?" data-code="Fråga 24">
+  <summary><span class="fn">24</span><span class="fqq">Vad är orsaken till jordbävningar och vulkanutbrott?</span></summary>
+  <div class="fa-wrap"><p class="fa" data-back><b>Kontinentalplattorna</b> rör sig (magmaströmmar i jordens inre) och krockar vid plattgränserna.</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F25" data-card data-group="fakta" data-front="Vilket är det vanligaste ämnet i atmosfären?" data-code="Fråga 25">
+  <summary><span class="fn">25</span><span class="fqq">Vilket är det vanligaste ämnet i atmosfären?</span></summary>
+  <div class="fa-wrap"><p class="fa" data-back><b>Kväve</b> (78 %). Syre 21 %, koldioxid 0,04 %.</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F26" data-card data-group="fakta" data-front="Vad kallas det skikt i atmosfären där regnmolnen bildas?" data-code="Fråga 26">
+  <summary><span class="fn">26</span><span class="fqq">Vad kallas det skikt i atmosfären där regnmolnen bildas?</span></summary>
+  <div class="fa-wrap"><p class="fa" data-back><b>Troposfären</b> (närmast oss). Ozonskiktet finns i stratosfären.</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F27" data-card data-group="fakta" data-front="Varför kallas de gröna växterna för producenter?" data-code="Fråga 27">
+  <summary><span class="fn">27</span><span class="fqq">Varför kallas de gröna växterna för producenter? <span class="star" title="Står på lärarens E-lista">★</span></span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>De <b>producerar</b> energirik näring (socker) av solenergi, koldioxid och vatten – fotosyntes.</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F28" data-card data-group="fakta" data-front="Skriv reaktionen för fotosyntesen med ord." data-code="Fråga 28">
+  <summary><span class="fn">28</span><span class="fqq">Skriv reaktionen för fotosyntesen med ord. <span class="star" title="Står på lärarens E-lista">★</span></span></summary>
+  <div class="fa-wrap"><p class="fa" data-back><b>koldioxid + vatten + solenergi → socker + syre</b></p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F29" data-card data-group="fakta" data-front="Varifrån kommer massan i ett träd?" data-code="Fråga 29">
+  <summary><span class="fn">29</span><span class="fqq">Varifrån kommer massan i ett träd?</span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>Mest från <b>luftens koldioxid</b> (plus vatten och mineraler från marken).</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F30" data-card data-group="fakta" data-front="Var sker växternas utbyte av koldioxid och vattenånga?" data-code="Fråga 30">
+  <summary><span class="fn">30</span><span class="fqq">Var sker växternas utbyte av koldioxid och vattenånga?</span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>I bladens <b>klyvöppningar</b>.</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F31" data-card data-group="fakta" data-front="Hur kan konsumenterna få del av den energi som de gröna växterna producerat?" data-code="Fråga 31">
+  <summary><span class="fn">31</span><span class="fqq">Hur kan konsumenterna få del av den energi som de gröna växterna producerat? <span class="star" title="Står på lärarens E-lista">★</span></span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>Genom att <b>äta</b> växterna (eller djur som ätit växter). Energin frigörs i <b>cellandningen</b>.</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F32" data-card data-group="fakta" data-front="Hur skrivs förbränningsreaktionen/cellandningen med ord?" data-code="Fråga 32">
+  <summary><span class="fn">32</span><span class="fqq">Hur skrivs förbränningsreaktionen/cellandningen med ord? <span class="star" title="Står på lärarens E-lista">★</span></span></summary>
+  <div class="fa-wrap"><p class="fa" data-back><b>socker + syre → koldioxid + vatten + energi</b></p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F33" data-card data-group="fakta" data-front="Rita ett exempel på en näringskedja i fyra steg." data-code="Fråga 33">
+  <summary><span class="fn">33</span><span class="fqq">Rita ett exempel på en näringskedja i fyra steg. <span class="star" title="Står på lärarens E-lista">★</span></span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>Blåstång → tånggråsugga → abborre → gädda. (Eller: växtplankton → djurplankton → sill → säl.)</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F34" data-card data-group="fakta" data-front="Vad visar en näringsväv?" data-code="Fråga 34">
+  <summary><span class="fn">34</span><span class="fqq">Vad visar en näringsväv? <span class="star" title="Står på lärarens E-lista">★</span></span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>Hur <b>många näringskedjor hänger ihop</b> – vem som äter vem och hur arterna beror av varandra.</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F35" data-card data-group="fakta" data-front="Vad kan man läsa ut ur en näringspyramid som inte näringskedjan visar?" data-code="Fråga 35">
+  <summary><span class="fn">35</span><span class="fqq">Vad kan man läsa ut ur en näringspyramid som inte näringskedjan visar? <span class="star" title="Står på lärarens E-lista">★</span></span></summary>
+  <div class="fa-wrap"><p class="fa" data-back><b>Mängden</b> (biomassa/energi) på varje nivå – att det blir <b>mindre för varje steg</b> uppåt (ca 10 %).</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F36" data-card data-group="fakta" data-front="Vilken funktion har nedbrytarna i naturen?" data-code="Fråga 36">
+  <summary><span class="fn">36</span><span class="fqq">Vilken funktion har nedbrytarna i naturen? <span class="star" title="Står på lärarens E-lista">★</span></span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>Bryter ner <b>döda</b> växter och djur till enkla ämnen som växterna kan ta upp igen → materien går tillbaka i kretsloppet.</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F37" data-card data-group="fakta" data-front="Hur skiljer sig energins vägar genom naturen från materians väg?" data-code="Fråga 37">
+  <summary><span class="fn">37</span><span class="fqq">Hur skiljer sig energins vägar genom naturen från materians väg? <span class="star" title="Står på lärarens E-lista">★</span></span></summary>
+  <div class="fa-wrap"><p class="fa" data-back><b>Energin flödar</b> (från solen, ut som värme, måste fyllas på). <b>Materien cirkulerar</b> (samma atomer om och om igen).</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details></div><h3 class="fq-sec">På väg mot en hållbar framtid</h3><div class="fq-list"><details class="fq" id="F38" data-card data-group="fakta" data-front="Vad innebär begreppet hållbar utveckling?" data-code="Fråga 38">
+  <summary><span class="fn">38</span><span class="fqq">Vad innebär begreppet hållbar utveckling? <span class="star" title="Står på lärarens E-lista">★</span></span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>Tillgodose <b>dagens behov</b> utan att äventyra <b>framtida generationers</b> möjligheter att tillgodose sina (Brundtland 1987).</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F39" data-card data-group="fakta" data-front="Hur har miljöproblemen förändrats över tid?" data-code="Fråga 39">
+  <summary><span class="fn">39</span><span class="fqq">Hur har miljöproblemen förändrats över tid?</span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>Förr <b>lokala och synliga</b> (nedskräpning, fabriksrök). I dag ofta <b>globala och osynliga</b> (koldioxid, klimat).</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F40" data-card data-group="fakta" data-front="Ge exempel på hur ett handlande kan ge effekter på helt andra ställen på jorden." data-code="Fråga 40">
+  <summary><span class="fn">40</span><span class="fqq">Ge exempel på hur ett handlande kan ge effekter på helt andra ställen på jorden. <span class="star" title="Står på lärarens E-lista">★</span></span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>Koldioxid påverkar hela klimatet; mat-import använder odlingsmark i andra länder; regnskogsmöbler; tonfisk → delfiner; avfall som exporteras.</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F41" data-card data-group="fakta" data-front="De globala målen omfattar huvudsakligen fem delar. Vilka?" data-code="Fråga 41">
+  <summary><span class="fn">41</span><span class="fqq">De globala målen omfattar huvudsakligen fem delar. Vilka?</span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>Människorna, planeten, välståndet, fred och partnerskap. (<b>”Människorna på planeten vill ha välstånd, fred och partnerskap.”</b>)</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F42" data-card data-group="fakta" data-front="Räkna upp några av de globala målen som du tycker är särskilt viktiga." data-code="Fråga 42">
+  <summary><span class="fn">42</span><span class="fqq">Räkna upp några av de globala målen som du tycker är särskilt viktiga.</span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>Eget val + motivering, t.ex. 13 Bekämpa klimatförändringarna, 15 Ekosystem och biologisk mångfald, 1 Ingen fattigdom, 5 Jämställdhet. Säg att målen <b>hänger ihop</b>.</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F43" data-card data-group="fakta" data-front="Vad är miljö-DNA (eDNA), och vad kan det användas till?" data-code="Fråga 43">
+  <summary><span class="fn">43</span><span class="fqq">Vad är miljö-DNA (eDNA), och vad kan det användas till?</span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>DNA-spår som organismer lämnar i <b>vatten eller jord</b>. Matchas mot en referensbank → visar snabbt vilka <b>arter</b> som finns.</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F44" data-card data-group="fakta" data-front="Varför tycker man att det är viktigt att bevara och restaurera våtmarker?" data-code="Fråga 44">
+  <summary><span class="fn">44</span><span class="fqq">Varför tycker man att det är viktigt att bevara och restaurera våtmarker?</span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>Skydd mot översvämning och torka, renar vatten, mindre övergödning, hög mångfald. Utdikade läcker <b>koldioxid</b> (ca 20 % av Sveriges utsläpp).</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F45" data-card data-group="fakta" data-front="Vad är ekosystemtjänster?" data-code="Fråga 45">
+  <summary><span class="fn">45</span><span class="fqq">Vad är ekosystemtjänster? <span class="star" title="Står på lärarens E-lista">★</span></span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>Det <b>naturen gör gratis</b> åt oss: grundläggande, reglerande, försörjande, sociala (<b>Gröna Rävar Fixar Saker</b>).</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F46" data-card data-group="fakta" data-front="Vad menas med ekologiskt fotavtryck?" data-code="Fråga 46">
+  <summary><span class="fn">46</span><span class="fqq">Vad menas med ekologiskt fotavtryck? <span class="star" title="Står på lärarens E-lista">★</span></span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>Hur stor <b>mark- och vattenyta</b> en person behöver för det hen konsumerar och för att ta hand om utsläppen.</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F47" data-card data-group="fakta" data-front="Jämför fotavtrycket för en genomsnittssvensk med en afrikan." data-code="Fråga 47">
+  <summary><span class="fn">47</span><span class="fqq">Jämför fotavtrycket för en genomsnittssvensk med en afrikan.</span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>Svensk: nästan <b>7 ha</b>. Afrika: ca <b>1,4 ha</b> (ca 5 gånger mindre). Världssnitt 2,8 ha. Levde alla som svenskar skulle det behövas <b>4 jordklot</b>.</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F48" data-card data-group="fakta" data-front="Vad menar vi med resurser respektive avfall?" data-code="Fråga 48">
+  <summary><span class="fn">48</span><span class="fqq">Vad menar vi med resurser respektive avfall?</span></summary>
+  <div class="fa-wrap"><p class="fa" data-back><b>Resurs</b>: något vi kan använda (råvaror, energi). <b>Avfall</b>: det som blir över – men det kan bli en resurs igen genom återanvändning och återvinning.</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F49" data-card data-group="fakta" data-front="Hur kan vi minska vårt avfall?" data-code="Fråga 49">
+  <summary><span class="fn">49</span><span class="fqq">Hur kan vi minska vårt avfall?</span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>Köpa mindre, <b>återanvända</b>, laga, second hand, dela och låna, sortera för <b>återvinning</b>.</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F50" data-card data-group="fakta" data-front="Hur kan vi minska matsvinnet?" data-code="Fråga 50">
+  <summary><span class="fn">50</span><span class="fqq">Hur kan vi minska matsvinnet?</span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>Planera inköp, laga lagom, ät rester, <b>lukta och smaka</b> i stället för att blint följa bäst före, butiker rear eller skänker.</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F51" data-card data-group="fakta" data-front="Ge några exempel på delningstjänster." data-code="Fråga 51">
+  <summary><span class="fn">51</span><span class="fqq">Ge några exempel på delningstjänster.</span></summary>
+  <div class="fa-wrap"><p class="fa" data-back><b>Bilpool</b>, elsparkcyklar, bibliotek, tvättstuga, hyra kläder, samåkning, Fritidsbanken.</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F52" data-card data-group="fakta" data-front="Vad menas med producentansvar?" data-code="Fråga 52">
+  <summary><span class="fn">52</span><span class="fqq">Vad menas med producentansvar?</span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>Den som <b>tillverkar, importerar eller säljer</b> en vara ansvarar för att avfallet samlas in och återvinns (”förorenaren betalar”, PPP, Rio 1992).</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details><details class="fq" id="F53" data-card data-group="fakta" data-front="Ge några exempel på hur miljön förbättrats i Sverige." data-code="Fråga 53">
+  <summary><span class="fn">53</span><span class="fqq">Ge några exempel på hur miljön förbättrats i Sverige.</span></summary>
+  <div class="fa-wrap"><p class="fa" data-back>DDT och PCB förbjudna → <b>havsörnen</b> tillbaka (ca 700 par), <b>sälar</b> och utter ökar, bly borta ur bensinen, man kan bada mitt i Stockholm.</p><div class="lights" role="group" aria-label="Kunde du?"><span class="lq">Kunde du?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div></div>
+</details></div>
+</section>
+
+<section class="part" id="del5">
+  <div class="part-head"><p class="eyebrow">Del 5</p><h2>Begrepp</h2><p class="sub">Kan jag orden?</p><span class="facit">Begreppslistan s. 62 och lärarens lista</span></div>
+<div class="gk"><span class="hand">Knepet för hela delen</span><p><mark>Förklara ordet högt, med egna ord, innan du läser.</mark></p></div>
+  <div class="terms"><div class="term" id="b-ekosystem" data-card data-group="begrepp" data-front="Ekosystem" data-code="Begrepp">
+  <h3>Ekosystem</h3><p class="def" data-back>Avgränsad bit natur med allt levande och icke levande – och hur delarna påverkar varandra.</p><p class="tk" data-back><span class="hand">Knep</span> Hela matchen</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-biotisk-faktor" data-card data-group="begrepp" data-front="Biotisk faktor" data-code="Begrepp">
+  <h3>Biotisk faktor</h3><p class="def" data-back>Levande faktor: växter, djur, svampar, bakterier – t.ex. föda, rovdjur, konkurrenter.</p><p class="tk" data-back><span class="hand">Knep</span> Kan det dö? Ja</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-abiotisk-faktor" data-card data-group="begrepp" data-front="Abiotisk faktor" data-code="Begrepp">
+  <h3>Abiotisk faktor</h3><p class="def" data-back>Icke levande faktor: ljus, temperatur, vatten, syre, koldioxid, näring i marken, pH.</p><p class="tk" data-back><span class="hand">Knep</span> Har aldrig levt</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-producent" data-card data-group="begrepp" data-front="Producent" data-code="Begrepp">
+  <h3>Producent</h3><p class="def" data-back>Grön växt eller alg som gör egen näring med fotosyntes och binder solenergi.</p><p class="tk" data-back><span class="hand">Knep</span> Kocken</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-konsument" data-card data-group="begrepp" data-front="Konsument" data-code="Begrepp">
+  <h3>Konsument</h3><p class="def" data-back>Djur som äter andra organismer: växtätare, köttätare, allätare.</p><p class="tk" data-back><span class="hand">Knep</span> Gästen</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-nedbrytare" data-card data-group="begrepp" data-front="Nedbrytare" data-code="Begrepp">
+  <h3>Nedbrytare</h3><p class="def" data-back>Svampar, bakterier, maskar som bryter ner döda organismer till ämnen växterna kan ta upp igen.</p><p class="tk" data-back><span class="hand">Knep</span> Diskaren</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-fotosyntes" data-card data-group="begrepp" data-front="Fotosyntes" data-code="Begrepp">
+  <h3>Fotosyntes</h3><p class="def" data-back>koldioxid + vatten + solenergi → socker + syre. Sker i gröna blad.</p><p class="tk" data-back><span class="hand">Knep</span> KVE → SS</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-cellandning" data-card data-group="begrepp" data-front="Cellandning" data-code="Begrepp">
+  <h3>Cellandning</h3><p class="def" data-back>socker + syre → koldioxid + vatten + energi. Hos djur och växter.</p><p class="tk" data-back><span class="hand">Knep</span> SS → KVE</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-naringskedja" data-card data-group="begrepp" data-front="Näringskedja" data-code="Begrepp">
+  <h3>Näringskedja</h3><p class="def" data-back>Visar vem som äter vem, från producent till toppkonsument.</p><p class="tk" data-back><span class="hand">Knep</span> Pilen pekar mot magen</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-naringsvav" data-card data-group="begrepp" data-front="Näringsväv" data-code="Begrepp">
+  <h3>Näringsväv</h3><p class="def" data-back>Många näringskedjor som hänger ihop. Visar hur arterna beror av varandra.</p><p class="tk" data-back><span class="hand">Knep</span> Spindelnätet</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-naringspyramid" data-card data-group="begrepp" data-front="Näringspyramid" data-code="Begrepp">
+  <h3>Näringspyramid</h3><p class="def" data-back>Visar mängden (biomassa/energi) på varje nivå. Bara ca 10 % går vidare uppåt.</p><p class="tk" data-back><span class="hand">Knep</span> Glassen som smälter</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-predation" data-card data-group="begrepp" data-front="Predation" data-code="Begrepp">
+  <h3>Predation</h3><p class="def" data-back>Ett rovdjur äter ett byte (+, −). Räven äter haren.</p><p class="tk" data-back><span class="hand">Knep</span> En vinner, en förlorar</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-konkurrens" data-card data-group="begrepp" data-front="Konkurrens" data-code="Begrepp">
+  <h3>Konkurrens</h3><p class="def" data-back>Två vill ha samma föda eller plats och den räcker inte (−, −).</p><p class="tk" data-back><span class="hand">Knep</span> Sista pizzabiten</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-symbios" data-card data-group="begrepp" data-front="Symbios" data-code="Begrepp">
+  <h3>Symbios</h3><p class="def" data-back>Samlingsnamn för samliv mellan organismer. Mutualism = båda vinner (+, +).</p><p class="tk" data-back><span class="hand">Knep</span> Myrornas kor</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-kretslopp" data-card data-group="begrepp" data-front="Kretslopp" data-code="Begrepp">
+  <h3>Kretslopp</h3><p class="def" data-back>Materia (kol, vatten) går runt och används om och om igen. Energi flödar, materia cirkulerar.</p><p class="tk" data-back><span class="hand">Knep</span> Busskort</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-population" data-card data-group="begrepp" data-front="Population" data-code="Begrepp">
+  <h3>Population</h3><p class="def" data-back>En grupp individer av samma art som lever i samma område.</p><p class="tk" data-back><span class="hand">Knep</span> Samma art, samma plats</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-begransande-faktor" data-card data-group="begrepp" data-front="Begränsande faktor" data-code="Begrepp">
+  <h3>Begränsande faktor</h3><p class="def" data-back>Något som sätter stopp för hur stor en population kan bli: föda, vatten, utrymme, rovdjur, sjukdom.</p><p class="tk" data-back><span class="hand">Knep</span> Chipsen tar slut</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-barkraft" data-card data-group="begrepp" data-front="Bärkraft" data-code="Begrepp">
+  <h3>Bärkraft</h3><p class="def" data-back>Det största antal individer ett område kan försörja i längden utan att resurserna tar slut.</p><p class="tk" data-back><span class="hand">Knep</span> Festen i köket</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-hallbar-utveckling" data-card data-group="begrepp" data-front="Hållbar utveckling" data-code="Begrepp">
+  <h3>Hållbar utveckling</h3><p class="def" data-back>Tillgodose dagens behov utan att förstöra för framtida generationer (Brundtland 1987).</p><p class="tk" data-back><span class="hand">Knep</span> Den lånade jackan</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-fornybar-resurs" data-card data-group="begrepp" data-front="Förnybar resurs" data-code="Begrepp">
+  <h3>Förnybar resurs</h3><p class="def" data-back>Återbildas av naturen (skog, fisk) – men tar slut om vi tar mer än som hinner växa tillbaka.</p><p class="tk" data-back><span class="hand">Knep</span> Magiska pizzan</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-planetara-granser" data-card data-group="begrepp" data-front="Planetära gränser" data-code="Begrepp">
+  <h3>Planetära gränser</h3><p class="def" data-back>Nio områden som håller jorden stabil. Sex av nio är överskridna (2023).</p><p class="tk" data-back><span class="hand">Knep</span> 3 K + BMS + HOP</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-tippningspunkt" data-card data-group="begrepp" data-front="Tippningspunkt" data-code="Begrepp">
+  <h3>Tippningspunkt</h3><p class="def" data-back>Gräns där ett system plötsligt och ofta oåterkalleligt förändras.</p><p class="tk" data-back><span class="hand">Knep</span> Droppen i glaset</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-resiliens" data-card data-group="begrepp" data-front="Resiliens" data-code="Begrepp">
+  <h3>Resiliens</h3><p class="def" data-back>Ett systems förmåga att tåla störningar och återhämta sig.</p><p class="tk" data-back><span class="hand">Knep</span> Kulan i skålen</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-biologisk-mangfald" data-card data-group="begrepp" data-front="Biologisk mångfald" data-code="Begrepp">
+  <h3>Biologisk mångfald</h3><p class="def" data-back>Variationen av liv: arter, gener och ekosystem. Hög mångfald ger mer motståndskraft.</p><p class="tk" data-back><span class="hand">Knep</span> Jenga</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-ekosystemtjanst" data-card data-group="begrepp" data-front="Ekosystemtjänst" data-code="Begrepp">
+  <h3>Ekosystemtjänst</h3><p class="def" data-back>Det naturen gör gratis åt oss: pollinering, rent vatten, syre, rekreation.</p><p class="tk" data-back><span class="hand">Knep</span> Gröna Rävar Fixar Saker</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-ekologiskt-fotavtryck" data-card data-group="begrepp" data-front="Ekologiskt fotavtryck" data-code="Begrepp">
+  <h3>Ekologiskt fotavtryck</h3><p class="def" data-back>Hur stor mark- och vattenyta en person behöver för sin konsumtion och sina utsläpp.</p><p class="tk" data-back><span class="hand">Knep</span> Svensk ≈ 7 ha = 4 jordklot</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-antropocen" data-card data-group="begrepp" data-front="Antropocen" data-code="Begrepp">
+  <h3>Antropocen</h3><p class="def" data-back>Förslag på namn för vår tid: människans tidsålder, eftersom vi förändrar hela jordens ekosystem.</p><p class="tk" data-back><span class="hand">Knep</span> Antro = människa</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-de-globala-malen" data-card data-group="begrepp" data-front="De globala målen" data-code="Begrepp">
+  <h3>De globala målen</h3><p class="def" data-back>FN:s 17 mål för hållbar utveckling till år 2030 (Agenda 2030).</p><p class="tk" data-back><span class="hand">Knep</span> 17 mål, 2030</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div></div>
+</section>
+
+<section class="part" id="kvallen">
+  <div class="part-head"><p class="eyebrow">★ Sista kvällen</p><h2>Kvällen före provet</h2><p class="sub">Kan du förklara varje ruta högt på 20 sekunder? Då är du redo.</p></div>
+  
+<div class="hooks">
+  <div class="k-e"><b>Ekosystem = hela matchen</b>Spelare (biotiskt) + plan och väder (abiotiskt) + samspelet.</div>
+  <div class="k-e"><b>”Kan det dö?”</b>Ja → biotiskt. Har aldrig levt → abiotiskt.</div>
+  <div class="k-e"><b>Kocken, gästen, diskaren</b>Producent, konsument, nedbrytare.</div>
+  <div class="k-e"><b>KVE → SS</b>Fotosyntes: koldioxid + vatten + energi → socker + syre. Cellandning: SS → KVE.</div>
+  <div class="k-e"><b>Pilen pekar mot magen</b>Kedja = halsband. Väv = spindelnät.</div>
+  <div class="k-e"><b>10 %: glassen som smälter</b>1 000 kg alger → 100 → 10 → 1 kg gädda. Resten blir värme.</div>
+  <div class="k-e"><b>Enkelbiljett och busskort</b>Energi flödar. Materia cirkulerar.</div>
+  <div class="k-e"><b>(+,+) (+,−) (−,−)</b>Mutualism · predation och parasitism · konkurrens. Myrornas kor.</div>
+  <div class="k-e"><b>Dinosauriekiss</b>Vatten och kol går runt i kretslopp. Utdikning och förbränning släpper ut lagrat kol.</div>
+  <div class="k-h"><b>Den lånade jackan</b>Hållbar utveckling: dagens behov utan att förstöra för framtida generationer.</div>
+  <div class="k-h"><b>Tårtan</b>Botten natur, mitten människor, toppen pengar.</div>
+  <div class="k-h"><b>Myntet har två sidor</b>Bra ur ett perspektiv, dåligt ur ett annat. Skogsavverkning!</div>
+  <div class="k-h"><b>Frukosttestet</b>Lokalt → globalt. Koldioxid påverkar hela jorden.</div>
+  <div class="k-h"><b>Den magiska pizzan</b>Förnybart är inte obegränsat. Uttaget får inte vara större än återväxten.</div>
+  <div class="k-h"><b>3 K + BMS + HOP</b>Nio planetära gränser, minst sex lyser rött. Tippningspunkt = droppen i glaset.</div>
+  <div class="k-h"><b>Jenga</b>Biologisk mångfald ger resiliens. Monokultur = ett lag med bara målvakter.</div>
+  <div class="k-h"><b>Gröna Rävar Fixar Saker</b>Ekosystemtjänster: grundläggande, reglerande, försörjande, sociala.</div>
+  <div class="k-h"><b>Festen i köket</b>Population, begränsande faktorer, bärkraft. Påskön = krasch.</div>
+</div>
+<h3 class="h-mid">Kedjeformeln för högre nivå</h3>
+<ol class="domino small-d">
+  <li><b>Om …</b><small>orsak</small></li><li><b>så …</b><small>följd</small></li><li><b>vilket leder till …</b><small>fler följder</small></li><li><b>men samtidigt …</b><small>annat perspektiv</small></li><li><b>därför …</b><small>slutsats</small></li>
+</ol>
+<h3 class="h-mid">Siffror som är bra att kunna</h3>
+<dl class="nums">
+  <div><dt>71 %</dt><dd>av jordens yta är vatten</dd></div>
+  <div><dt>78 / 21 %</dt><dd>kväve / syre i luften (koldioxid 0,04 %)</dd></div>
+  <div><dt>10 %</dt><dd>av energin går vidare i varje steg</dd></div>
+  <div><dt>1987</dt><dd>Brundtlands definition av hållbar utveckling</dd></div>
+  <div><dt>6 av 9</dt><dd>planetära gränser överskridna enligt boken (2023)</dd></div>
+  <div><dt>17 mål</dt><dd>Agenda 2030, beslutades 2015</dd></div>
+  <div><dt>≈ 7 ha</dt><dd>svenskens fotavtryck = 4 jordklot (världen 2,8 ha)</dd></div>
+  <div><dt>20 → 80 %</dt><dd>de rikaste 20 % står för 80 % av konsumtionen</dd></div>
+  <div><dt>8,2 → 10–12</dt><dd>miljarder människor, i dag och år 2100</dd></div>
+  <div><dt>150–200</dt><dd>arter försvinner varje dag</dd></div>
+  <div><dt>1/3</dt><dd>av all mat i världen slängs</dd></div>
+  <div><dt>≈ 20 %</dt><dd>av Sveriges växthusgaser kommer från utdikade våtmarker</dd></div>
+</dl>
+
+  <p class="intro">Lycka till! Du har gjort jobbet, nu ska du bara plocka fram det.</p>
+</section>
+
+<p class="foot">Byggd från lärarens lista ”Att kunna inför provet”, bokens kapitel 2 (s. 24–63) och faktafrågorna på s. 274–275. Sidhänvisningarna gäller boken Naturkunskap 1b med GY25 på omslaget. Uppgifterna om planetära gränser är kontrollerade mot Planetary Health Check 2026. Systersida: <a href="../begrepp/">Ekologins 44 begrepp</a>.</p>
+</div>
+</main>
+
+<section id="forhor" class="quiz" hidden>
+  <div class="inner">
+    <h2>Förhör</h2>
+    <p class="muted">Säg svaret högt innan du vänder kortet. Röda kort kommer först, sedan gula. Kort som lyser grönt försvinner ur högen.</p>
+    <div class="qcontrols">
+      <div class="qparts" id="qparts" role="group" aria-label="Välj urval"></div>
+      <div class="qopts"><button type="button" class="pill" id="qshuf">Blanda</button></div>
+    </div>
+    <div class="qprog"><span id="qcount"></span><div class="tbar"><i class="g" id="qbar"></i></div></div>
+    <div class="card" id="qcard" tabindex="0" role="button" aria-live="polite"></div>
+    <div class="qactions" id="qactions"></div>
+    <button type="button" class="linkbtn" id="qreset">Släck lamporna i urvalet</button>
+  </div>
+</section>
+
+<script>
+(function(){
+  var KEY='kap2-lampor-v1', L={};
+  try{ L=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){ L={}; }
+  function save(){ try{ localStorage.setItem(KEY, JSON.stringify(L)); }catch(e){} }
+  var cards=[].slice.call(document.querySelectorAll('[data-card]'));
+  function paint(el){
+    var v=L[el.id]||'';
+    if(v) el.setAttribute('data-light', v); else el.removeAttribute('data-light');
+    el.querySelectorAll('.lights button').forEach(function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-v')===v ? 'true':'false'); });
+  }
+  function setLight(id, v){ if(v) L[id]=v; else delete L[id]; save(); var el=document.getElementById(id); if(el) paint(el); tally(); }
+  cards.forEach(paint);
+  document.addEventListener('click', function(e){
+    var b=e.target.closest('#las .lights button'); if(!b) return;
+    var c=b.closest('[data-card]'); var v=b.getAttribute('data-v');
+    setLight(c.id, L[c.id]===v ? '' : v);
+  });
+
+  /* Lampräknare */
+  var tc=document.getElementById('tcount'), tb=document.getElementById('tbar');
+  function tally(){
+    var n={g:0,y:0,r:0}; cards.forEach(function(c){ var v=L[c.id]; if(n[v]!=null) n[v]++; });
+    var tot=cards.length, none=tot-n.g-n.y-n.r;
+    tc.innerHTML='<span class="g"><i></i>'+n.g+' kan</span><span class="y"><i></i>'+n.y+' osäker</span><span class="r"><i></i>'+n.r+' kan inte</span><span class="o"><i></i>'+none+' omarkerade av '+tot+'</span>';
+    tb.innerHTML='<i class="g" style="width:'+(n.g/tot*100)+'%"></i><i class="y" style="width:'+(n.y/tot*100)+'%"></i><i class="r" style="width:'+(n.r/tot*100)+'%"></i>';
+  }
+  tally();
+  var gom=document.getElementById('gom');
+  gom.addEventListener('click', function(){ var on=!document.body.classList.contains('gom'); document.body.classList.toggle('gom', on); gom.setAttribute('aria-pressed', on?'true':'false'); });
+  var allHi=document.getElementById('allhi');
+  allHi.addEventListener('click', function(){ var open=allHi.getAttribute('aria-pressed')!=='true'; document.querySelectorAll('#las details.hi').forEach(function(d){ d.open=open; }); allHi.setAttribute('aria-pressed', open?'true':'false'); });
+  window.addEventListener('beforeprint', function(){ document.querySelectorAll('#las details').forEach(function(d){ d.open=true; }); });
+
+  /* Läs / Förhör */
+  var las=document.getElementById('las'), quiz=document.getElementById('forhor'), nav=document.getElementById('partnav');
+  var tL=document.getElementById('tab-las'), tF=document.getElementById('tab-forhor');
+  function mode(m, setHash){
+    las.hidden = m!=='las'; quiz.hidden = m!=='forhor'; nav.hidden = m!=='las';
+    tL.setAttribute('aria-pressed', m==='las'); tF.setAttribute('aria-pressed', m==='forhor');
+    if(m==='forhor') build();
+    if(setHash){ try{ history.replaceState(null,'', m==='forhor' ? '#forhor' : '#start'); }catch(e){} window.scrollTo(0,0); }
+  }
+  tL.addEventListener('click', function(){ mode('las', true); });
+  tF.addEventListener('click', function(){ mode('forhor', true); });
+
+  var links={}; nav.querySelectorAll('a').forEach(function(a){ links[a.getAttribute('href').slice(1)]=a; });
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(ents){
+      ents.forEach(function(e){
+        if(!e.isIntersecting) return;
+        Object.keys(links).forEach(function(k){ links[k].classList.toggle('on', k===e.target.id); });
+        var a=links[e.target.id]; if(a){ try{ nav.scrollTo({left:a.offsetLeft-12, behavior:'auto'}); }catch(err){ nav.scrollLeft=a.offsetLeft-12; } }
+      });
+    },{rootMargin:'-35% 0px -60% 0px'});
+    document.querySelectorAll('.part').forEach(function(s){ io.observe(s); });
+  }
+
+  /* Förhör */
+  var GROUPS=[['alla','Alla'],['eko','Ekologi'],['hall','Hållbarhet'],['hog','Högre nivå'],['fakta','Faktafrågor'],['begrepp','Begrepp']];
+  var GNAME={eko:'Ekologi',hall:'Hållbar utveckling',hog:'Högre nivå',fakta:'Faktafråga',begrepp:'Begrepp'};
+  var all=cards.map(function(el){
+    var back=document.createElement('div');
+    el.querySelectorAll('[data-back]').forEach(function(n){ var c=n.cloneNode(true); c.removeAttribute('data-back'); c.querySelectorAll('.fig,.figrow .fig-kol,.figrow .fig-mid,svg').forEach(function(f){ f.remove(); }); back.appendChild(c); });
+    return { id:el.id, group:el.getAttribute('data-group'), code:el.getAttribute('data-code'), front:el.getAttribute('data-front'), back:back.innerHTML };
+  });
+  var group='alla', shuffled=false, deck=[], i=0, shown=false, resetArmed=false;
+  var card=document.getElementById('qcard'), acts=document.getElementById('qactions'), qparts=document.getElementById('qparts');
+  var qshuf=document.getElementById('qshuf'), qcount=document.getElementById('qcount'), qreset=document.getElementById('qreset');
+  GROUPS.forEach(function(g){
+    var b=document.createElement('button'); b.type='button'; b.className='pill'; b.textContent=g[1];
+    b.setAttribute('aria-pressed', g[0]==='alla');
+    b.addEventListener('click', function(){ group=g[0]; qparts.querySelectorAll('button').forEach(function(x){ x.setAttribute('aria-pressed', x===b); }); build(); });
+    qparts.appendChild(b);
+  });
+  qshuf.addEventListener('click', function(){ shuffled=true; build(); });
+  qreset.addEventListener('click', function(){
+    if(!resetArmed){ resetArmed=true; qreset.textContent='Tryck igen för att släcka alla lampor i urvalet'; setTimeout(function(){ resetArmed=false; qreset.textContent='Släck lamporna i urvalet'; }, 4000); return; }
+    pool().forEach(function(c){ delete L[c.id]; var el=document.getElementById(c.id); if(el) paint(el); });
+    save(); tally(); resetArmed=false; qreset.textContent='Släck lamporna i urvalet'; build();
+  });
+  function pool(){ return all.filter(function(c){ return group==='alla' || c.group===group; }); }
+  function build(){
+    deck=pool().filter(function(c){ return L[c.id]!=='g'; });
+    var w={r:0,y:1,'':2}; deck.sort(function(a,b){ return (w[L[a.id]||'']) - (w[L[b.id]||'']); });
+    if(shuffled){ for(var k=deck.length-1;k>0;k--){ var j=Math.floor(Math.random()*(k+1)); var t=deck[k]; deck[k]=deck[j]; deck[j]=t; } }
+    i=0; shown=false; render();
+  }
+  function el(tag, cls, txt){ var e=document.createElement(tag); if(cls) e.className=cls; if(txt!=null) e.textContent=txt; return e; }
+  function btn(txt, cls, fn){ var b=el('button','btn '+(cls||''),txt); b.type='button'; b.addEventListener('click', function(ev){ ev.stopPropagation(); fn(); }); return b; }
+  function render(){
+    var p=pool(), g=p.filter(function(c){ return L[c.id]==='g'; }).length;
+    qcount.textContent='Grönt på '+g+' av '+p.length+' kort';
+    document.getElementById('qbar').style.width=(p.length? Math.round(g/p.length*100):0)+'%';
+    card.innerHTML=''; acts.innerHTML=''; card.classList.remove('done');
+    if(!deck.length || i>=deck.length){
+      card.classList.add('done');
+      var left=p.filter(function(c){ return L[c.id]!=='g'; }).length;
+      if(left===0){ card.appendChild(el('p','front','Allt lyser grönt!')); card.appendChild(el('p','muted','Byt urval eller släck lamporna och kör igen.')); }
+      else { card.appendChild(el('p','front','Varvet är klart')); card.appendChild(el('p','muted', left+' kort kvar som inte lyser grönt.')); acts.appendChild(btn('Kör ett varv till','primary', function(){ shuffled=true; build(); })); }
+      return;
+    }
+    var c=deck[i], cur=L[c.id];
+    card.appendChild(el('p','meta', c.code+' · '+GNAME[c.group]+' · '+(i+1)+' av '+deck.length+(cur==='r'?' · röd':cur==='y'?' · gul':'')));
+    card.appendChild(el('p','front', c.front));
+    if(shown){
+      var back=el('div','back'); back.innerHTML=c.back;
+      var go=el('a','goto','Läs hela svaret i Läs-läget'); go.href='#'+c.id;
+      go.addEventListener('click', function(ev){ ev.preventDefault(); ev.stopPropagation(); mode('las', false); try{ history.replaceState(null,'','#'+c.id); }catch(e){} var t=document.getElementById(c.id); if(t){ if(t.tagName==='DETAILS') t.open=true; t.scrollIntoView(); } });
+      back.appendChild(go);
+      card.appendChild(back);
+      acts.appendChild(btn('Kan inte','r', function(){ next('r'); }));
+      acts.appendChild(btn('Osäker','y', function(){ next('y'); }));
+      acts.appendChild(btn('Kan','g', function(){ next('g'); }));
+    } else {
+      card.appendChild(el('p','ask', c.group==='begrepp' ? 'Förklara ordet högt med egna ord.' : 'Säg svaret högt innan du vänder kortet.'));
+      card.appendChild(el('p','hint','Tryck på kortet för att vända det'));
+      acts.appendChild(btn('Visa svaret','primary', reveal));
+    }
+  }
+  function reveal(){ if(!shown && deck.length && i<deck.length){ shown=true; render(); } }
+  function next(v){ var c=deck[i]; setLight(c.id, v); i++; shown=false; render(); }
+  card.addEventListener('click', function(e){ if(e.target.closest('a')) return; reveal(); });
+  card.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); reveal(); } });
+
+  if(location.hash==='#forhor') mode('forhor', false);
+  else if(location.hash.length>1){ var t=document.getElementById(location.hash.slice(1)); if(t && t.tagName==='DETAILS') t.open=true; }
+})();
+</script>
+</body>
+</html>
