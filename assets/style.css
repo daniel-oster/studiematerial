@@ -76,6 +76,7 @@ mark{color:inherit;background:linear-gradient(transparent 36%,var(--marker) 36%,
 .hand{font-family:var(--f-hand);font-weight:600;color:var(--water);font-size:1.35rem;line-height:1;margin-right:.35rem}
 
 /* PDF:er */
+.pdfs{margin:0 0 1.5rem}
 .pdfs ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem}
 .pdfs a{display:inline-flex;align-items:center;gap:.4rem;font-family:var(--f-display);font-weight:600;font-size:.95rem;color:var(--water);background:var(--water-soft);border-radius:999px;padding:.5rem 1rem;min-height:40px;text-decoration:none}
 

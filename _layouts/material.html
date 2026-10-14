@@ -10,13 +10,8 @@ layout: base
     {%- if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
   </section>
 
-  <div class="content">{{ content }}</div>
-
-  {% include material-list.html child=page.child parent=page.id %}
-
   {%- if page.pdfs %}
   <section class="pdfs">
-    <h2>Att skriva ut</h2>
     <ul>
       {%- for f in page.pdfs %}
       <li><a href="{{ f.file }}" target="_blank" rel="noopener"><span aria-hidden="true">📄</span> {{ f.title }}</a></li>
@@ -24,6 +19,11 @@ layout: base
     </ul>
   </section>
   {%- endif %}
+
+  <div class="content">{{ content }}</div>
+
+  {% include material-list.html child=page.child parent=page.id %}
+
 
   {%- if page.terms %}
   <section class="terms">

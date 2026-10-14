@@ -34,3 +34,14 @@ används sidans egen design men den listas ändå på rätt ställe. Exempel:
 
 **Obs:** repot och sidan är publika. Lägg inte upp lärarens facit eller annat material
 som inte får spridas.
+
+### PDF-häfte för Ekologins 44 begrepp
+
+`sarah/ekologi/begrepp/ekologins-44-begrepp.pdf` byggs från webbsidan, i samma stil som
+plugghäftet för kapitel 2. Ändrar du texterna på sidan, bygg om PDF:en:
+
+```
+python3 _verktyg/begrepp-pdf/build.py
+```
+
+Kräver Python med `bs4` och `pypdf`, och Node med Playwright (Chromium).
