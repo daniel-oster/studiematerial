@@ -1,12 +1,17 @@
 ---
 layout: base
 ---
-<h1 class="center">Vem ska plugga?</h1>
+<section class="hero">
+  <p class="eyebrow">Studiematerial</p>
+  <h1>Vem ska plugga?</h1>
+  <p class="lead">Välj ditt namn för att se allt material du läser just nu.</p>
+</section>
 <div class="pick">
   {%- for kid in site.children %}
   <a class="pick-btn" href="{{ '/' | append: kid.id | append: '/' | relative_url }}">
-    <span class="pick-emoji">{{ kid.emoji }}</span>
-    <span>{{ kid.name }}</span>
+    <span class="pick-emoji" aria-hidden="true">{{ kid.emoji }}</span>
+    <span class="pick-name">{{ kid.name }}</span>
+    <span class="pick-go" aria-hidden="true">→</span>
   </a>
   {%- endfor %}
 </div>

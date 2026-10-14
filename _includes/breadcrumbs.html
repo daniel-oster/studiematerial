@@ -1,10 +1,10 @@
 {%- if page.child -%}
   {%- assign kid = site.children | where: "id", page.child | first -%}
-  <nav class="crumbs">
-    <a href="{{ '/' | append: kid.id | append: '/' | relative_url }}">{{ kid.emoji }} {{ kid.name }}</a>
+  <nav class="crumbs" aria-label="Du är här">
+    <a href="{{ '/' | append: kid.id | append: '/' | relative_url }}">{{ kid.name }}</a>
     {%- if page.parent -%}
       {%- assign par = site.pages | where: "id", page.parent | first -%}
-      {%- if par %} › <a href="{{ par.url | relative_url }}">{{ par.title }}</a>{% endif -%}
+      {%- if par %}<span aria-hidden="true">›</span><a href="{{ par.url | relative_url }}">{{ par.title }}</a>{% endif -%}
     {%- endif -%}
   </nav>
 {%- endif -%}

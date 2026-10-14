@@ -2,16 +2,21 @@
 <html lang="{{ site.lang }}">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Familjen+Grotesk:wght@400;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
 </head>
 <body>
   <header class="topbar">
-    <a href="{{ '/' | relative_url }}" class="brand">📚 {{ site.title }}</a>
-    {% include breadcrumbs.html %}
+    <div class="inner toprow">
+      <a href="{{ '/' | relative_url }}" class="brand">{{ site.title }}</a>
+      {% include breadcrumbs.html %}
+    </div>
   </header>
-  <main class="wrap">
+  <main class="inner">
     {{ content }}
   </main>
 </body>

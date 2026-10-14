@@ -14,6 +14,7 @@ pdfs:                        # valfritt – lägg PDF-filerna i samma mapp
 terms:                       # valfritt – begreppslista
   - term: Begrepp
     definition: Förklaring av begreppet.
+    knep: Minnesknep (valfritt).
 ---
 
 Fri text i Markdown här (sammanfattningar, frågor, bilder ...).

@@ -2,18 +2,24 @@
 layout: base
 ---
 <article class="material">
-  <h1>{{ page.title }}</h1>
-  {%- if page.subject or page.test_date %}
-  <p class="meta">{{ page.subject }}{% if page.subject and page.test_date %} · {% endif %}{% if page.test_date %}Prov {{ page.test_date }}{% endif %}</p>
-  {%- endif %}
-  {%- if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
+  <section class="hero">
+    {%- if page.subject or page.test_date %}
+    <p class="eyebrow">{{ page.subject }}{% if page.subject and page.test_date %} · {% endif %}{% if page.test_date %}Prov {{ page.test_date }}{% endif %}</p>
+    {%- endif %}
+    <h1>{{ page.title }}</h1>
+    {%- if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
+  </section>
+
+  <div class="content">{{ content }}</div>
+
+  {% include material-list.html child=page.child parent=page.id %}
 
   {%- if page.pdfs %}
   <section class="pdfs">
-    <h2>PDF:er att skriva ut</h2>
+    <h2>Att skriva ut</h2>
     <ul>
       {%- for f in page.pdfs %}
-      <li><a href="{{ f.file }}" target="_blank" rel="noopener">📄 {{ f.title }}</a></li>
+      <li><a href="{{ f.file }}" target="_blank" rel="noopener"><span aria-hidden="true">📄</span> {{ f.title }}</a></li>
       {%- endfor %}
     </ul>
   </section>
@@ -23,20 +29,18 @@ layout: base
   <section class="terms">
     <div class="terms-head">
       <h2>Begrepp</h2>
-      <button type="button" class="toggle" onclick="document.body.classList.toggle('quiz');this.textContent=document.body.classList.contains('quiz')?'Visa förklaringar':'Förhör mig (dölj förklaringar)'">Förhör mig (dölj förklaringar)</button>
+      <button type="button" class="toggle" aria-pressed="false" onclick="var on=document.body.classList.toggle('quiz');this.setAttribute('aria-pressed',on);this.textContent=on?'Visa förklaringar':'Förhör mig'">Förhör mig</button>
     </div>
-    <dl>
-      {%- for t in page.terms %}
-      <div class="term" onclick="this.classList.toggle('open')">
-        <dt>{{ t.term }}</dt>
-        <dd>{{ t.definition | markdownify }}</dd>
+    {%- for t in page.terms %}
+    <div class="item" onclick="this.classList.toggle('open')">
+      <div class="num">nr<b>{{ forloop.index }}</b></div>
+      <div>
+        <h3>{{ t.term }}</h3>
+        <div class="plain">{{ t.definition | markdownify }}</div>
+        {%- if t.knep %}<p class="knep"><span class="hand">Minnesknep</span><mark>{{ t.knep }}</mark></p>{% endif %}
       </div>
-      {%- endfor %}
-    </dl>
+    </div>
+    {%- endfor %}
   </section>
   {%- endif %}
-
-  <div class="content">{{ content }}</div>
-
-  {% include material-list.html child=page.child parent=page.id %}
 </article>

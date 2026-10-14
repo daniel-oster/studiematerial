@@ -1,4 +1,4 @@
-{%- comment -%} Lista material. Parametrar: child, parent (tom = toppnivå) {%- endcomment -%}
+{%- comment -%} Lista material som en stig. Parametrar: child, parent (tom = toppnivå), empty {%- endcomment -%}
 {%- assign items = site.pages | where: "child", include.child | where_exp: "p", "p.id" -%}
 {%- if include.parent -%}
   {%- assign items = items | where: "parent", include.parent -%}
@@ -7,19 +7,18 @@
 {%- endif -%}
 {%- assign items = items | sort: "order" -%}
 {%- if items.size > 0 -%}
-<ul class="cards">
+<ol class="route">
   {%- for p in items %}
-  <li>
-    <a class="card" href="{{ p.url | relative_url }}">
-      <span class="card-title">{{ p.title }}</span>
-      {%- if p.subject or p.test_date %}
-      <span class="card-meta">{{ p.subject }}{% if p.subject and p.test_date %} · {% endif %}{% if p.test_date %}Prov {{ p.test_date }}{% endif %}</span>
-      {%- endif %}
-      {%- if p.description %}<span class="card-desc">{{ p.description }}</span>{% endif %}
-    </a>
-  </li>
+  <li><a href="{{ p.url | relative_url }}">
+    <span class="dot">{{ forloop.index }}</span>
+    <span>
+      <span class="q">{{ p.title }}</span>
+      {%- if p.subject or p.test_date %}<span class="m">{{ p.subject }}{% if p.subject and p.test_date %} · {% endif %}{% if p.test_date %}Prov {{ p.test_date }}{% endif %}</span>{% endif %}
+      {%- if p.description %}<span class="t">{{ p.description }}</span>{% endif %}
+    </span>
+  </a></li>
   {%- endfor %}
-</ul>
+</ol>
 {%- elsif include.empty -%}
 <p class="empty">{{ include.empty }}</p>
 {%- endif -%}
