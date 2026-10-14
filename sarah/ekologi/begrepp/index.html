@@ -1,0 +1,1150 @@
+---
+layout: null
+title: Ekologins 44 begrepp
+id: sarah-ekologi-begrepp
+child: sarah
+parent: sarah-ekologi
+order: 1
+description: Alla 44 begrepp och utmaningar från facit, i åtta delar runt en skogstjärn. Med minnesknep och förhörsläge.
+---
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ekologins 44 begrepp</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Familjen+Grotesk:wght@400;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<style>
+/* Layout: en läskolumn som följer en stig runt en skogstjärn. Facit-numret står i vänstermarginalen,
+   minnesknepen är överstrukna med överstrykningspenna som på facit-papperet. */
+:root{
+  --paper:#F2F5F1; --surface:#FBFCFA; --ink:#16302B; --muted:#53685F; --line:#D5DFD9;
+  --water:#1A6370; --water-soft:#DAEAEB; --moss:#46702F; --moss-soft:#E2ECD9;
+  --marker:#F6DC6E; --stone-soft:#E4E8E4; --warn:#8F431A; --warn-soft:#F6E7DC;
+  --wood:#C49A6A; --on-water:#F2F5F1;
+  --f-display:"Familjen Grotesk","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Literata",Georgia,"Times New Roman",serif;
+  --f-hand:"Caveat","Segoe Print","Bradley Hand",cursive;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0D1618; --surface:#132124; --ink:#E0EAE5; --muted:#99AEA7; --line:#283B3E;
+    --water:#74C3CA; --water-soft:#1A3337; --moss:#A6C988; --moss-soft:#1E3021;
+    --marker:rgba(219,176,52,.36); --stone-soft:#22302F; --warn:#EBA57E; --warn-soft:#2E2019;
+    --wood:#8E6A43; --on-water:#0D1618; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0D1618; --surface:#132124; --ink:#E0EAE5; --muted:#99AEA7; --line:#283B3E;
+  --water:#74C3CA; --water-soft:#1A3337; --moss:#A6C988; --moss-soft:#1E3021;
+  --marker:rgba(219,176,52,.36); --stone-soft:#22302F; --warn:#EBA57E; --warn-soft:#2E2019;
+  --wood:#8E6A43; --on-water:#0D1618; color-scheme:dark;
+}
+@media (prefers-reduced-motion: no-preference){ html{scroll-behavior:smooth} }
+/* Samma grundregler som artefaktskalet ger, så att filen också fungerar fristående (t.ex. GitHub Pages) */
+[hidden]{display:none!important}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.6;-webkit-text-size-adjust:100%}
+.inner{max-width:42rem;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;line-height:1.15}
+a{color:var(--water)}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--water);outline-offset:2px;border-radius:6px}
+
+/* Topbar */
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--paper);border-bottom:1px solid var(--line)}
+.topbar .inner{display:flex;flex-direction:column;gap:.5rem;padding-block:.55rem}
+.toprow{display:flex;align-items:center;justify-content:space-between;gap:.75rem}
+.brand{color:inherit;text-decoration:none;font-family:var(--f-display);font-weight:700;font-size:.95rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.seg{display:flex;background:var(--stone-soft);border-radius:999px;padding:3px;flex-shrink:0}
+.seg button{border:0;background:transparent;font-family:var(--f-display);font-weight:600;font-size:.95rem;padding:.4rem 1rem;border-radius:999px;cursor:pointer;min-height:36px}
+.seg button[aria-pressed="true"]{background:var(--water);color:var(--on-water)}
+.partnav{display:flex;gap:.4rem;overflow-x:auto;scrollbar-width:none;padding-bottom:2px;margin-inline:-4px;padding-inline:4px}
+.partnav::-webkit-scrollbar{display:none}
+.partnav a{flex-shrink:0;text-decoration:none;font-family:var(--f-display);font-size:.85rem;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:.25rem .7rem;white-space:nowrap}
+.partnav a b{color:var(--water);margin-right:.3rem;font-variant-numeric:tabular-nums}
+.partnav a.on{background:var(--water);border-color:var(--water);color:var(--on-water)}
+.partnav a.on b{color:var(--on-water)}
+
+/* Hero */
+.hero{padding-block:2.25rem 1rem}
+.eyebrow{font-family:var(--f-display);font-weight:700;font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;color:var(--water);margin:0}
+.hero h1{font-size:clamp(2.1rem,8vw,3rem);margin:.4rem 0 .8rem;letter-spacing:-.01em}
+.lead{font-size:1.08rem;margin:0 0 1.25rem}
+.howto{list-style:none;padding:0;margin:0 0 2rem;display:grid;gap:.5rem;font-size:.95rem}
+.howto li{display:grid;grid-template-columns:1.6rem 1fr;gap:.4rem}
+.howto li::before{content:"✓";font-family:var(--f-display);font-weight:700;color:var(--moss)}
+
+/* Stigen (karta) */
+.route-h{font-size:1.25rem;margin:0 0 .25rem}
+.route-sub{margin:0 0 1rem;color:var(--muted);font-size:.95rem}
+.route{list-style:none;margin:0;padding:0;position:relative}
+.route::before{content:"";position:absolute;left:15px;top:16px;bottom:16px;border-left:2px dotted var(--water)}
+.route li{position:relative}
+.route a{display:grid;grid-template-columns:32px 1fr;gap:.85rem;padding:.45rem 0;text-decoration:none;color:var(--ink)}
+.route .dot{width:32px;height:32px;border-radius:50%;background:var(--surface);border:2px solid var(--water);display:grid;place-items:center;font-family:var(--f-display);font-weight:700;color:var(--water);position:relative;font-variant-numeric:tabular-nums}
+.route .q{font-family:var(--f-display);font-weight:600;font-size:1.05rem;line-height:1.3;display:block}
+.route .t{font-size:.88rem;color:var(--muted);display:block;line-height:1.4}
+
+/* Delar */
+.part{scroll-margin-top:7.5rem;padding-top:3.25rem}
+.part-head h2{font-size:clamp(1.75rem,6vw,2.3rem);margin:.35rem 0 .35rem}
+.part-head .sub{font-family:var(--f-display);color:var(--muted);margin:0 0 .6rem;font-size:1rem}
+.facit{display:inline-block;font-family:var(--f-display);font-size:.78rem;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:.1rem .6rem;font-variant-numeric:tabular-nums}
+.intro{margin:1rem 0 0}
+.gk{margin:1.4rem 0 1.25rem}
+.hand{font-family:var(--f-hand);font-weight:600;color:var(--water);font-size:1.35rem;line-height:1}
+.gk p{font-family:var(--f-display);font-weight:600;font-size:1.22rem;line-height:1.45;margin:.25rem 0 0}
+.gk .legend{font-family:var(--f-display);font-weight:400;font-size:.95rem;color:var(--muted);margin-top:.5rem}
+mark{color:inherit;background:linear-gradient(transparent 36%,var(--marker) 36%,var(--marker) 94%,transparent 94%);-webkit-box-decoration-break:clone;box-decoration-break:clone;padding:0 .12em}
+
+.item{display:grid;grid-template-columns:2.6rem minmax(0,1fr);gap:0 .9rem;padding-block:1.2rem;border-top:1px solid var(--line)}
+.num{font-family:var(--f-display);text-align:right;color:var(--muted);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;padding-top:.15rem;line-height:1.1}
+.num b{display:block;font-size:1.4rem;color:var(--water);letter-spacing:0;font-variant-numeric:tabular-nums}
+.item h3{font-size:1.3rem;margin:0 0 .3rem}
+.plain{margin:0 0 .65rem}
+.knep{margin:0 0 .55rem}
+.knep .hand{margin-right:.35rem}
+.ex{margin:0;font-size:.93rem;color:var(--muted)}
+.tag{font-family:var(--f-display);font-weight:700;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--moss);margin-right:.35rem;white-space:nowrap}
+
+/* Utmaningar */
+.item.challenge{border:1.5px dashed var(--water);border-radius:14px;background:var(--surface);padding:1.1rem .9rem 1.1rem .5rem;margin-block:1.25rem}
+.item.challenge + .item{border-top:0}
+.challenge .eyebrow{margin-bottom:.15rem}
+.challenge h3{font-size:1.18rem}
+details summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:.4rem;font-family:var(--f-display);font-weight:600;font-size:.95rem;color:var(--water);background:var(--water-soft);border-radius:999px;padding:.45rem .95rem;margin-top:.35rem;min-height:40px}
+details summary::-webkit-details-marker{display:none}
+details .when-open{display:none}
+details[open] .when-open{display:inline}
+details[open] .when-closed{display:none}
+details[open] summary{margin-bottom:.85rem}
+.chain{list-style:none;padding:0;margin:.4rem 0 .85rem;font-size:.97rem}
+.chain li + li::before{content:"↓";display:block;color:var(--water);font-family:var(--f-display);font-weight:700;line-height:1.3}
+.chain-h{font-family:var(--f-display);font-weight:600;font-size:.88rem;color:var(--muted);margin:.6rem 0 0}
+
+/* Rutor */
+.box{border-radius:10px;padding:.8rem 1rem;margin:.4rem 0 1.2rem;font-size:.95rem}
+.box strong{display:block;font-family:var(--f-display);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.15rem}
+.warn{background:var(--warn-soft)} .warn strong{color:var(--warn)}
+.note{background:var(--water-soft)} .note strong{color:var(--water)}
+.box p{margin:0}
+.ex + .ex{margin-top:.45rem}
+.deep{margin:.2rem 0 1.2rem;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+.deep summary{display:flex;width:100%;justify-content:space-between;align-items:center;gap:.75rem;background:none;color:var(--ink);margin:0;padding:.65rem .9rem;border-radius:10px;font-weight:600}
+.deep[open] summary{margin-bottom:0}
+.deep summary::after{content:"+";color:var(--water);font-size:1.2rem;line-height:1}
+.deep[open] summary::after{content:"−"}
+.deep-k{display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--water);font-weight:700}
+.deep-body{padding:0 .9rem .85rem;font-size:.95rem}
+.deep-body p{margin:0 0 .55rem}
+.deep-body p:last-child{margin:0}
+.formula{font-family:var(--f-display);font-size:.9rem;color:var(--muted);margin:-.45rem 0 1rem;font-variant-numeric:tabular-nums}
+
+/* Figurer */
+.fig{margin:.6rem 0 1.4rem;padding:1rem;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.fig figcaption{font-size:.88rem;color:var(--muted);margin-top:.85rem;line-height:1.5}
+.fig svg{display:block;width:100%;height:auto;max-width:26rem;margin:0 auto}
+.fig-h{font-family:var(--f-display);font-weight:700;font-size:.95rem;margin:0 0 .35rem}
+.fig-h small{font-weight:400;color:var(--muted)}
+.eq{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem;margin-bottom:1rem}
+.eq:last-child{margin-bottom:0}
+.c{font-family:var(--f-display);font-size:.9rem;padding:.2rem .55rem;border-radius:6px;line-height:1.3}
+.c.co2{background:var(--stone-soft)} .c.h2o{background:var(--water-soft)} .c.sug{background:var(--marker)} .c.o2{background:var(--moss-soft)}
+.c.nrg{border:1.5px solid var(--ink)}
+.op{font-family:var(--f-display);color:var(--muted);font-weight:700}
+.arrow{font-family:var(--f-display);color:var(--water);font-weight:700;font-size:1.1rem}
+
+.pyr{display:grid;gap:.15rem}
+.floor{display:grid;grid-template-columns:7.4rem minmax(0,1fr);gap:.6rem;align-items:center}
+.lvl{font-family:var(--f-display);font-weight:700;font-size:.85rem;line-height:1.2}
+.lvl small{display:block;font-weight:400;color:var(--muted);font-size:.76rem;hyphens:manual}
+.slab{width:var(--w);margin-inline:auto;background:var(--water-soft);border-radius:6px;text-align:center;padding:.35rem .3rem;font-family:var(--f-display);font-size:.85rem;line-height:1.25}
+.slab b{display:block}
+.slab span{color:var(--muted);font-variant-numeric:tabular-nums}
+.slab.prod{background:var(--moss-soft)}
+.up{grid-column:2;text-align:center;color:var(--water);font-family:var(--f-display);font-size:.75rem;line-height:1}
+
+.svg-node rect{fill:var(--surface);stroke:var(--water);stroke-width:1.5}
+.svg-node text{fill:var(--ink);font-family:var(--f-display);font-size:14px;font-weight:600;text-anchor:middle}
+.svg-node text.s{font-size:11.5px;font-weight:400;fill:var(--muted)}
+.svg-arrow{fill:none;stroke:var(--water);stroke-width:2}
+.svg-ah{fill:var(--water)}
+.svg-lbl{fill:var(--water);font-family:var(--f-body);font-style:italic;font-size:12.5px;text-anchor:middle}
+
+.tbl-wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.92rem;min-width:18rem}
+th,td{text-align:left;padding:.5rem .55rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--f-display);font-weight:700;font-size:.85rem}
+td:first-child{font-family:var(--f-display);font-weight:600}
+.sign{font-family:var(--f-display);font-weight:700;color:var(--water);white-space:nowrap}
+
+.barrel{position:relative;max-width:18.5rem;margin:0 auto}
+.staves{position:relative;display:flex;align-items:flex-end;justify-content:center;gap:6px;height:150px}
+.stave{width:64px;height:var(--h);background:var(--wood);border-radius:5px 5px 0 0;position:relative;overflow:hidden}
+.stave i{position:absolute;left:0;right:0;bottom:0;height:64px;background:var(--water);opacity:.85}
+.spill{position:absolute;left:0;right:0;bottom:64px;border-top:2px dashed var(--water)}
+.slabels{display:flex;justify-content:center;gap:6px;margin-top:.35rem}
+.slabels span{width:64px;text-align:center;font-family:var(--f-display);font-size:.8rem}
+.slabels span.short{font-weight:700;color:var(--water)}
+
+.three{display:grid;gap:.75rem}
+@media (min-width:560px){.three{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.s3{border:1px solid var(--line);border-radius:10px;padding:.75rem .85rem;background:var(--paper)}
+.s3 h4{font-family:var(--f-display);font-size:1.15rem;margin:0}
+.s3 h4 .bigS{color:var(--water)}
+.s3 .k{font-family:var(--f-display);font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:.1rem 0 .4rem}
+.s3 p{margin:0;font-size:.9rem;line-height:1.45}
+.s3 .eg{color:var(--muted);margin-top:.35rem}
+
+.stool text{font-family:var(--f-display);text-anchor:middle}
+.stool .seat{fill:var(--water)}
+.stool .seat-t{fill:var(--on-water);font-weight:700;font-size:14px}
+.stool .leg{stroke:var(--ink);stroke-width:9;stroke-linecap:round}
+.stool .lt{fill:var(--ink);font-weight:700;font-size:14px}
+.stool .ls{fill:var(--muted);font-size:12px}
+
+/* Helheten */
+.whole{margin-top:3.5rem;padding:1.25rem 1.1rem;border-radius:14px;background:var(--surface);border:1px solid var(--line)}
+.whole h2{font-size:1.6rem;margin:.3rem 0 .75rem}
+.whole ol{margin:0;padding-left:1.4rem;display:grid;gap:.4rem}
+.whole li::marker{font-family:var(--f-display);font-weight:700;color:var(--water)}
+.foot{font-size:.85rem;color:var(--muted);margin:2rem 0 3rem}
+
+/* Förhör */
+.quiz{padding-block:1.75rem 4rem}
+.quiz h2{font-size:2rem;margin:0 0 .3rem}
+.muted{color:var(--muted)}
+.qcontrols{display:grid;gap:.6rem;margin:1rem 0 1.1rem}
+.qparts{display:flex;flex-wrap:wrap;gap:.35rem}
+.pill{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:.3rem .8rem;font-family:var(--f-display);font-size:.9rem;cursor:pointer;min-height:36px;font-variant-numeric:tabular-nums}
+.pill[aria-pressed="true"]{background:var(--water);border-color:var(--water);color:var(--on-water)}
+.qopts{display:flex;flex-wrap:wrap;gap:.35rem}
+.qprog{display:grid;gap:.35rem;margin-bottom:.9rem;font-family:var(--f-display);font-size:.92rem}
+.bar{height:7px;background:var(--line);border-radius:4px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--moss);transition:width .3s}
+@media (prefers-reduced-motion: reduce){.bar i{transition:none}}
+.card{min-height:16rem;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:1.25rem 1.2rem;display:flex;flex-direction:column;gap:.6rem;cursor:pointer}
+.card .meta{font-family:var(--f-display);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.card .front{font-family:var(--f-display);font-weight:700;font-size:1.65rem;line-height:1.2;margin:0;text-wrap:balance}
+.card .front.long{font-size:1.2rem;font-weight:600;line-height:1.4}
+.card .ask{font-family:var(--f-display);color:var(--water);font-size:.95rem;margin:0}
+.card .back{border-top:1px dashed var(--line);padding-top:.75rem;display:grid;gap:.55rem}
+.card .back p{margin:0}
+.card .hint{margin-top:auto;font-family:var(--f-display);font-size:.85rem;color:var(--muted)}
+.qactions{display:flex;gap:.5rem;margin-top:.8rem}
+.qactions .btn{flex:1}
+.btn{font-family:var(--f-display);font-weight:600;font-size:1rem;padding:.7rem 1rem;border-radius:12px;border:1.5px solid var(--ink);background:transparent;cursor:pointer;min-height:48px}
+.btn.primary{background:var(--water);border-color:var(--water);color:var(--on-water)}
+.btn.good{background:var(--moss);border-color:var(--moss);color:var(--on-water)}
+.linkbtn{background:none;border:0;color:var(--muted);text-decoration:underline;font-family:var(--f-display);font-size:.88rem;cursor:pointer;margin-top:1.5rem;padding:.4rem 0;min-height:36px}
+.done{text-align:center;justify-content:center;align-items:center;cursor:default}
+.done .front{font-size:1.4rem}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="inner">
+    <div class="toprow">
+      <a class="brand" href="../">← Ekologi</a>
+      <div class="seg" role="group" aria-label="Läge">
+        <button type="button" id="tab-las" aria-pressed="true">Läs</button>
+        <button type="button" id="tab-forhor" aria-pressed="false">Förhör</button>
+      </div>
+    </div>
+    <nav class="partnav" id="partnav" aria-label="Delar">
+      <a href="#del1"><b>1</b>Ekosystem</a>
+      <a href="#del2"><b>2</b>Roller</a>
+      <a href="#del3"><b>3</b>Energi</a>
+      <a href="#del4"><b>4</b>Kretslopp</a>
+      <a href="#del5"><b>5</b>Samspel</a>
+      <a href="#del6"><b>6</b>Naturens nytta</a>
+      <a href="#del7"><b>7</b>Hållbarhet</a>
+      <a href="#del8"><b>8</b>Påverkan</a>
+    </nav>
+  </div>
+</header>
+
+<main id="las">
+<div class="inner">
+
+<section class="hero">
+  <p class="eyebrow">Ekologi och hållbar utveckling · gymnasiet</p>
+  <h1>Ekologins 44 begrepp</h1>
+  <p class="lead">Hela facit, sorterat i åtta delar som bygger på varandra. Varje begrepp får en enkel förklaring och ett minnesknep. Nästan alla exempel utspelar sig vid samma lilla skogstjärn, så du ser hur allt hänger ihop.</p>
+  <ul class="howto">
+    <li>Läs en del i taget och i ordning. Varje del bygger på den förra.</li>
+    <li>Säg förklaringen högt med egna ord innan du läser minnesknepet. Facit säger själv att du inte behöver använda exakt samma ord.</li>
+    <li>Testa dig i Förhör. Numren är samma som i facit.</li>
+    <li>Rutorna märkta Fördjupning hjälper dig att resonera nyanserat, vilket brukar krävas för högre betyg.</li>
+  </ul>
+
+  <h2 class="route-h">Stigen runt tjärnen</h2>
+  <p class="route-sub">Åtta frågor. Svarar du på dem har du hela facit.</p>
+  <ol class="route">
+    <li><a href="#del1"><span class="dot">1</span><span><span class="q">Vad finns i tjärnen?</span><span class="t">Ekosystem, biotiska och abiotiska faktorer, population</span></span></a></li>
+    <li><a href="#del2"><span class="dot">2</span><span><span class="q">Vem gör vad?</span><span class="t">Producent, konsument, nedbrytare, fotosyntes, cellandning</span></span></a></li>
+    <li><a href="#del3"><span class="dot">3</span><span><span class="q">Vart tar energin vägen?</span><span class="t">Näringskedja, näringsväv, trofinivå, näringspyramid, energiflöde</span></span></a></li>
+    <li><a href="#del4"><span class="dot">4</span><span><span class="q">Vart tar ämnena vägen?</span><span class="t">Ämnenas kretslopp</span></span></a></li>
+    <li><a href="#del5"><span class="dot">5</span><span><span class="q">Hur många får plats?</span><span class="t">Konkurrens, predation, mutualism, begränsande faktor, bärkraft</span></span></a></li>
+    <li><a href="#del6"><span class="dot">6</span><span><span class="q">Vad ger naturen oss?</span><span class="t">Biologisk mångfald, resiliens, ekosystemtjänster</span></span></a></li>
+    <li><a href="#del7"><span class="dot">7</span><span><span class="q">Hur gör vi så att det räcker?</span><span class="t">Hållbar utveckling, tre sorters hållbarhet, förnybar resurs, fotavtryck</span></span></a></li>
+    <li><a href="#del8"><span class="dot">8</span><span><span class="q">Hur påverkar vi planeten?</span><span class="t">Markanvändning, övergödning, lokalt och globalt, planetens gränser</span></span></a></li>
+  </ol>
+</section>
+
+<!-- ============ DEL 1 ============ -->
+<section class="part" id="del1" data-part="1">
+  <div class="part-head">
+    <p class="eyebrow">Del 1</p>
+    <h2>Vad finns i tjärnen?</h2>
+    <p class="sub">Ekosystemet och dess delar</p>
+    <span class="facit">Facit nr 1–4</span>
+  </div>
+  <p class="intro">Tänk dig en liten skogstjärn. Fiskar, alger, myggor, vatten, solljus och is på vintern. Allt det här påverkar varandra, och det är där vi börjar.</p>
+  <div class="gk"><span class="hand">Knepet för hela delen</span><p><mark>Ekosystem = det levande + det icke-levande + hur de påverkar varandra.</mark></p></div>
+
+  <article class="item" data-card data-kind="term" data-num="1" data-part="1">
+    <div class="num">nr<b>1</b></div>
+    <div><h3>Ekosystem</h3>
+      <p class="plain">Ett område med allt som lever där, allt som inte lever där och hur de påverkar varandra.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>Eko kommer från grekiskans ord för hus. Ekosystemet är naturens hus: både de som bor där och själva huset.</mark></p>
+      <p class="ex"><span class="tag">I tjärnen</span>Hela tjärnen är ett ekosystem: fiskarna, algerna, vattnet, ljuset och bottenslammet.</p>
+    </div>
+  </article>
+
+  <article class="item" data-card data-kind="term" data-num="2" data-part="1">
+    <div class="num">nr<b>2</b></div>
+    <div><h3>Biotisk faktor</h3>
+      <p class="plain">Något levande som påverkar andra i ekosystemet, till exempel rovdjur, växter eller konkurrens om mat.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>Bio betyder liv, som i biologi. Biotisk = har med liv att göra.</mark></p>
+      <p class="ex"><span class="tag">I tjärnen</span>Gäddan är en biotisk faktor för abborrarna, eftersom den äter dem.</p>
+    </div>
+  </article>
+
+  <article class="item" data-card data-kind="term" data-num="3" data-part="1">
+    <div class="num">nr<b>3</b></div>
+    <div><h3>Abiotisk faktor</h3>
+      <p class="plain">Något icke-levande som påverkar livet, till exempel temperatur, vatten eller ljus.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>A- betyder inte. A-biotisk = inte levande. Tänk A som i Aldrig levt: solljus, kyla och vatten har aldrig levt.</mark></p>
+      <p class="ex"><span class="tag">I tjärnen</span>Isen på vintern och hur varmt vattnet blir på sommaren.</p>
+    </div>
+  </article>
+  <div class="box warn"><strong>Vanligt misstag</strong><p>Konkurrens är ingen sak man kan ta på, men den räknas ändå som biotisk. Den uppstår ju mellan levande varelser.</p></div>
+
+  <article class="item" data-card data-kind="term" data-num="4" data-part="1">
+    <div class="num">nr<b>4</b></div>
+    <div><h3>Population</h3>
+      <p class="plain">Alla individer av samma art som lever i samma område.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>Populus betyder folk på latin. Tänk ”abborrfolket i tjärnen”: samma art + samma plats.</mark></p>
+      <p class="ex"><span class="tag">I tjärnen</span>Alla abborrar i tjärnen är en population. Abborrar och mörtar tillsammans är inte en population, för det är två arter.</p>
+    </div>
+  </article>
+</section>
+
+<!-- ============ DEL 2 ============ -->
+<section class="part" id="del2" data-part="2">
+  <div class="part-head">
+    <p class="eyebrow">Del 2</p>
+    <h2>Vem gör vad?</h2>
+    <p class="sub">Rollerna och livets två motorer</p>
+    <span class="facit">Facit nr 5–9</span>
+  </div>
+  <p class="intro">Alla i tjärnen behöver energi och byggstenar för att leva. Men de får tag på dem på olika sätt.</p>
+  <div class="gk"><span class="hand">Knepet för hela delen</span><p><mark>Tjärnen är en restaurang. Kocken lagar maten, gästerna äter den och diskaren tar hand om resterna så att allt kan användas igen.</mark></p>
+    <p class="legend">Kock = producent · Gäst = konsument · Diskare = nedbrytare</p></div>
+
+  <article class="item" data-card data-kind="term" data-num="5" data-part="2">
+    <div class="num">nr<b>5</b></div>
+    <div><h3>Producent</h3>
+      <p class="plain">Gör sin egen mat. Den bygger organiska ämnen, som socker, av oorganiska ämnen, som koldioxid och vatten. Oftast med fotosyntes. Kallas också autotrof.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>Producera = tillverka. Producenten är kocken som inte behöver äta någon annan. Auto = själv, trof = näring: autotrof betyder självnärande.</mark></p>
+      <p class="ex"><span class="tag">I tjärnen</span>Alger, näckrosor och granarna runt stranden.</p>
+    </div>
+  </article>
+  <div class="box note"><strong>Ordförklaring</strong><p>Organiska ämnen kommer från levande saker och innehåller kol, till exempel socker, fett och protein. Oorganiska ämnen är till exempel koldioxid, vatten och mineraler.</p></div>
+
+  <article class="item" data-card data-kind="term" data-num="6" data-part="2">
+    <div class="num">nr<b>6</b></div>
+    <div><h3>Konsument</h3>
+      <p class="plain">Får energi och byggstenar genom att äta andra organismer. Kallas också heterotrof.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>Konsumera = förbruka. Konsumenten är gästen som äter det någon annan har lagat. Hetero = annan: heterotrof betyder att näringen kommer från andra.</mark></p>
+      <p class="ex"><span class="tag">I tjärnen</span>Djurplankton äter alger, mörten äter djurplankton och gäddan äter mörten.</p>
+    </div>
+  </article>
+
+  <article class="item" data-card data-kind="term" data-num="7" data-part="2">
+    <div class="num">nr<b>7</b></div>
+    <div><h3>Nedbrytare</h3>
+      <p class="plain">Bryter ner döda växter, döda djur och avföring till oorganiska ämnen. Då går näringsämnena tillbaka till naturen och kan användas igen.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>Naturens diskare och återvinningscentral. Utan dem skulle botten fyllas av döda löv och fiskar, och näringen skulle ta slut.</mark></p>
+      <p class="ex"><span class="tag">I tjärnen</span>Bakterier och svampar i bottenslammet.</p>
+    </div>
+  </article>
+
+  <article class="item" data-card data-kind="term" data-num="8" data-part="2">
+    <div class="num">nr<b>8</b></div>
+    <div><h3>Fotosyntes</h3>
+      <p class="plain">Växter och alger använder energin i solljus för att göra socker och syre av koldioxid och vatten. Det sker i kloroplasterna, där det gröna färgämnet klorofyll fångar ljuset.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>Foto = ljus, syntes = sätta ihop. Fotosyntes betyder att bygga med ljus.</mark></p>
+      <p class="ex"><span class="tag">I tjärnen</span>Algerna gör syre som fiskarna sedan andas.</p>
+    </div>
+  </article>
+
+  <article class="item" data-card data-kind="term" data-num="9" data-part="2">
+    <div class="num">nr<b>9</b></div>
+    <div><h3>Cellandning</h3>
+      <p class="plain">Cellerna bryter ner socker med hjälp av syre och får energi som lagras tillfälligt i ATP. Det blir koldioxid och vatten över. Det sker i mitokondrierna, och när syre används kallas det aerob.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>Det är fotosyntesen baklänges: fotosyntesen bygger socker, cellandningen eldar upp det. ATP är cellens laddade batterier. Aerob = med luft.</mark></p>
+      <p class="ex"><span class="tag">I tjärnen</span>När gäddan simmar använder den energi från cellandning.</p>
+    </div>
+  </article>
+
+  <figure class="fig">
+    <p class="fig-h">Fotosyntes <small>· i växter och alger · bara när det är ljust</small></p>
+    <div class="eq"><span class="c co2">koldioxid</span><span class="op">+</span><span class="c h2o">vatten</span><span class="op">+</span><span class="c nrg">ljusenergi</span><span class="arrow">→</span><span class="c sug">socker</span><span class="op">+</span><span class="c o2">syre</span></div>
+    <p class="formula">6 CO₂ + 6 H₂O → C₆H₁₂O₆ + 6 O₂</p>
+    <p class="fig-h">Cellandning <small>· i alla celler · hela tiden</small></p>
+    <div class="eq"><span class="c sug">socker</span><span class="op">+</span><span class="c o2">syre</span><span class="arrow">→</span><span class="c co2">koldioxid</span><span class="op">+</span><span class="c h2o">vatten</span><span class="op">+</span><span class="c nrg">energi</span></div>
+    <p class="formula">C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O + energi (ATP)</p>
+    <figcaption>Samma ämnen, åt motsatt håll. Färgerna visar att det som kommer ut ur den ena är det som går in i den andra.</figcaption>
+  </figure>
+  <div class="box warn"><strong>Vanligt misstag</strong><p>Växter gör också cellandning, dygnet runt. De behöver ju energi de med. Fotosyntes gör de bara när det är ljust.</p></div>
+</section>
+
+<!-- ============ DEL 3 ============ -->
+<section class="part" id="del3" data-part="3">
+  <div class="part-head">
+    <p class="eyebrow">Del 3</p>
+    <h2>Vart tar energin vägen?</h2>
+    <p class="sub">Näringskedjor och energiflöde</p>
+    <span class="facit">Facit nr 10–14, 37, 38</span>
+  </div>
+  <p class="intro">Nästan all energi i tjärnen kommer från solen. Frågan är vad som händer med den sedan.</p>
+  <div class="gk"><span class="hand">Knepet för hela delen</span><p><mark>Energin har en enkelbiljett. Den kommer från solen, åker genom kedjan och försvinner som värme. Den kommer aldrig tillbaka.</mark></p></div>
+
+  <article class="item" data-card data-kind="term" data-num="10" data-part="3">
+    <div class="num">nr<b>10</b></div>
+    <div><h3>Näringskedja</h3>
+      <p class="plain">En rad som visar vem som äter vem, och åt vilket håll energin går.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>Läs pilen som ”blir mat åt”. Alger → djurplankton betyder att alger blir mat åt djurplankton.</mark></p>
+      <p class="ex"><span class="tag">I tjärnen</span>Alger → djurplankton → mört → abborre → gädda.</p>
+    </div>
+  </article>
+  <div class="box warn"><strong>Vanligt misstag</strong><p>Pilen pekar mot den som äter, inte mot den som blir uppäten. Den visar vart energin tar vägen.</p></div>
+
+  <article class="item" data-card data-kind="term" data-num="11" data-part="3">
+    <div class="num">nr<b>11</b></div>
+    <div><h3>Näringsväv</h3>
+      <p class="plain">Många näringskedjor som hänger ihop, eftersom de flesta djur äter flera olika saker och kan bli uppätna av flera.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>En kedja är ett spår. En väv är ett spindelnät. Drar du i en tråd darrar hela nätet.</mark></p>
+      <p class="ex"><span class="tag">I tjärnen</span>Abborren äter djurplankton, insektslarver och små mörtar. Gäddan äter både abborre och mört.</p>
+    </div>
+  </article>
+
+  <article class="item" data-card data-kind="term" data-num="12" data-part="3">
+    <div class="num">nr<b>12</b></div>
+    <div><h3>Trofinivå</h3>
+      <p class="plain">Vilken plats, eller våning, en organism har i näringskedjan. Till exempel producent, förstahandskonsument eller andrahandskonsument.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>Tänk våningar i ett hus. Producenterna bor på bottenvåningen, växtätaren en trappa upp och den som äter växtätaren två trappor upp. Trofi betyder näring.</mark></p>
+      <p class="ex"><span class="tag">I tjärnen</span>Djurplankton äter alger och är förstahandskonsument. Mörten är andrahandskonsument. Gäddan, som ingen annan i tjärnen äter, är toppkonsument. Abborren äter på flera våningar och kan därför ha flera trofinivåer.</p>
+    </div>
+  </article>
+
+  <article class="item" data-card data-kind="term" data-num="13" data-part="3">
+    <div class="num">nr<b>13</b></div>
+    <div><h3>Näringspyramid</h3>
+      <p class="plain">En bild som visar att det finns mest energi och biomassa längst ner, och mindre för varje våning uppåt. Biomassa är hur mycket allt levande på en våning väger tillsammans.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>Tiondelsregeln: ungefär en tiondel går vidare till nästa våning. 1&nbsp;000 kg alger räcker till ungefär 1 kg gädda.</mark></p>
+      <p class="ex"><span class="tag">I tjärnen</span>Därför finns det många mörtar men bara några få gäddor.</p>
+    </div>
+  </article>
+
+  <figure class="fig">
+    <div class="pyr" role="img" aria-label="Näringspyramid: 1000 kilo alger längst ner, 100 kilo djurplankton, 10 kilo mört och 1 kilo gädda högst upp.">
+      <div class="floor"><div class="lvl">Våning 4<small>tredjehands&shy;konsument</small></div><div class="slab" style="--w:36%"><b>Gädda</b><span>ca 1 kg</span></div></div>
+      <div class="up">↑</div>
+      <div class="floor"><div class="lvl">Våning 3<small>andrahands&shy;konsument</small></div><div class="slab" style="--w:56%"><b>Mört</b><span>ca 10 kg</span></div></div>
+      <div class="up">↑</div>
+      <div class="floor"><div class="lvl">Våning 2<small>förstahands&shy;konsument</small></div><div class="slab" style="--w:78%"><b>Djurplankton</b><span>ca 100 kg</span></div></div>
+      <div class="up">↑</div>
+      <div class="floor"><div class="lvl">Våning 1<small>producent</small></div><div class="slab prod" style="--w:100%"><b>Alger</b><span>ca 1&nbsp;000 kg</span></div></div>
+    </div>
+    <figcaption>Varje våning är en trofinivå. Läser du nerifrån och upp har du en näringskedja. Bilden är inte skalenlig: i rätt skala skulle gäddans våning bara vara en prick.</figcaption>
+  </figure>
+  <details class="deep"><summary><span><span class="deep-k">Fördjupning</span>Varför står det ”vanligen” i facit?</span></summary><div class="deep-body">
+    <p>Det finns två sorters pyramider. En energipyramid smalnar alltid av uppåt, eftersom energi försvinner som värme i varje steg.</p>
+    <p>En biomassapyramid kan däremot stå på huvudet i en sjö. Växtplankton väger inte så mycket vid ett visst tillfälle, men de förökar sig så snabbt att de hinner föda en större mängd djurplankton. Därför skriver facit ”vanligen”.</p>
+  </div></details>
+
+  <article class="item" data-card data-kind="term" data-num="14" data-part="3">
+    <div class="num">nr<b>14</b></div>
+    <div><h3>Energiflöde</h3>
+      <p class="plain">Energin kommer in, oftast som solljus, går vidare genom organismerna och lämnar ekosystemet som värme. Den går inte runt.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>Enkelbiljett. Därför måste solen skina varje dag. Utan ny energi stannar allt.</mark></p>
+      <p class="ex"><span class="tag">I tjärnen</span>Solen → alger → djurplankton → mört → värme som försvinner ut i vattnet och luften.</p>
+    </div>
+  </article>
+  <details class="deep"><summary><span><span class="deep-k">Fördjupning</span>Fysiken bakom enkelbiljetten</span></summary><div class="deep-body">
+    <p>Energi kan inte skapas eller förstöras, bara omvandlas. Det är termodynamikens första huvudsats.</p>
+    <p>Men vid varje omvandling blir en del till värme som inte går att använda igen. Det är andra huvudsatsen. Därför måste energin hela tiden fyllas på utifrån, medan atomerna kan återanvändas.</p>
+  </div></details>
+
+  <article class="item challenge" data-card data-kind="challenge" data-num="38" data-part="3">
+    <div class="num">nr<b>38</b></div>
+    <div><p class="eyebrow">Utmaning</p>
+      <h3>Varför finns mindre energi högre upp i näringskedjan?</h3>
+      <details><summary><span class="when-closed">Tänk själv först. Visa ett svar</span><span class="when-open">Dölj svaret</span></summary>
+        <p class="plain">Varje organism använder det mesta av energin till att leva: simma, växa och hålla igång kroppen. Mycket försvinner som värme. Bara en liten del, ungefär en tiondel, finns kvar i kroppen när den blir uppäten. Resten har gått åt i cellandningen och blivit värme.</p>
+        <p class="knep"><span class="hand">Minnesknep</span><mark>Glasstafetten: skicka en glass längs en rad kompisar en varm dag. Alla tar en slick och en del smälter bort. Den sista får nästan ingenting.</mark></p>
+      </details>
+    </div>
+  </article>
+
+  <article class="item challenge" data-card data-kind="challenge" data-num="37" data-part="3">
+    <div class="num">nr<b>37</b></div>
+    <div><p class="eyebrow">Utmaning</p>
+      <h3>Om en toppkonsument försvinner, vad kan hända i näringsväven?</h3>
+      <details><summary><span class="when-closed">Tänk själv först. Visa ett svar</span><span class="when-open">Dölj svaret</span></summary>
+        <p class="plain">Följ minst två konsekvenser i flera led. Det finns inget enda rätt svar, eftersom det beror på hur just det nätet ser ut.</p>
+        <p class="chain-h">Konsekvens 1</p>
+        <ol class="chain">
+          <li>Gäddan försvinner</li>
+          <li>Mörtarna blir många, ingen jagar dem</li>
+          <li>De äter upp mycket djurplankton</li>
+          <li>Färre djurplankton som äter alger</li>
+          <li>Algerna växer och vattnet blir grönt och grumligt</li>
+        </ol>
+        <p class="chain-h">Konsekvens 2</p>
+        <ol class="chain">
+          <li>Gäddan försvinner</li>
+          <li>Abborrarna blir fler</li>
+          <li>De äter mer insektslarver</li>
+          <li>Färre insekter kläcks, och fåglar som äter insekter får mindre mat</li>
+        </ol>
+        <p class="ex"><span class="tag">Nyansera</span>Effekten kan bli mindre om abborren tar över gäddans roll som rovfisk. Därför säger facit att effekterna beror på nätets relationer. Skriv gärna ”det beror på” och förklara på vad.</p>
+        <p class="knep"><span class="hand">Minnesknep</span><mark>Dominoeffekten. Skriv ”om … så …, och då …”. Varje ”och då” är ett led till.</mark></p>
+      </details>
+    </div>
+  </article>
+</section>
+
+<!-- ============ DEL 4 ============ -->
+<section class="part" id="del4" data-part="4">
+  <div class="part-head">
+    <p class="eyebrow">Del 4</p>
+    <h2>Vart tar ämnena vägen?</h2>
+    <p class="sub">Kretslopp</p>
+    <span class="facit">Facit nr 15, 44</span>
+  </div>
+  <p class="intro">Energin försvinner som värme. Men atomerna försvinner inte. De går runt.</p>
+  <div class="gk"><span class="hand">Knepet för hela delen</span><p><mark>Ämnen är som pantburkar. Samma material används om och om igen och blir nya saker.</mark></p></div>
+
+  <article class="item" data-card data-kind="term" data-num="15" data-part="4">
+    <div class="num">nr<b>15</b></div>
+    <div><h3>Ämnenas kretslopp</h3>
+      <p class="plain">Ämnen som kol, kväve och vatten går runt mellan levande varelser, luft, vatten och mark, och används om och om igen.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>Kolatomerna i din frukostmacka har funnits i luften, i ett vetestrå och kanske i en dinosaurie. Ingenting försvinner, det byter bara plats.</mark></p>
+      <p class="ex"><span class="tag">I tjärnen</span>Algen tar upp koldioxid, mörten äter algen, mörten andas ut koldioxid och algen tar upp den igen.</p>
+    </div>
+  </article>
+
+  <figure class="fig">
+    <svg viewBox="0 0 360 300" role="img" aria-label="Kolets kretslopp: alger tar upp koldioxid genom fotosyntes, djur äter alger, döda djur bryts ner av nedbrytare, och både djur och nedbrytare släpper ut koldioxid genom cellandning.">
+      <defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="svg-ah"/></marker></defs>
+      <path class="svg-arrow" d="M252 32 Q 300 38 300 118" marker-end="url(#ah)"/>
+      <path class="svg-arrow" d="M300 174 Q 298 262 232 266" marker-end="url(#ah)"/>
+      <path class="svg-arrow" d="M132 266 Q 64 262 62 176" marker-end="url(#ah)"/>
+      <path class="svg-arrow" d="M62 120 Q 62 38 106 32" marker-end="url(#ah)"/>
+      <path class="svg-arrow" d="M180 240 L 180 60" marker-end="url(#ah)"/>
+      <text class="svg-lbl" x="252" y="96">fotosyntes</text>
+      <text class="svg-lbl" x="262" y="226">äts</text>
+      <text class="svg-lbl" x="100" y="226">dör</text>
+      <text class="svg-lbl" x="104" y="96">cellandning</text>
+      <text class="svg-lbl" x="186" y="156" style="text-anchor:start">cellandning</text>
+      <g class="svg-node"><rect x="110" y="8" width="140" height="48" rx="10"/><text x="180" y="29">Koldioxid</text><text class="s" x="180" y="46">i vatten och luft</text></g>
+      <g class="svg-node"><rect x="244" y="124" width="108" height="48" rx="10"/><text x="298" y="144">Alger och</text><text x="298" y="161">växter</text></g>
+      <g class="svg-node"><rect x="135" y="244" width="90" height="46" rx="10"/><text x="180" y="272">Djur</text></g>
+      <g class="svg-node"><rect x="8" y="124" width="108" height="48" rx="10"/><text x="62" y="153">Nedbrytare</text></g>
+    </svg>
+    <figcaption>Kolets kretslopp vid tjärnen. Fotosyntesen och cellandningen från del 2 är det som håller cirkeln igång.</figcaption>
+  </figure>
+  <details class="deep"><summary><span><span class="deep-k">Fördjupning</span>Kvävets kretslopp i korthet</span></summary><div class="deep-body">
+    <p>Luften består till ungefär 78 procent av kväve, men varken växter eller djur kan använda det direkt. Kvävefixerande bakterier, till exempel i rotknölar hos ärtväxter och bland cyanobakterierna, gör om luftens kväve till ämnen som växter kan ta upp.</p>
+    <p>Djuren får sitt kväve genom maten. Nedbrytarna frigör det igen när något dör, och vissa bakterier skickar tillbaka kväve till luften. Konstgödsel tillför extra kväve, och det är en del av förklaringen till övergödningen i del 8.</p>
+  </div></details>
+
+  <article class="item challenge" data-card data-kind="challenge" data-num="44" data-part="4">
+    <div class="num">nr<b>44</b></div>
+    <div><p class="eyebrow">Utmaning</p>
+      <h3>Vad är skillnaden mellan energiflöde och kretslopp?</h3>
+      <details><summary><span class="when-closed">Tänk själv först. Visa ett svar</span><span class="when-open">Dölj svaret</span></summary>
+        <p class="plain">Energi flödar igenom och avges som värme, så den används bara en gång. Ämnen cirkulerar och återanvänds.</p>
+        <p class="knep"><span class="hand">Minnesknep</span><mark>Energi = enkelbiljett. Ämnen = pantburk.</mark></p>
+        <div class="tbl-wrap"><table>
+          <thead><tr><th></th><th>Energi</th><th>Ämnen</th></tr></thead>
+          <tbody>
+            <tr><td>Kommer från</td><td>Solen</td><td>Finns redan på jorden</td></tr>
+            <tr><td>Väg</td><td>Rakt igenom</td><td>Runt, runt</td></tr>
+            <tr><td>Slutar som</td><td>Värme som försvinner</td><td>Byggstenar i nya organismer</td></tr>
+            <tr><td>Måste fyllas på?</td><td>Ja, hela tiden</td><td>Nej, de återanvänds</td></tr>
+          </tbody>
+        </table></div>
+      </details>
+    </div>
+  </article>
+</section>
+
+<!-- ============ DEL 5 ============ -->
+<section class="part" id="del5" data-part="5">
+  <div class="part-head">
+    <p class="eyebrow">Del 5</p>
+    <h2>Hur många får plats?</h2>
+    <p class="sub">Samspel och gränser</p>
+    <span class="facit">Facit nr 16–20, 39</span>
+  </div>
+  <p class="intro">Arterna i tjärnen lever inte var för sig. De tävlar om mat, jagar varandra och samarbetar. Och ingen population kan växa hur mycket som helst.</p>
+  <div class="gk"><span class="hand">Knepet för hela delen</span><p><mark>Rivaler, jägare eller kompisar. Fråga dig: vem vinner?</mark></p></div>
+
+  <article class="item" data-card data-kind="term" data-num="18" data-part="5">
+    <div class="num">nr<b>18</b></div>
+    <div><h3>Konkurrens</h3>
+      <p class="plain">När flera organismer behöver samma sak och det inte räcker åt alla. Det kan vara mat, ljus, vatten eller plats.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>Sista bullen på fikabordet. Två som vill ha den kan inte båda få hela.</mark></p>
+      <p class="ex"><span class="tag">I tjärnen</span>Mörtar och unga abborrar äter båda djurplankton.</p>
+    </div>
+  </article>
+
+  <article class="item" data-card data-kind="term" data-num="19" data-part="5">
+    <div class="num">nr<b>19</b></div>
+    <div><h3>Predation</h3>
+      <p class="plain">När ett djur fångar och äter ett annat djur.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>En predator är ett rovdjur, och predation är jakten. Jägaren vinner, bytet förlorar.</mark></p>
+      <p class="ex"><span class="tag">I tjärnen</span>Gäddan ligger still i vassen och hugger en mört.</p>
+    </div>
+  </article>
+
+  <article class="item" data-card data-kind="term" data-num="20" data-part="5">
+    <div class="num">nr<b>20</b></div>
+    <div><h3>Mutualism</h3>
+      <p class="plain">Ett samspel där båda parter tjänar på det.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>Mutual betyder ömsesidig på engelska. Mutualism = win-win.</mark></p>
+      <p class="ex"><span class="tag">I tjärnen</span>Laven på stenarna är en svamp och en alg som bor ihop. Algen gör socker med fotosyntes, svampen ger skydd och fukt.</p>
+    </div>
+  </article>
+
+  <figure class="fig">
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Samspel</th><th>Vem vinner?</th><th>Vid tjärnen</th></tr></thead>
+      <tbody>
+        <tr><td>Konkurrens</td><td><span class="sign">− / −</span><br>Båda förlorar lite</td><td>Mört och abborrunge om djurplankton</td></tr>
+        <tr><td>Predation</td><td><span class="sign">+ / −</span><br>En vinner, en förlorar</td><td>Gäddan äter mörten</td></tr>
+        <tr><td>Mutualism</td><td><span class="sign">+ / +</span><br>Båda vinner</td><td>Svamp och alg i laven</td></tr>
+      </tbody>
+    </table></div>
+    <figcaption>Plus och minus visar vem som tjänar på samspelet. Kan du sätta rätt tecken kan du skilja de tre åt.</figcaption>
+  </figure>
+  <details class="deep"><summary><span><span class="deep-k">Fördjupning</span>Fler sorters samspel</span></summary><div class="deep-body">
+    <p>Mutualism är en sorts symbios, alltså ett nära samliv mellan två arter. Det finns fler sorter som inte står i facit men som kan dyka upp.</p>
+    <p><b>Kommensalism (+/0):</b> den ena tjänar på det och den andra påverkas inte, till exempel en lav som växer på en trädstam. <b>Parasitism (+/−):</b> parasiten lever på värden och skadar den, till exempel en bandmask i en fisk.</p>
+  </div></details>
+
+  <article class="item" data-card data-kind="term" data-num="16" data-part="5">
+    <div class="num">nr<b>16</b></div>
+    <div><h3>Begränsande faktor</h3>
+      <p class="plain">Det som tar slut först och hindrar en population från att växa mer, till exempel mat eller boplatser.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>Tunnan med plankor: en tunna med olika långa plankor kan bara fyllas upp till den kortaste plankan. Den kortaste plankan är den begränsande faktorn. Principen kallas Liebigs minimilag.</mark></p>
+      <p class="ex"><span class="tag">I tjärnen</span>Fiskgjusen bygger bo i höga tallar. Finns det bara ett bra boträd spelar det ingen roll hur mycket fisk det finns.</p>
+    </div>
+  </article>
+
+  <figure class="fig">
+    <div class="barrel" role="img" aria-label="En tunna med fyra plankor: mat, vatten, boplatser och lugn. Plankan boplatser är kortast och vattnet når bara upp till den.">
+      <div class="staves">
+        <div class="stave" style="--h:150px"><i></i></div>
+        <div class="stave" style="--h:132px"><i></i></div>
+        <div class="stave" style="--h:64px"><i></i></div>
+        <div class="stave" style="--h:118px"><i></i></div>
+        <div class="spill"></div>
+      </div>
+      <div class="slabels"><span>Mat</span><span>Vatten</span><span class="short">Boplatser</span><span>Lugn</span></div>
+    </div>
+    <figcaption>Vattnet når bara upp till den kortaste plankan. För fiskgjusen vid tjärnen är det boplatserna, inte maten.</figcaption>
+  </figure>
+
+  <article class="item" data-card data-kind="term" data-num="17" data-part="5">
+    <div class="num">nr<b>17</b></div>
+    <div><h3>Bärkraft</h3>
+      <p class="plain">Ungefär hur stor en population kan bli i ett område och ändå klara sig år efter år.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>Skylten i hissen: ”Max 8 personer”. Bärkraft är naturens maxskylt.</mark></p>
+      <p class="ex"><span class="tag">I tjärnen</span>Tjärnen har bara mat för ett visst antal abborrar, år efter år. Det antalet är bärkraften.</p>
+    </div>
+  </article>
+  <details class="deep"><summary><span><span class="deep-k">Fördjupning</span>J-kurva och S-kurva</span></summary><div class="deep-body">
+    <p>När en population har gott om resurser växer den snabbare och snabbare, som en J-kurva. När den närmar sig bärkraften planar tillväxten ut och kurvan blir en S-kurva. Bärkraften brukar betecknas K.</p>
+    <p>Bärkraften är inte konstant. Den kan ändras av till exempel klimat, nya arter eller mänsklig påverkan.</p>
+  </div></details>
+
+  <article class="item challenge" data-card data-kind="challenge" data-num="39" data-part="5">
+    <div class="num">nr<b>39</b></div>
+    <div><p class="eyebrow">Utmaning</p>
+      <h3>Vad händer om en population överskrider bärkraften?</h3>
+      <details><summary><span class="when-closed">Tänk själv först. Visa ett svar</span><span class="when-open">Dölj svaret</span></summary>
+        <p class="plain">Resurserna, till exempel maten, räcker inte. Konkurrensen ökar, fler svälter eller får färre ungar, och populationen minskar. Ofta svänger den upp och ner runt bärkraften.</p>
+        <ol class="chain">
+          <li>För många individer</li>
+          <li>Maten räcker inte</li>
+          <li>Hårdare konkurrens, färre överlever</li>
+          <li>Populationen minskar</li>
+          <li>Maten hinner växa tillbaka, och populationen ökar igen</li>
+        </ol>
+        <p class="knep"><span class="hand">Minnesknep</span><mark>För många i hissen: larmet går och några får kliva av.</mark></p>
+        <p class="ex"><span class="tag">Känt exempel</span>Sorkar och lämlar: vissa år blir de jättemånga, sedan rasar antalet.</p>
+        <p class="ex"><span class="tag">Nyansera</span>Om populationen hinner förstöra sina resurser, till exempel betar ner växterna, kan bärkraften själv sjunka. Då hamnar populationen lägre än förut.</p>
+      </details>
+    </div>
+  </article>
+</section>
+
+<!-- ============ DEL 6 ============ -->
+<section class="part" id="del6" data-part="6">
+  <div class="part-head">
+    <p class="eyebrow">Del 6</p>
+    <h2>Vad ger naturen oss?</h2>
+    <p class="sub">Mångfald, resiliens och ekosystemtjänster</p>
+    <span class="facit">Facit nr 21–25, 32, 40, 41</span>
+  </div>
+  <p class="intro">Nu vänder vi blicken mot oss själva. Varför spelar det någon roll för människor att tjärnen mår bra?</p>
+  <div class="gk"><span class="hand">Knepet för hela delen</span><p><mark>Ju fler sorters liv, desto tåligare natur. Och en tålig natur jobbar gratis åt oss på tre sätt: Skafferi, Service och Spa.</mark></p></div>
+
+  <article class="item" data-card data-kind="term" data-num="21" data-part="6">
+    <div class="num">nr<b>21</b></div>
+    <div><h3>Biologisk mångfald</h3>
+      <p class="plain">Hur mycket variation av liv det finns. Den finns på tre nivåer: gener, arter och ekosystem.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>Zooma ut: gener (skillnader inom en art) → arter (hur många sorter) → ekosystem (hur många olika miljöer).</mark></p>
+      <p class="ex"><span class="tag">I tjärnen</span>Ingen abborre är exakt lik en annan (gener). Tjärnen har många arter. Landskapet har både tjärn, skog och myr (ekosystem).</p>
+      <p class="ex"><span class="tag">Varför det spelar roll</span>Genetisk variation gör att en art kan anpassa sig, till exempel till ett varmare klimat eller en ny sjukdom.</p>
+    </div>
+  </article>
+
+  <article class="item" data-card data-kind="term" data-num="32" data-part="6">
+    <div class="num">nr<b>32</b></div>
+    <div><h3>Resiliens</h3>
+      <p class="plain">Ett systems förmåga att klara en störning och återhämta sig, eller fortsätta fungera ändå.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>Resilire betyder studsa tillbaka på latin. Tänk gräset som reser sig efter att du trampat på det. Många arter är som ett fotbollslag med många avbytare.</mark></p>
+      <p class="ex"><span class="tag">I tjärnen</span>Om en sjukdom slår ut en sorts djurplankton kan andra sorter ta över och fortsätta äta algerna.</p>
+    </div>
+  </article>
+  <details class="deep"><summary><span><span class="deep-k">Fördjupning</span>När en sjö tippar över</span></summary><div class="deep-body">
+    <p>En grund sjö kan ha två stabila lägen: klart vatten med många undervattensväxter, eller grumligt vatten fullt av alger. Om näringen ökar under lång tid kan sjön plötsligt tippa över från det ena läget till det andra.</p>
+    <p>Vägen tillbaka är längre än vägen dit. Det räcker ofta inte att minska näringen lite för att få tillbaka det klara vattnet. Resiliens handlar alltså om hur mycket ett system tål innan det tippar.</p>
+  </div></details>
+
+  <article class="item" data-card data-kind="term" data-num="22" data-part="6">
+    <div class="num">nr<b>22</b></div>
+    <div><h3>Ekosystemtjänst</h3>
+      <p class="plain">Nyttor som vi människor får från naturen, till exempel pollinering och vattenrening.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>Naturen jobbar åt oss och skickar aldrig någon faktura. Tjänsterna finns i tre sorter: de tre S:en.</mark></p>
+      <p class="ex"><span class="tag">I tjärnen</span>Tjärnen ger fisk, renar vatten och är en plats att bada på.</p>
+    </div>
+  </article>
+
+  <figure class="fig">
+    <div class="three">
+      <div class="s3"><h4><span class="bigS">S</span>kafferi</h4><p class="k">Försörjande</p><p>Det du kan bära hem i en korg.</p><p class="eg">Fisk, blåbär, virke, dricksvatten</p></div>
+      <div class="s3"><h4><span class="bigS">S</span>ervice</h4><p class="k">Reglerande</p><p>Jobbet som görs i bakgrunden.</p><p class="eg">Pollinering, vattenrening, skydd mot översvämning</p></div>
+      <div class="s3"><h4><span class="bigS">S</span>pa</h4><p class="k">Kulturell</p><p>Det du tar med dig hem i huvudet.</p><p class="eg">Bad, skridskor, friluftsliv, vila</p></div>
+    </div>
+    <figcaption>De tre sorternas ekosystemtjänster. Fastnar du på provet: fråga dig om det går att bära hem, om det är ett jobb eller om det är en upplevelse.</figcaption>
+  </figure>
+  <details class="deep"><summary><span><span class="deep-k">Fördjupning</span>En fjärde sort</span></summary><div class="deep-body">
+    <p>I vissa läroböcker finns en fjärde sort: stödjande ekosystemtjänster. Det är grundprocesser som alla andra tjänster bygger på, till exempel fotosyntes, jordbildning och näringens kretslopp. Facit nämner bara tre sorter, men känn igen ordet om det dyker upp.</p>
+  </div></details>
+
+  <article class="item" data-card data-kind="term" data-num="23" data-part="6">
+    <div class="num">nr<b>23</b></div>
+    <div><h3>Försörjande ekosystemtjänst</h3>
+      <p class="plain">Saker vi kan hämta från naturen, till exempel mat, virke och färskvatten.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>Skafferiet. Allt du kan bära hem i en korg.</mark></p>
+      <p class="ex"><span class="tag">I tjärnen</span>Abborre till middag, blåbär från skogen, timmer till hus.</p>
+    </div>
+  </article>
+
+  <article class="item" data-card data-kind="term" data-num="24" data-part="6">
+    <div class="num">nr<b>24</b></div>
+    <div><h3>Reglerande ekosystemtjänst</h3>
+      <p class="plain">Naturens arbete som håller saker i balans, till exempel pollinering, vattenrening och skydd mot översvämning.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>Servicen. Naturens personal som jobbar i bakgrunden: bin som pollinerar, våtmarker som renar och suger upp vatten.</mark></p>
+      <p class="ex"><span class="tag">I tjärnen</span>Myren vid inloppet renar vattnet innan det rinner ut i tjärnen.</p>
+    </div>
+  </article>
+
+  <article class="item" data-card data-kind="term" data-num="25" data-part="6">
+    <div class="num">nr<b>25</b></div>
+    <div><h3>Kulturell ekosystemtjänst</h3>
+      <p class="plain">Det naturen ger oss i form av upplevelser, friluftsliv och återhämtning.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>Spat. Det du tar med dig hem i huvudet, inte i korgen.</mark></p>
+      <p class="ex"><span class="tag">I tjärnen</span>Ett dopp från bryggan, skridskor på isen, lugnet i skogen.</p>
+    </div>
+  </article>
+
+  <article class="item challenge" data-card data-kind="challenge" data-num="40" data-part="6">
+    <div class="num">nr<b>40</b></div>
+    <div><p class="eyebrow">Utmaning</p>
+      <h3>Hur kan minskad biologisk mångfald påverka människor?</h3>
+      <details><summary><span class="when-closed">Tänk själv först. Visa ett svar</span><span class="when-open">Dölj svaret</span></summary>
+        <p class="plain">Med färre arter klarar naturen mindre av sitt jobb, och det märks för oss. Visa det som en kedja.</p>
+        <ol class="chain">
+          <li>Färre pollinatörer, som bin och humlor</li>
+          <li>Sämre pollinering</li>
+          <li>Lägre skörd av vissa grödor, till exempel äpplen</li>
+        </ol>
+        <p class="chain-h">Ett till sätt</p>
+        <ol class="chain">
+          <li>Färre arter</li>
+          <li>Sämre resiliens, färre avbytare</li>
+          <li>Naturen återhämtar sig sämre efter till exempel torka</li>
+        </ol>
+        <p class="knep"><span class="hand">Minnesknep</span><mark>Utan humlan, inget äpple.</mark></p>
+      </details>
+    </div>
+  </article>
+
+  <article class="item challenge" data-card data-kind="challenge" data-num="41" data-part="6">
+    <div class="num">nr<b>41</b></div>
+    <div><p class="eyebrow">Utmaning</p>
+      <h3>Hur kan en våtmark gynna människor?</h3>
+      <details><summary><span class="when-closed">Tänk själv först. Visa ett svar</span><span class="when-open">Dölj svaret</span></summary>
+        <p class="plain">Den renar vatten, dämpar översvämningar, ger hem åt många arter och ger naturupplevelser.</p>
+        <p class="knep"><span class="hand">Minnesknep</span><mark>Våtmarken är landskapets njure och tvättsvamp. Den filtrerar vattnet som en njure och suger upp vatten vid skyfall som en svamp.</mark></p>
+        <p class="ex"><span class="tag">Sortera med tre S</span>Rening och översvämningsskydd är Service. Fågelskådning är Spa. Och alla arter där är biologisk mångfald.</p>
+      </details>
+    </div>
+  </article>
+</section>
+
+<!-- ============ DEL 7 ============ -->
+<section class="part" id="del7" data-part="7">
+  <div class="part-head">
+    <p class="eyebrow">Del 7</p>
+    <h2>Hur gör vi så att det räcker?</h2>
+    <p class="sub">Hållbarhet</p>
+    <span class="facit">Facit nr 26–31, 42</span>
+  </div>
+  <p class="intro">Om allt i naturen hänger ihop, hur ska vi då leva för att det ska räcka, både åt oss och åt dem som kommer efter?</p>
+  <div class="gk"><span class="hand">Knepet för hela delen</span><p><mark>Hållbarhet är en pall med tre ben: natur, människor och pengar. Kapar du ett ben välter pallen.</mark></p></div>
+
+  <article class="item" data-card data-kind="term" data-num="26" data-part="7">
+    <div class="num">nr<b>26</b></div>
+    <div><h3>Hållbar utveckling</h3>
+      <p class="plain">Att vi tar det vi behöver i dag, utan att förstöra möjligheterna för dem som lever i framtiden att ta det de behöver.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>Lämna lägerplatsen som du själv vill hitta den. Ät inte upp hela tårtan, det kommer fler efter dig.</mark></p>
+      <p class="ex"><span class="tag">Bra att veta</span>Definitionen kommer från FN:s Brundtlandrapport från 1987. Agenda 2030 med sina 17 globala mål bygger på samma tanke.</p>
+    </div>
+  </article>
+
+  <figure class="fig">
+    <svg class="stool" viewBox="0 0 320 222" role="img" aria-label="En pall med sitsen hållbar utveckling och tre ben: ekologisk, social och ekonomisk hållbarhet.">
+      <line class="leg" x1="76" y1="54" x2="54" y2="166"/>
+      <line class="leg" x1="160" y1="54" x2="160" y2="166"/>
+      <line class="leg" x1="244" y1="54" x2="266" y2="166"/>
+      <rect class="seat" x="30" y="18" width="260" height="38" rx="9"/>
+      <text class="seat-t" x="160" y="42">Hållbar utveckling</text>
+      <text class="lt" x="54" y="190">Ekologisk</text>
+      <text class="lt" x="160" y="190">Social</text>
+      <text class="lt" x="266" y="190">Ekonomisk</text>
+      <text class="ls" x="54" y="209">natur</text>
+      <text class="ls" x="160" y="209">människor</text>
+      <text class="ls" x="266" y="209">pengar</text>
+    </svg>
+    <figcaption>Alla tre benen behövs. Ett beslut som bara tänker på ett av dem får pallen att vicka.</figcaption>
+  </figure>
+
+  <article class="item" data-card data-kind="term" data-num="27" data-part="7">
+    <div class="num">nr<b>27</b></div>
+    <div><h3>Ekologisk hållbarhet</h3>
+      <p class="plain">Att naturens system, den biologiska mångfalden och resurserna fortsätter fungera i lång tid.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>Eko som i ekosystem. Benet NATUR: mår tjärnen bra även om hundra år?</mark></p>
+    </div>
+  </article>
+
+  <article class="item" data-card data-kind="term" data-num="28" data-part="7">
+    <div class="num">nr<b>28</b></div>
+    <div><h3>Social hållbarhet</h3>
+      <p class="plain">Att människor har goda, trygga och rättvisa livsvillkor.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>Social som i sociala medier, alltså människor. Benet MÄNNISKOR: mår alla bra och behandlas rättvist?</mark></p>
+    </div>
+  </article>
+
+  <article class="item" data-card data-kind="term" data-num="29" data-part="7">
+    <div class="num">nr<b>29</b></div>
+    <div><h3>Ekonomisk hållbarhet</h3>
+      <p class="plain">Att ekonomin och resurserna fungerar i längden, utan att man gör slut på det som behövs sen.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>Ekonomi = pengar. Benet PENGAR: går det runt även om tio år?</mark></p>
+    </div>
+  </article>
+
+  <article class="item" data-card data-kind="term" data-num="30" data-part="7">
+    <div class="num">nr<b>30</b></div>
+    <div><h3>Förnybar resurs</h3>
+      <p class="plain">Något som naturen kan återskapa, som skog, fisk och vatten. Men den kan ta slut om vi tar snabbare än den hinner växa tillbaka.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>Plocka blåbären, men dra inte upp riset. Fiska bara så mycket som tjärnen hinner göra nytt.</mark></p>
+      <p class="ex"><span class="tag">I tjärnen</span>Fiskar man upp alla abborrar en sommar finns inga kvar som kan få ungar.</p>
+    </div>
+  </article>
+
+  <article class="item" data-card data-kind="term" data-num="31" data-part="7">
+    <div class="num">nr<b>31</b></div>
+    <div><h3>Ekologiskt fotavtryck</h3>
+      <p class="plain">Ett mått på hur mycket mark och vatten som behövs för att ta fram allt du använder: mat, kläder, resor och energi.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>Ditt fotspår i naturen. Allt du använder har vuxit eller tillverkats någonstans, på en åker, i en skog eller i havet. Stort liv, stort fotspår.</mark></p>
+      <p class="ex"><span class="tag">Bra att veta</span>Fotavtrycket mäts i globala hektar. Om alla i världen levde som en genomsnittlig svensk skulle det behövas flera jordklot.</p>
+    </div>
+  </article>
+
+  <article class="item challenge" data-card data-kind="challenge" data-num="42" data-part="7">
+    <div class="num">nr<b>42</b></div>
+    <div><p class="eyebrow">Utmaning</p>
+      <h3>Varför kan en produkt vara både hållbar och ohållbar?</h3>
+      <details><summary><span class="when-closed">Tänk själv först. Visa ett svar</span><span class="when-open">Dölj svaret</span></summary>
+        <p class="plain">Den kan vara bra för ett av benen men dålig för ett annat. Väg natur, människor och pengar mot varandra, både på kort och på lång sikt.</p>
+        <p class="chain-h">Exempel: en billig t-shirt</p>
+        <ol class="chain">
+          <li>Bra för plånboken just nu (ekonomi)</li>
+          <li>Bomullen kan kräva mycket vatten och besprutning (natur)</li>
+          <li>Den som syr kan ha låg lön (människor)</li>
+          <li>Går den sönder efter fem tvättar är den inte ens billig i längden</li>
+        </ol>
+        <p class="knep"><span class="hand">Minnesknep</span><mark>Kolla alla tre benen. Och kolla både nu och sen.</mark></p>
+        <p class="ex"><span class="tag">Nyansera</span>Tänk på hela livscykeln: råvara, tillverkning, transport, användning och vad som händer när produkten slängs. Att räkna på det kallas livscykelanalys.</p>
+      </details>
+    </div>
+  </article>
+</section>
+
+<!-- ============ DEL 8 ============ -->
+<section class="part" id="del8" data-part="8">
+  <div class="part-head">
+    <p class="eyebrow">Del 8</p>
+    <h2>Hur påverkar vi planeten?</h2>
+    <p class="sub">Människans avtryck</p>
+    <span class="facit">Facit nr 33–36, 43</span>
+  </div>
+  <p class="intro">Den sista delen handlar om hur människor förändrar naturen, och hur det vi gör på ett ställe märks på andra.</p>
+  <div class="gk"><span class="hand">Knepet för hela delen</span><p><mark>Ringar på vattnet. Kasta en sten i tjärnen och ringarna når ända till stranden. Det vi gör sprider sig.</mark></p></div>
+
+  <article class="item" data-card data-kind="term" data-num="34" data-part="8">
+    <div class="num">nr<b>34</b></div>
+    <div><h3>Markanvändning</h3>
+      <p class="plain">Hur människor använder och förändrar mark, till exempel för jordbruk, vägar och hus.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>Jämför en gammal karta med en ny. Allt som gått från skog till åker, väg eller hus är markanvändning.</mark></p>
+      <p class="ex"><span class="tag">I tjärnen</span>Åkern uppströms och vägen ner till badplatsen var en gång skog.</p>
+    </div>
+  </article>
+
+  <article class="item" data-card data-kind="term" data-num="35" data-part="8">
+    <div class="num">nr<b>35</b></div>
+    <div><h3>Övergödning</h3>
+      <p class="plain">När för mycket näringsämnen, främst kväve och fosfor, hamnar i vatten. Det ger algblomning och sedan syrebrist. Kallas också eutrofiering.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>För mycket av det goda: gödsel → algfest → algerna dör → nedbrytarna äter och gör slut på syret → fiskarna kvävs.</mark></p>
+      <p class="ex"><span class="tag">I tjärnen</span>Rinner gödsel från åkern ner i tjärnen kan vattnet bli grönt på sommaren. Östersjön har stora döda bottnar av samma orsak.</p>
+    </div>
+  </article>
+  <div class="box note"><strong>Här möts del 2 och del 8</strong><p>Det är nedbrytarnas cellandning som gör slut på syret. Samma process som ger energi tar syret från fiskarna.</p></div>
+
+  <article class="item" data-card data-kind="term" data-num="36" data-part="8">
+    <div class="num">nr<b>36</b></div>
+    <div><h3>Lokalt och globalt</h3>
+      <p class="plain">Det du gör på ett ställe kan påverka natur och människor på helt andra platser.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>Ringarna på vattnet igen. Stenen landar på ett ställe, men vågorna når långt.</mark></p>
+      <p class="ex"><span class="tag">Exempel</span>Avgaser från bilar i Sverige påverkar klimatet på hela jorden. Kläderna du köper kan ha tagit vatten från en flod på andra sidan jorden.</p>
+    </div>
+  </article>
+
+  <article class="item" data-card data-kind="term" data-num="33" data-part="8">
+    <div class="num">nr<b>33</b></div>
+    <div><h3>Planetens gränser</h3>
+      <p class="plain">Ett ramverk för hur mycket människan kan påverka jordens viktigaste system innan risken för stora förändringar ökar. Det finns nio sådana områden, bland annat klimatet, biologisk mångfald, markanvändning och övergödning.</p>
+      <p class="knep"><span class="hand">Minnesknep</span><mark>Isen på tjärnen. Nära land är den tjock och säker. Ju längre ut du går, desto tunnare blir den. Gränserna är varningsskyltarna innan isen brister.</mark></p>
+      <p class="ex"><span class="tag">Bra att veta</span>Ramverket togs fram 2009 av forskare under ledning av svensken Johan Rockström. Enligt den senaste genomgången, från september 2026, är sju av nio gränser passerade. Bara ozonlagret och partiklarna i luften ligger fortfarande inom den säkra zonen.</p>
+      <p class="ex"><span class="tag">Nyansera</span>Ozonlagret visar att det går att vända en trend: det började läka efter att freonerna förbjöds.</p>
+    </div>
+  </article>
+
+  <article class="item challenge" data-card data-kind="challenge" data-num="43" data-part="8">
+    <div class="num">nr<b>43</b></div>
+    <div><p class="eyebrow">Utmaning</p>
+      <h3>Hur kan en aktivitet påverka flera planetära gränser?</h3>
+      <details><summary><span class="when-closed">Tänk själv först. Visa ett svar</span><span class="when-open">Dölj svaret</span></summary>
+        <p class="plain">Följ samma handling åt flera håll. Skogsavverkning påverkar till exempel markanvändning, biologisk mångfald och klimat på en gång.</p>
+        <p class="chain-h">Exempel: man hugger ner en skog</p>
+        <ol class="chain">
+          <li>Markanvändning: skog blir kalhygge</li>
+          <li>Biologisk mångfald: djur och växter förlorar sitt hem</li>
+          <li>Klimat: träden slutar ta upp koldioxid, och kol i träd och mark kan släppas ut</li>
+        </ol>
+        <p class="knep"><span class="hand">Minnesknep</span><mark>En sten, flera ringar.</mark></p>
+        <p class="ex"><span class="tag">Ett till</span>För mycket gödsel ger övergödning i tjärnen, och när fiskarna kvävs minskar den biologiska mångfalden.</p>
+      </details>
+    </div>
+  </article>
+</section>
+
+<section class="whole" id="helheten">
+  <p class="eyebrow">Repetera</p>
+  <h2>Hela tjärnen i åtta meningar</h2>
+  <ol>
+    <li>Tjärnen är ett ekosystem av levande och icke-levande delar som påverkar varandra.</li>
+    <li>Producenterna bygger mat med solljus, konsumenterna äter och nedbrytarna återvinner.</li>
+    <li>Energin går rakt igenom och försvinner som värme, så det blir mindre för varje våning.</li>
+    <li>Ämnena går runt och används om och om igen.</li>
+    <li>Arterna tävlar, jagar och samarbetar, och ingen population kan växa förbi bärkraften.</li>
+    <li>Ju större mångfald, desto tåligare natur och desto fler gratistjänster åt oss.</li>
+    <li>Hållbart betyder att natur, människor och pengar håller på lång sikt.</li>
+    <li>Det vi gör sprider sig som ringar på vattnet, och planeten har gränser.</li>
+  </ol>
+</section>
+
+<p class="foot">Bygger på facit ”Begrepp och utmaningar”. Förklaringarna är omskrivna med enklare ord, och minnesknepen är till för att hjälpa minnet. På provet räcker det att förklara med egna ord.</p>
+
+</div>
+</main>
+
+<section id="forhor" class="quiz" hidden>
+  <div class="inner">
+    <h2>Förhör</h2>
+    <p class="muted">Säg svaret högt innan du vänder kortet. Kort du kan försvinner ur högen.</p>
+    <div class="qcontrols">
+      <div class="qparts" id="qparts" role="group" aria-label="Välj del"></div>
+      <div class="qopts">
+        <button type="button" class="pill" id="qrev" aria-pressed="false">Visa förklaringen först</button>
+        <button type="button" class="pill" id="qshuf">Blanda</button>
+      </div>
+    </div>
+    <div class="qprog"><span id="qcount"></span><div class="bar"><i id="qbar"></i></div></div>
+    <div class="card" id="qcard" tabindex="0" role="button" aria-live="polite"></div>
+    <div class="qactions" id="qactions"></div>
+    <button type="button" class="linkbtn" id="qreset">Nollställ det jag kan</button>
+  </div>
+</section>
+
+<script>
+(function(){
+  var las=document.getElementById('las'), quiz=document.getElementById('forhor'), nav=document.getElementById('partnav');
+  var tL=document.getElementById('tab-las'), tF=document.getElementById('tab-forhor');
+  function mode(m, setHash){
+    las.hidden = m!=='las'; quiz.hidden = m!=='forhor'; nav.hidden = m!=='las';
+    tL.setAttribute('aria-pressed', m==='las'); tF.setAttribute('aria-pressed', m==='forhor');
+    if(setHash){ try{ history.replaceState(null,'', m==='forhor' ? '#forhor' : '#start'); }catch(e){} window.scrollTo(0,0); }
+  }
+  tL.addEventListener('click', function(){ mode('las', true); });
+  tF.addEventListener('click', function(){ mode('forhor', true); });
+  if(location.hash==='#forhor') mode('forhor', false);
+
+  /* Markera aktuell del i navigeringen */
+  var links={}; nav.querySelectorAll('a').forEach(function(a){ links[a.getAttribute('href').slice(1)]=a; });
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(ents){
+      ents.forEach(function(e){
+        if(!e.isIntersecting) return;
+        Object.keys(links).forEach(function(k){ links[k].classList.toggle('on', k===e.target.id); });
+        var a=links[e.target.id]; if(a){ try{ nav.scrollTo({left:a.offsetLeft-12, behavior:'auto'}); }catch(err){ nav.scrollLeft=a.offsetLeft-12; } }
+      });
+    },{rootMargin:'-35% 0px -60% 0px'});
+    document.querySelectorAll('.part').forEach(function(s){ io.observe(s); });
+  }
+
+  /* ---------- Förhör ---------- */
+  var KEY='eko44-known-v1', known=new Set();
+  try{ known=new Set(JSON.parse(localStorage.getItem(KEY)||'[]')); }catch(e){}
+  function save(){ try{ localStorage.setItem(KEY, JSON.stringify(Array.from(known))); }catch(e){} }
+  var all=Array.prototype.map.call(document.querySelectorAll('[data-card]'), function(el){
+    var m=el.querySelector('.knep mark');
+    return { num:+el.dataset.num, part:+el.dataset.part, kind:el.dataset.kind,
+      front:el.querySelector('h3').textContent.trim(),
+      plain:el.querySelector('.plain').textContent.trim(),
+      knep:m ? m.textContent.trim() : '' };
+  }).sort(function(a,b){ return a.num-b.num; });
+
+  var part='all', reverse=false, shuffled=false, deck=[], i=0, shown=false, resetArmed=false;
+  var card=document.getElementById('qcard'), acts=document.getElementById('qactions');
+  var qparts=document.getElementById('qparts'), qrev=document.getElementById('qrev'), qshuf=document.getElementById('qshuf');
+  var qcount=document.getElementById('qcount'), qbar=document.getElementById('qbar'), qreset=document.getElementById('qreset');
+
+  ['all',1,2,3,4,5,6,7,8].forEach(function(p){
+    var b=document.createElement('button'); b.type='button'; b.className='pill';
+    b.textContent = p==='all' ? 'Alla' : 'Del '+p; b.dataset.p=p;
+    b.setAttribute('aria-pressed', p==='all');
+    b.addEventListener('click', function(){ part = p==='all' ? 'all' : +p; qparts.querySelectorAll('button').forEach(function(x){ x.setAttribute('aria-pressed', x===b); }); build(); });
+    qparts.appendChild(b);
+  });
+  qrev.addEventListener('click', function(){ reverse=!reverse; qrev.setAttribute('aria-pressed', reverse); build(); });
+  qshuf.addEventListener('click', function(){ shuffled=true; build(); });
+  qreset.addEventListener('click', function(){
+    if(!resetArmed){ resetArmed=true; qreset.textContent='Tryck igen för att nollställa'; setTimeout(function(){ resetArmed=false; qreset.textContent='Nollställ det jag kan'; }, 4000); return; }
+    known.clear(); save(); resetArmed=false; qreset.textContent='Nollställ det jag kan'; build();
+  });
+
+  function pool(){ return all.filter(function(c){ return (part==='all'||c.part===part) && (!reverse||c.kind==='term'); }); }
+  function build(){
+    deck=pool().filter(function(c){ return !known.has(c.num); });
+    if(shuffled){ for(var k=deck.length-1;k>0;k--){ var j=Math.floor(Math.random()*(k+1)); var t=deck[k]; deck[k]=deck[j]; deck[j]=t; } }
+    i=0; shown=false; render();
+  }
+  function el(tag, cls, txt){ var e=document.createElement(tag); if(cls) e.className=cls; if(txt!=null) e.textContent=txt; return e; }
+  function btn(txt, cls, fn){ var b=el('button','btn '+(cls||''),txt); b.type='button'; b.addEventListener('click', function(ev){ ev.stopPropagation(); fn(); }); return b; }
+  function progress(){
+    var p=pool(), k=p.filter(function(c){ return known.has(c.num); }).length;
+    qcount.textContent='Du kan '+k+' av '+p.length+(reverse?' begrepp':' kort');
+    qbar.style.width=(p.length ? Math.round(k/p.length*100) : 0)+'%';
+  }
+  function render(){
+    progress(); card.innerHTML=''; acts.innerHTML='';
+    card.classList.remove('done');
+    if(!deck.length || i>=deck.length){
+      card.classList.add('done');
+      var left=pool().filter(function(c){ return !known.has(c.num); }).length;
+      if(left===0){
+        card.appendChild(el('p','front','Allt sitter!'));
+        card.appendChild(el('p','muted', reverse ? 'Du kan alla begrepp i det här urvalet.' : 'Du kan alla kort i det här urvalet. Nollställ om du vill köra igen.'));
+      } else {
+        card.appendChild(el('p','front','Varvet är klart'));
+        card.appendChild(el('p','muted', left+(left===1?' kort':' kort')+' kvar att öva på.'));
+        acts.appendChild(btn('Kör ett varv till','primary', function(){ shuffled=true; build(); }));
+      }
+      return;
+    }
+    var c=deck[i];
+    card.appendChild(el('p','meta','nr '+c.num+' · Del '+c.part+(c.kind==='challenge'?' · Utmaning':'')+' · '+(i+1)+' av '+deck.length));
+    if(!reverse){
+      card.appendChild(el('p','front'+(c.kind==='challenge'?' long':''), c.front));
+      if(!shown) card.appendChild(el('p','ask', c.kind==='challenge' ? 'Hur skulle du svara?' : 'Vad betyder det?'));
+    } else {
+      card.appendChild(el('p','ask','Vilket begrepp är det?'));
+      card.appendChild(el('p','front long', c.plain));
+    }
+    if(shown){
+      var back=el('div','back');
+      if(reverse) back.appendChild(el('p','front', c.front));
+      else back.appendChild(el('p',null,c.plain));
+      if(c.knep){ var p=el('p'); var h=el('span','hand','Minnesknep '); var m=el('mark',null,c.knep); p.appendChild(h); p.appendChild(m); back.appendChild(p); }
+      card.appendChild(back);
+      acts.appendChild(btn('Öva mer','', function(){ next(false); }));
+      acts.appendChild(btn('Kunde det','good', function(){ next(true); }));
+    } else {
+      card.appendChild(el('p','hint','Tryck på kortet för att vända det'));
+      acts.appendChild(btn('Visa svaret','primary', reveal));
+    }
+  }
+  function reveal(){ if(!shown && deck.length && i<deck.length){ shown=true; render(); } }
+  function next(ok){ var c=deck[i]; if(ok){ known.add(c.num); save(); } i++; shown=false; render(); }
+  card.addEventListener('click', reveal);
+  card.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); reveal(); } });
+  build();
+})();
+</script>
+</body>
+</html>
