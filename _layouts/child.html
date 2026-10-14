@@ -3,9 +3,9 @@ layout: base
 ---
 {%- assign kid = site.children | where: "id", page.child | first -%}
 <section class="hero">
-  <p class="eyebrow">Studiematerial</p>
+  <p class="eyebrow">Plugg</p>
   <h1>{{ kid.emoji }} {{ kid.name }}</h1>
-  <p class="lead">Det här läser du just nu. Välj ett område för att börja.</p>
+  <p class="lead">Dina prov och allt material till dem. Välj ett prov för att börja.</p>
 </section>
 {{ content }}
 {% include material-list.html child=page.child empty="Inget material här än." %}

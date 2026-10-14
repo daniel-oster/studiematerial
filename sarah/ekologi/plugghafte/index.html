@@ -6,7 +6,10 @@ child: sarah
 parent: sarah-ekologi
 subject: Naturkunskap 1b · Kapitel 2
 order: 2
-description: Hela kapitlet med svar på E-nivå och högre nivå, minnesknep, lampor, faktafrågor, begrepp och förhörsläge. Plugghäftet finns som PDF.
+description: Hela kapitlet med svar på E-nivå och högre nivå, minnesknep, bokens faktafrågor och förhörsläge.
+kind: Studiematerial
+pdf: plugghafte-naturkunskap-1b-kap-2.pdf
+open_label: Läs och förhör
 ---
 <!doctype html>
 <html lang="sv">
@@ -75,6 +78,9 @@ mark{color:inherit;background:linear-gradient(transparent 38%,var(--marker) 38%,
 .topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--paper);border-bottom:1px solid var(--line)}
 .topbar .inner{display:flex;flex-direction:column;gap:.5rem;padding-block:.55rem}
 .toprow{display:flex;align-items:center;justify-content:space-between;gap:.75rem}
+.crumbs-sm{display:flex;align-items:center;gap:.35rem}
+.crumbs-sm a{color:inherit;text-decoration:none;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:.15rem .6rem;font-weight:600}
+.crumbs-sm span{color:var(--muted);font-weight:400}
 .brand{color:inherit;text-decoration:none;font-family:var(--f-display);font-weight:700;font-size:.95rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
 .seg{display:flex;background:var(--stone-soft);border-radius:999px;padding:3px;flex-shrink:0}
 .seg button{border:0;background:transparent;font-family:var(--f-display);font-weight:600;font-size:.95rem;padding:.4rem 1rem;border-radius:999px;cursor:pointer;min-height:36px}
@@ -361,7 +367,7 @@ table.grid4 th small{text-transform:none;letter-spacing:0;color:var(--muted);fon
 <header class="topbar">
   <div class="inner">
     <div class="toprow">
-      <a class="brand" href="../">← Ekologi</a>
+      <nav class="brand crumbs-sm" aria-label="Du är här"><a href="../../">Sarah</a><span aria-hidden="true">›</span><a href="../">Ekologi</a></nav>
       <div class="seg" role="group" aria-label="Läge">
         <button type="button" id="tab-las" aria-pressed="true">Läs</button>
         <button type="button" id="tab-forhor" aria-pressed="false">Förhör</button>

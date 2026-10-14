@@ -2,9 +2,10 @@
 title: Ekologi och hållbar utveckling
 id: sarah-ekologi
 child: sarah
-subject: Biologi
+subject: Naturkunskap 1b
+test_date: vecka 43
 order: 1
-description: Allt material inför provet i ekologi och hållbar utveckling.
+description: Kapitel 2 i boken. Begreppen och studiematerialet inför provet.
 ---
 
-Börja med de 44 begreppen. Gå sedan vidare till plugghäftet för hela kapitlet, med svar för högre betyg och bokens faktafrågor. Båda finns som PDF att skriva ut.
+Två delar. Börja med **begreppen**, gå sedan vidare till **studiematerialet** för hela kapitlet. Båda går att läsa och förhöra sig på här, eller skriva ut som PDF.

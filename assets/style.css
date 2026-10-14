@@ -105,3 +105,15 @@ body.quiz .item.open h3::after{content:none}
   body.quiz .item h3::after{content:none}
   .item{break-inside:avoid}
 }
+
+/* Provsidan: materialet som kort */
+.mcards{display:grid;gap:.9rem;margin:1.25rem 0 0}
+@media (min-width:600px){.mcards{grid-template-columns:1fr 1fr}}
+.mcard{background:var(--surface);border:1.5px solid var(--line);border-radius:16px;padding:1.1rem 1.15rem;display:flex;flex-direction:column;gap:.4rem}
+.mcard h2{font-size:1.35rem;margin:.1rem 0 0}
+.mcard h2 a{color:var(--ink);text-decoration:none}
+.mdesc{margin:0;font-size:.95rem;color:var(--muted);line-height:1.5}
+.mactions{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:auto;padding-top:.6rem}
+.btn-main,.btn-pdf{display:inline-flex;align-items:center;gap:.4rem;font-family:var(--f-display);font-weight:600;font-size:.95rem;text-decoration:none;border-radius:999px;padding:.5rem 1rem;min-height:42px}
+.btn-main{background:var(--water);color:var(--on-water)}
+.btn-pdf{background:var(--water-soft);color:var(--water)}

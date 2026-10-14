@@ -23,7 +23,12 @@ Varje materialsida är en Markdown-fil med samma format (se `_mallar/material.md
 - `terms` – begreppslista (har en "förhör mig"-knapp som döljer förklaringarna)
 - `pdfs` – PDF:er som öppnas i ny flik för utskrift (lägg filerna i samma mapp)
 
-Sidor som har `parent` satt till en sidas `id` listas automatiskt längst ner på den sidan.
+Sidor som har `parent` satt till en sidas `id` visas som kort på den sidan (t.ex. Begrepp och
+Studiematerial under ett prov), med knappar för att öppna sidan och ladda ner PDF:en
+(fälten `kind`, `pdf` och `open_label`).
+
+Navigering: Start → barnets sida (proven) → provet (korten) → materialet. Fristående
+HTML-sidor har en egen rad överst med länkar tillbaka till barnet och provet.
 
 ### Egna HTML-sidor
 

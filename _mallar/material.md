@@ -8,6 +8,9 @@ subject: Ämne                # valfritt
 test_date: 2026-11-05        # valfritt, provdatum
 order: 1                     # sorteringsordning
 description: Kort beskrivning som syns i listan.
+kind: Begrepp                # valfritt – etikett på kortet i provet (t.ex. Begrepp, Studiematerial)
+pdf: haefte.pdf              # valfritt – ger knappen "PDF att skriva ut" på kortet
+open_label: Läs och förhör   # valfritt – text på knappen som öppnar sidan
 pdfs:                        # valfritt – lägg PDF-filerna i samma mapp
   - title: Arbetsblad
     file: arbetsblad.pdf
