@@ -42,11 +42,14 @@ Kort-id:n följer lärarens frågenummer (F1–F20). Extrakort är märkta T (ti
 
 ## Källkonflikter och val
 
-- **Grundlagsändring:** lärarens bild säger "minst hälften av två riksdagar", boken "fler än hälften". Sidan skriver "en majoritet (fler än hälften)".
-- **Bokens påstående om FN:s konventioner** (att en grundlagsändring inte får strida mot dem) är utelämnat: det står inte på lärarens bilder och stämmer tveksamt med hur grundlagen fungerar.
-- **Landshövdingens namn:** lärarens två bilder anger olika personer. Inga namn på ämbetsinnehavare står på sidan. Samma gäller statsminister och talman, eftersom riksdagsval hölls i september 2026. Sidan har en "Kolla själv"-ruta som uppmanar att kontrollera vem som gäller nu.
-- **Antal regioner:** boken skriver både 20 och 21. Sidan skriver 21 (samma som länen) och har en ruta om att boken är otydlig.
-- **Skattesatser:** lärarens bild och boken anger olika procentsatser för regionskatten. Sidan anger bara kommunalskatten (ca 19 %, boken) och utelämnar regionens.
+Principen: där lärarens bilder och boken säger olika står **båda uppgifterna** på sidan, i en ruta märkt "Källorna skiljer sig". Namn på ämbetsinnehavare står med år och källa.
+
+- **Grundlagsändring (F3):** lärarens bild skriver "minst hälften", boken "fler än hälften". Båda står i rutan.
+- **Bokens påstående om FN:s konventioner** (en grundlagsändring får inte strida mot dem) står med som "Boken säger också". Det finns inte på lärarens bilder, och det är tveksamt om det stämmer juridiskt, men det är bokens text och provet bygger på boken.
+- **Landshövding i Dalarna (T4):** lärarens två bilder anger olika personer (Camilla Fagerberg Littorin respektive Helena Höij). Båda namnen står med källa.
+- **Antal regioner (F14):** boken skriver 21 i texten (s. 76) och 20 i ordlistan (s. 80).
+- **Regionskatt (F14):** lärarens bild ca 10 %, boken omkring 13 % (s. 74). Kommunalskatten är 19 % enligt boken.
+- **Namn (F5, F11, F12, kvällen före):** kung Carl XVI Gustaf (boken, 2024), statsminister Ulf Kristersson (boken, sedan 2022), talman Andreas Norlén (lärarens bild). Riksdagsval hölls i september 2026, så uppgifterna kan ha ändrats.
 - **Årtal:** regeringsformen 1974 (gäller 1975), YGL 1992 (lärarens bild, trädde i kraft då).
 - Det som inte står på lärarens provlista (valsystem, partier, ideologier, domstolar, medborgerliga skyldigheter) är utelämnat, utom ett bonuskort om valsystemet (B1) eftersom spärregeln ingår i lärarens bild om riksdagen.
 
@@ -67,6 +70,5 @@ Skriver ut sidan med webbläsarens utskriftsstil (lampor och knappar döljs, all
 
 ## Sådant som kan bli inaktuellt
 
-- Namn på ämbetsinnehavare (se ovan).
-- Boken anger kungen som statschef "just nu (2024)". Sidan skriver bara att Carl XVI Gustaf är statschef.
+- Namn på ämbetsinnehavare (se ovan), särskilt statsminister och talman efter valet 2026.
 - Antalet nationella folkomröstningar (sex, senast 2003 enligt boken).
