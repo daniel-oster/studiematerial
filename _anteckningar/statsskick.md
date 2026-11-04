@@ -72,3 +72,7 @@ Skriver ut sidan med webbläsarens utskriftsstil (lampor och knappar döljs, all
 
 - Namn på ämbetsinnehavare (se ovan), särskilt statsminister och talman efter valet 2026.
 - Antalet nationella folkomröstningar (sex, senast 2003 enligt boken).
+
+## PDF: sidbrytningar
+
+Utskriftsstilen (i `<style>` längst ner, `@media print`) ger: varje del på ny sida, rubriker som hålls ihop med det som följer, kort/rutor/tabeller som inte delas mitt i, vägkartan och källraden dolda, samt en tätare "Kvällen före" som ryms på en sida. Efter ändringar i texten: kontrollera att inget kort blivit så högt att det inte ryms på en sida (F16 är det högsta), och bygg om PDF:en.

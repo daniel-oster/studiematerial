@@ -352,6 +352,50 @@ table.grid4 th small{text-transform:none;letter-spacing:0;color:var(--muted);fon
   .item,.term,.challenge,.fq{break-inside:avoid}
   .part{padding-top:1.5rem}
 }
+
+/* Sidbrytningar i PDF:en: varje del på ny sida, rubriker hålls ihop med det som följer, rutor delas inte */
+@media print{
+  body{font-size:10pt}
+  .challenge{font-size:.94em;padding-block:.8rem}
+  .challenge .knep,.challenge .why{font-size:.9em}
+  .challenge .knep{margin-bottom:.5rem}
+  ol.chain-n>li{margin-bottom:.4rem}
+  .lag{padding:.25rem .5rem;font-size:.75rem}
+  .lag b{font-size:.85rem}
+  .nums,.hooks,.tarta{break-inside:avoid}
+  .h-mid+dl{break-after:avoid}
+  .route-h,.route-sub,.route{display:none!important}
+  .hero{padding-top:0;padding-bottom:0}
+  .part{break-before:page;padding-top:0}
+  .part-head,.gk,.intro,.h-mid,.h-mid+p,.h-mid+ol{break-after:avoid}
+  .compare,.cmp,.two,.panel,.domino li,.four,.tarta,.hooks div,.nums div,.box,.knep,.tbl-wrap,table tr,.hi-body li,.levels div,.term{break-inside:avoid}
+  .item{padding-block:1rem}
+  .hooks{grid-template-columns:repeat(4,minmax(0,1fr));gap:.3rem;margin-top:.5rem}
+  .hooks div{font-size:.7rem;line-height:1.28;padding:.3rem .45rem}
+  .hooks b{font-size:.78rem}
+  .lag{padding:.15rem .4rem}
+  .h-mid{margin-top:1rem}
+  .two{margin-top:.8rem}
+  .compare{margin-top:.5rem}
+  #kvallen .part-head .sub{margin-bottom:0}
+  .nums div{padding:.3rem .5rem}
+  .nums dd{font-size:.66rem;line-height:1.25}
+  #kvallen .box{padding:.4rem .7rem;font-size:.8rem;margin-top:.6rem!important}
+  .tarta{gap:.12rem}
+  .lag{font-size:.68rem;line-height:1.2}
+  .lag b{font-size:.78rem}
+  .panel{padding:.5rem .8rem}
+  .panel h3{font-size:1rem;margin-bottom:.3rem}
+  .checks{gap:.15rem;font-size:.85rem}
+  .signal span{font-size:.76rem}
+  #kvallen .intro{display:none}
+  .foot{display:none}
+  .hooks div{padding:.25rem .4rem}
+  .nums{grid-template-columns:repeat(5,minmax(0,1fr));gap:.35rem}
+  .nums dt{font-size:1.05rem}
+  .nums dd{font-size:.72rem}
+  #kvallen .h-mid{margin-top:.8rem}
+}
 </style>
 </head>
 <body>
