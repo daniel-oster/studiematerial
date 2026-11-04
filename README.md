@@ -61,3 +61,10 @@ node _verktyg/sida-till-pdf/render.js sarah/statsskick/studiematerial/index.html
 ```
 
 Kräver Node med Playwright (Chromium). Bygg om PDF:en när du ändrar texterna.
+
+### Uppdateringsknapp
+
+Alla sidor har en liten ↻-knapp i sidhuvudet. Den gör en hård uppdatering (hämtar sidan förbi
+webbläsarens cache) och behövs när sidan ligger på hemskärmen, där det inte finns någon
+uppdateringsknapp. Knappen finns i `_layouts/base.html` och, som egen kopia, i de fristående
+studiesidorna. Sparade lampor och förhörsläget behålls.
