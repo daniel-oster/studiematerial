@@ -50,3 +50,14 @@ python3 _verktyg/begrepp-pdf/build.py
 ```
 
 Kräver Python med `bs4` och `pypdf`, och Node med Playwright (Chromium).
+
+### PDF för övriga studiesidor
+
+Studiesidor som `sarah/statsskick/studiematerial/index.html` har en egen utskriftsstil
+(lampor och knappar döljs, alla svar fälls ut). PDF:en skrivs ut direkt från sidan:
+
+```
+node _verktyg/sida-till-pdf/render.js sarah/statsskick/studiematerial/index.html sarah/statsskick/studiematerial/fran-rost-till-lag.pdf
+```
+
+Kräver Node med Playwright (Chromium). Bygg om PDF:en när du ändrar texterna.

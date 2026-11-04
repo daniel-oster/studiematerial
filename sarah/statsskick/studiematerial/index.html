@@ -1,0 +1,1071 @@
+---
+layout: null
+title: Från röst till lag
+id: sarah-statsskick-studiematerial
+child: sarah
+parent: sarah-statsskick
+subject: Samhällskunskap · Sveriges statsskick
+order: 1
+description: Allt inför provet om Sveriges statsskick, med svar på E-nivå och högre nivå, minnesknep, begrepp och förhörsläge.
+kind: Studiematerial
+pdf: fran-rost-till-lag.pdf
+open_label: Läs och förhör
+---
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Från röst till lag</title>
+<meta name="description" content="Plugga inför provet om Sveriges statsskick: grundlagar, riksdag, regering, kommun och region. E-svar, svar på högre nivå, minnesknep och förhör.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Familjen+Grotesk:wght@400;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<style>
+/* Layout: en läskolumn, samma familj som systersidorna om ekologi. Varje del har en egen accent,
+   E-svaret står öppet, högre nivå fälls ut, och trafikljusen följer med mellan Läs och Förhör. */
+:root{
+  --paper:#F2F5F1; --surface:#FBFCFA; --ink:#16302B; --muted:#53685F; --line:#D5DFD9;
+  --water:#1A6370; --water-soft:#DAEAEB; --moss:#46702F; --moss-soft:#E2ECD9;
+  --plum:#6B3F7A; --plum-soft:#EFE5F2; --rust:#8F431A; --rust-soft:#F6E7DC;
+  --marker:#F6DC6E; --marker-soft:#FBF2C9; --stone-soft:#E4E8E4; --warn:#A23B22; --warn-soft:#F8E6E0;
+  --go:#2E8A4F; --wait:#B98606; --stop:#B8432F; --on-acc:#F2F5F1;
+  --f-display:"Familjen Grotesk","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Literata",Georgia,"Times New Roman",serif;
+  --f-hand:"Caveat","Segoe Print","Bradley Hand",cursive;
+  --acc:var(--water); --acc-soft:var(--water-soft);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0D1618; --surface:#132124; --ink:#E0EAE5; --muted:#99AEA7; --line:#283B3E;
+    --water:#74C3CA; --water-soft:#1A3337; --moss:#A6C988; --moss-soft:#1E3021;
+    --plum:#D2AEDF; --plum-soft:#2B2031; --rust:#EBA57E; --rust-soft:#2E2019;
+    --marker:rgba(219,176,52,.38); --marker-soft:rgba(219,176,52,.13); --stone-soft:#22302F; --warn:#F09A84; --warn-soft:#33201B;
+    --go:#7FCB95; --wait:#E8C25A; --stop:#F0907A; --on-acc:#0D1618; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0D1618; --surface:#132124; --ink:#E0EAE5; --muted:#99AEA7; --line:#283B3E;
+  --water:#74C3CA; --water-soft:#1A3337; --moss:#A6C988; --moss-soft:#1E3021;
+  --plum:#D2AEDF; --plum-soft:#2B2031; --rust:#EBA57E; --rust-soft:#2E2019;
+  --marker:rgba(219,176,52,.38); --marker-soft:rgba(219,176,52,.13); --stone-soft:#22302F; --warn:#F09A84; --warn-soft:#33201B;
+  --go:#7FCB95; --wait:#E8C25A; --stop:#F0907A; --on-acc:#0D1618; color-scheme:dark;
+}
+@media (prefers-reduced-motion: no-preference){ html{scroll-behavior:smooth} }
+/* Grundregler som artefaktskalet annars ger, så att filen fungerar fristående (GitHub Pages) */
+[hidden]{display:none!important}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.6;-webkit-text-size-adjust:100%}
+.inner{max-width:44rem;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3,h4{font-family:var(--f-display);text-wrap:balance;line-height:1.15}
+a{color:var(--water)}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--water);outline-offset:2px;border-radius:6px}
+b,strong{font-weight:700}
+.muted{color:var(--muted)} .small{font-size:.9rem}
+svg.defs{position:absolute;width:0;height:0;overflow:hidden}
+mark{color:inherit;background:linear-gradient(transparent 38%,var(--marker) 38%,var(--marker) 94%,transparent 94%);-webkit-box-decoration-break:clone;box-decoration-break:clone;padding:0 .12em}
+
+/* Delarnas accenter */
+#del1{--acc:var(--moss);--acc-soft:var(--moss-soft)}
+#del2{--acc:var(--water);--acc-soft:var(--water-soft)}
+#del3{--acc:var(--rust);--acc-soft:var(--rust-soft)}
+#del4{--acc:var(--moss);--acc-soft:var(--moss-soft)}
+#del5{--acc:var(--plum);--acc-soft:var(--plum-soft)}
+#del6{--acc:var(--muted);--acc-soft:var(--stone-soft)}
+#kvallen{--acc:var(--ink);--acc-soft:var(--marker-soft)}
+
+/* Topbar */
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--paper);border-bottom:1px solid var(--line)}
+.topbar .inner{display:flex;flex-direction:column;gap:.5rem;padding-block:.55rem}
+.toprow{display:flex;align-items:center;justify-content:space-between;gap:.75rem}
+.crumbs-sm{display:flex;align-items:center;gap:.35rem}
+.crumbs-sm a{color:inherit;text-decoration:none;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:.15rem .6rem;font-weight:600}
+.crumbs-sm span{color:var(--muted);font-weight:400}
+.brand{color:inherit;text-decoration:none;font-family:var(--f-display);font-weight:700;font-size:.95rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.seg{display:flex;background:var(--stone-soft);border-radius:999px;padding:3px;flex-shrink:0}
+.seg button{border:0;background:transparent;font-family:var(--f-display);font-weight:600;font-size:.95rem;padding:.4rem 1rem;border-radius:999px;cursor:pointer;min-height:36px}
+.seg button[aria-pressed="true"]{background:var(--water);color:var(--on-acc)}
+.partnav{display:flex;gap:.4rem;overflow-x:auto;scrollbar-width:none;padding-bottom:2px;margin-inline:-4px;padding-inline:4px}
+.partnav::-webkit-scrollbar{display:none}
+.partnav a{flex-shrink:0;text-decoration:none;font-family:var(--f-display);font-size:.85rem;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:.25rem .7rem;white-space:nowrap}
+.partnav a b{color:var(--water);margin-right:.3rem;font-variant-numeric:tabular-nums}
+.partnav a.on{background:var(--water);border-color:var(--water);color:var(--on-acc)}
+.partnav a.on b{color:var(--on-acc)}
+
+/* Hero */
+.hero{padding-block:2.25rem 1rem}
+.eyebrow{font-family:var(--f-display);font-weight:700;font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);margin:0}
+.hero .eyebrow{color:var(--water)}
+.hero h1{font-size:clamp(2.1rem,8vw,3.1rem);margin:.4rem 0 .8rem;letter-spacing:-.01em}
+.hero h1 span{display:block;color:var(--moss)}
+.lead{font-size:1.08rem;margin:0 0 1.25rem}
+.howto{list-style:none;padding:0;margin:0 0 1.5rem;display:grid;gap:.5rem;font-size:.95rem}
+.howto li{display:grid;grid-template-columns:1.6rem minmax(0,1fr);gap:.4rem}
+.howto li::before{content:"✓";font-family:var(--f-display);font-weight:700;color:var(--moss)}
+.levels{display:grid;gap:.6rem;margin:0 0 1.75rem}
+@media (min-width:600px){.levels{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.levels div{border:1px solid var(--line);border-radius:12px;padding:.7rem .85rem;background:var(--surface);font-size:.92rem;line-height:1.45}
+.levels .tag,.levels .hand{display:inline-block;margin-bottom:.25rem}
+
+/* Lampräknare */
+.tally{border:1px solid var(--line);border-radius:14px;background:var(--surface);padding:.9rem 1rem;margin:0 0 2rem;display:grid;gap:.6rem}
+.tally h2{font-size:1.1rem;margin:0}
+.tcount{display:flex;flex-wrap:wrap;gap:.4rem .9rem;font-family:var(--f-display);font-size:.95rem;font-variant-numeric:tabular-nums}
+.tcount span{display:inline-flex;align-items:center;gap:.35rem}
+.tcount i{width:.8rem;height:.8rem;border-radius:50%;display:inline-block;border:2px solid}
+.tcount .g i{background:var(--go);border-color:var(--go)} .tcount .y i{background:var(--wait);border-color:var(--wait)} .tcount .r i{background:var(--stop);border-color:var(--stop)} .tcount .o i{border-color:var(--muted)}
+.tbar{display:flex;height:8px;border-radius:4px;overflow:hidden;background:var(--line)}
+.tbar i{display:block;height:100%}
+.tbar .g{background:var(--go)} .tbar .y{background:var(--wait)} .tbar .r{background:var(--stop)}
+.tally .row{display:flex;flex-wrap:wrap;gap:.4rem}
+
+/* Stigen */
+.route-h{font-size:1.25rem;margin:0 0 .25rem}
+.route-sub{margin:0 0 1rem;color:var(--muted);font-size:.95rem}
+.route{list-style:none;margin:0;padding:0;position:relative}
+.route::before{content:"";position:absolute;left:15px;top:16px;bottom:16px;border-left:2px dotted var(--water)}
+.route a{display:grid;grid-template-columns:32px minmax(0,1fr);gap:.85rem;padding:.45rem 0;text-decoration:none;color:var(--ink)}
+.route .dot{width:32px;height:32px;border-radius:50%;background:var(--surface);border:2px solid var(--water);display:grid;place-items:center;font-family:var(--f-display);font-weight:700;color:var(--water);position:relative;font-variant-numeric:tabular-nums}
+.route .q{font-family:var(--f-display);font-weight:600;font-size:1.05rem;line-height:1.3;display:block}
+.route .t{font-size:.88rem;color:var(--muted);display:block;line-height:1.4}
+
+/* Delar */
+.part{scroll-margin-top:7.5rem;padding-top:3.25rem}
+.part-head h2{font-size:clamp(1.75rem,6vw,2.3rem);margin:.35rem 0 .35rem;color:var(--ink)}
+.part-head .sub{font-family:var(--f-display);color:var(--muted);margin:0 0 .6rem;font-size:1rem}
+.facit{display:inline-block;font-family:var(--f-display);font-size:.78rem;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:.1rem .6rem}
+.gk{margin:1.4rem 0 1.25rem}
+.hand{font-family:var(--f-hand);font-weight:600;color:var(--acc);font-size:1.35rem;line-height:1}
+.gk p{font-family:var(--f-display);font-weight:600;font-size:1.22rem;line-height:1.45;margin:.25rem 0 0}
+.intro{margin:1rem 0 0}
+
+.item{display:grid;grid-template-columns:2.9rem minmax(0,1fr);gap:0 .9rem;padding-block:1.4rem;border-top:1px solid var(--line);scroll-margin-top:7.5rem}
+.num{font-family:var(--f-display);text-align:right;color:var(--muted);font-size:.68rem;letter-spacing:.04em;padding-top:.1rem;line-height:1.2}
+.num b{display:block;font-size:1.35rem;color:var(--acc);letter-spacing:0;font-variant-numeric:tabular-nums;margin-bottom:.15rem}
+.body{min-width:0}
+.item h3{font-size:1.3rem;margin:0 0 .55rem}
+.item .sub{font-size:.9rem;color:var(--muted);margin:-.3rem 0 .6rem;font-style:italic}
+.lvl{margin:0 0 .75rem}
+.tag{display:inline-block;font-family:var(--f-display);font-weight:700;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;border-radius:999px;padding:.12rem .55rem;margin-bottom:.35rem;line-height:1.5}
+.tag-e{background:var(--acc);color:var(--on-acc)}
+.tag-h{border:1.5px solid var(--acc);color:var(--acc)}
+.e-svar p,.u-e p{margin:0 0 .5rem}
+.knep{background:var(--marker-soft);border-radius:10px;padding:.6rem .8rem;margin:0 0 .75rem;font-size:.97rem;line-height:1.5}
+.knep .hand{color:var(--ink);margin-right:.25rem;font-size:1.3rem}
+.term .tk .hand,.gk .hand{color:var(--acc)}
+
+details>summary{list-style:none;cursor:pointer}
+details>summary::-webkit-details-marker{display:none}
+.hi>summary,.challenge details>summary{display:inline-flex;align-items:center;gap:.4rem;font-family:var(--f-display);font-weight:600;font-size:.95rem;color:var(--acc);background:var(--acc-soft);border-radius:999px;padding:.45rem .95rem;min-height:40px}
+.hi>summary::before,.challenge details>summary::before{content:"+";font-weight:700}
+.hi[open]>summary::before,.challenge details[open]>summary::before{content:"−"}
+details .when-open{display:none}
+details[open]>summary .when-open{display:inline}
+details[open]>summary .when-closed{display:none}
+.hi[open]>summary,.challenge details[open]>summary{margin-bottom:.85rem}
+.hi-body{border-left:2px solid var(--acc-soft);padding-left:.9rem}
+ol.chain-n{list-style:none;counter-reset:s;padding:0;margin:0 0 .5rem}
+ol.chain-n>li{counter-increment:s;position:relative;padding-left:2rem;margin:0 0 .55rem;font-size:.97rem}
+ol.chain-n>li::before{content:counter(s);position:absolute;left:0;top:.15rem;width:1.35rem;height:1.35rem;border-radius:50%;background:var(--acc);color:var(--on-acc);font-family:var(--f-display);font-weight:700;font-size:.75rem;display:grid;place-items:center}
+
+/* Trafikljus */
+.lights{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem;margin-top:.9rem}
+.lq{font-family:var(--f-display);font-size:.85rem;color:var(--muted);margin-right:.2rem}
+.lights button{display:inline-flex;align-items:center;gap:.35rem;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:.25rem .7rem;font-family:var(--f-display);font-size:.85rem;cursor:pointer;min-height:34px}
+.lights button i{width:.75rem;height:.75rem;border-radius:50%;border:2px solid currentColor;display:inline-block}
+.lights button[data-v="g"] i{color:var(--go)} .lights button[data-v="y"] i{color:var(--wait)} .lights button[data-v="r"] i{color:var(--stop)}
+.lights button[aria-pressed="true"]{border-color:var(--ink);font-weight:700}
+.lights button[aria-pressed="true"] i{background:currentColor}
+[data-light="g"]>.num b::after,[data-light="y"]>.num b::after,[data-light="r"]>.num b::after{content:"";display:block;width:.6rem;height:.6rem;border-radius:50%;margin:.3rem 0 0 auto}
+[data-light="g"]>.num b::after{background:var(--go)} [data-light="y"]>.num b::after{background:var(--wait)} [data-light="r"]>.num b::after{background:var(--stop)}
+body.gom #las [data-card][data-light="g"]{display:none}
+
+/* Rutor och småformat från plugghäftet */
+.box{border-radius:10px;padding:.7rem .9rem;margin:.6rem 0 .4rem;font-size:.93rem}
+.box strong{display:block;font-family:var(--f-display);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.15rem}
+.box p{margin:0}
+.note{background:var(--water-soft)} .note strong{color:var(--water)}
+.formula{display:inline-block;font-family:var(--f-display);font-weight:600;background:var(--surface);border:1.5px solid var(--acc);border-radius:8px;padding:.1rem .55rem;margin:.2rem 0;font-size:.93rem}
+.chips{display:flex;flex-wrap:wrap;align-items:center;gap:.3rem;margin:.45rem 0 .6rem}
+.chip{border:1.5px solid var(--acc);border-radius:8px;padding:.15rem .5rem;background:var(--surface);text-align:center;line-height:1.2;font-family:var(--f-display);font-weight:600;font-size:.88rem}
+.chip small{display:block;font-size:.7rem;color:var(--muted);font-weight:400}
+.arr{color:var(--acc);font-family:var(--f-display);font-weight:700}
+ul.tight,ol.tight{margin:.3rem 0 .4rem;padding-left:1.3rem}
+ul.tight li,ol.tight li{margin-bottom:.35rem}
+.tbl-wrap{overflow-x:auto;margin:.3rem 0 .6rem}
+table{border-collapse:collapse;width:100%;font-size:.9rem}
+table.mini th,table.mini td{text-align:left;padding:.4rem .5rem;border-bottom:1px solid var(--line);vertical-align:top}
+table.mini th{font-family:var(--f-display);font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+table.mini td.sig{font-family:var(--f-display);font-weight:700;color:var(--acc);white-space:nowrap}
+table.pmtable,table.grid4{border-collapse:separate;border-spacing:.35rem;min-width:30rem;margin:-.35rem}
+table.pmtable th,table.grid4 th{font-family:var(--f-display);font-size:.76rem;text-transform:uppercase;letter-spacing:.05em;color:var(--acc);text-align:left;vertical-align:top;padding:.2rem .3rem}
+table.pmtable td,table.grid4 td{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:.5rem .65rem;vertical-align:top;line-height:1.45}
+table.pmtable td:nth-child(2){background:var(--moss-soft);border-color:transparent}
+table.pmtable td:nth-child(3){background:var(--warn-soft);border-color:transparent}
+table.grid4 th small{text-transform:none;letter-spacing:0;color:var(--muted);font-weight:400}
+.model{background:var(--surface);border-left:3px solid var(--acc);border-radius:0 8px 8px 0;padding:.6rem .85rem;margin:.6rem 0 0;font-size:.95rem}
+.keybox{background:var(--acc-soft);border-radius:10px;padding:.65rem .85rem;margin-top:.7rem;font-size:.95rem}
+.aside{font-size:.93rem;background:var(--stone-soft);border-radius:8px;padding:.55rem .8rem;margin:.6rem 0 0}
+.steps5{display:grid;gap:.45rem}
+.steps5>div{border:1px solid var(--line);border-radius:10px;padding:.55rem .8rem;background:var(--surface);font-size:.95rem}
+.steps5>div span{display:block;font-family:var(--f-display);font-weight:700;font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:var(--acc)}
+
+/* Figurer */
+.fig{margin:.5rem 0 1rem;padding:.85rem;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.fig-small{max-width:22rem}
+.fig svg,.fig-kol svg,.fig-mid svg{display:block;width:100%;height:auto;fill:var(--ink)}
+.fig svg text,.figrow svg text{font-family:var(--f-display)}
+.figrow{display:flex;flex-wrap:wrap;gap:.9rem;align-items:center;margin:.4rem 0 .8rem}
+.figrow>*{min-width:0}
+.figrow.top{align-items:flex-start}
+.figrow.top>div:first-child{flex:1 1 15rem}
+.figrow>ol{flex:1 1 13rem}
+.fig-kol,.fig-mid,.fig-wide,.fig-web{flex:1 1 18rem;max-width:28rem;padding:.6rem;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.fig-web,.fig-wide{max-width:32rem;flex-basis:100%}
+.pyr{display:grid;grid-template-columns:minmax(0,1fr) 9.5rem;gap:.8rem;align-items:center}
+@media (max-width:480px){.pyr{grid-template-columns:1fr}}
+.pyr-stack{display:grid;gap:.2rem}
+.slab{width:var(--w);margin-inline:auto;background:var(--water-soft);border-radius:6px;text-align:center;padding:.3rem .3rem;font-family:var(--f-display);font-size:.85rem;line-height:1.25}
+.slab b{display:block} .slab span{color:var(--muted);font-variant-numeric:tabular-nums}
+.slab.prod{background:var(--moss-soft)}
+.pyr-side p{margin:0 0 .5rem;font-family:var(--f-display);font-size:.82rem;line-height:1.35;color:var(--muted)}
+.pyr-side b{display:block;font-size:.95rem}
+.up-r b{color:var(--warn)} .down-g b{color:var(--moss)}
+.tarta{display:grid;gap:.25rem;justify-items:center}
+.lag{border-radius:10px;text-align:center;padding:.45rem .6rem;font-family:var(--f-display);font-size:.82rem;line-height:1.3;color:var(--muted)}
+.lag b{display:block;color:var(--ink);font-size:.95rem}
+.lag.top{width:52%;background:var(--marker-soft);border:1.5px solid var(--marker)}
+.lag.mid{width:76%;background:var(--water-soft)}
+.lag.bot{width:100%;background:var(--moss-soft)}
+
+/* Del 3 */
+.compare{display:grid;gap:.7rem;margin:1rem 0 0}
+.cmp{border-radius:12px;padding:.8rem .95rem}
+.cmp p{margin:0}
+.cmp.e{background:var(--stone-soft)}
+.cmp.h{background:var(--plum-soft);border:1.5px solid var(--plum)}
+.cmp-l{font-family:var(--f-display);font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:.3rem!important}
+.cmp.h .cmp-l{color:var(--plum)}
+.n{display:inline-grid;place-items:center;min-width:1.2rem;height:1.2rem;border-radius:999px;background:var(--plum);color:var(--on-acc);font-family:var(--f-display);font-size:.7rem;font-weight:700;margin:0 .2rem 0 .1rem;vertical-align:.1rem}
+.legend{font-family:var(--f-display);font-size:.82rem;color:var(--muted);margin-top:.5rem!important}
+.h-mid{font-size:1.25rem;margin:2rem 0 .2rem}
+.domino{list-style:none;padding:0;margin:.7rem 0 0;display:grid;gap:.5rem;grid-template-columns:repeat(auto-fit,minmax(7.5rem,1fr))}
+.domino li{border:1.5px solid var(--acc);border-radius:10px;padding:.55rem .6rem;background:var(--surface);text-align:center}
+.domino b{display:block;font-family:var(--f-display);font-size:1.05rem;color:var(--acc);line-height:1.2}
+.domino small{display:block;font-family:var(--f-display);font-size:.78rem;color:var(--muted);line-height:1.3;margin-top:.2rem}
+.two{display:grid;gap:.8rem;margin-top:1.6rem}
+@media (min-width:640px){.two{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.panel{border:1px solid var(--line);border-radius:12px;padding:.85rem 1rem;background:var(--surface)}
+.panel h3{font-size:1.1rem;margin:0 0 .5rem;color:var(--acc)}
+.checks{list-style:none;padding:0;margin:0;display:grid;gap:.3rem;font-size:.95rem}
+.checks li{padding-left:1.6rem;position:relative}
+.checks li::before{content:"";position:absolute;left:0;top:.3rem;width:.95rem;height:.95rem;border:1.5px solid var(--acc);border-radius:3px}
+.signal{display:flex;flex-wrap:wrap;gap:.3rem;margin:0 0 .6rem}
+.signal span{border:1px solid var(--acc);color:var(--acc);border-radius:999px;padding:.05rem .55rem;font-family:var(--f-display);font-size:.85rem}
+.four{display:grid;grid-template-columns:5.5rem repeat(2,minmax(0,1fr));gap:.35rem;margin-top:.7rem;font-family:var(--f-display);font-size:.85rem}
+.four .fl{font-weight:700;color:var(--acc);font-size:.76rem;text-transform:uppercase;letter-spacing:.05em;align-self:end}
+.four .cell{border:1.5px dashed var(--acc);border-radius:8px;padding:.5rem .55rem;min-height:4rem;color:var(--muted)}
+.challenge{border:1.5px dashed var(--acc);border-radius:14px;background:var(--surface);padding:1.1rem .9rem 1.1rem .5rem;margin-block:1.25rem}
+.challenge + .challenge{margin-top:1.25rem}
+.goal{font-size:.88rem;color:var(--muted);margin:0 0 .3rem}
+.goal .hand{font-size:1.15rem;margin-right:.2rem}
+.why{font-family:var(--f-display);font-size:.88rem;color:var(--acc);border-top:1px solid var(--line);padding-top:.55rem;margin:.8rem 0 0}
+
+/* Del 4 */
+.fq-sec{font-size:1.15rem;margin:1.8rem 0 .5rem;color:var(--acc)}
+.fq-list{border-top:1px solid var(--line)}
+.fq{border-bottom:1px solid var(--line);scroll-margin-top:7.5rem}
+.fq>summary{display:grid;grid-template-columns:2.2rem minmax(0,1fr) auto;gap:.6rem;padding:.7rem 0;align-items:baseline}
+.fq>summary::after{content:"Visa";font-family:var(--f-display);font-size:.8rem;color:var(--acc);border:1px solid var(--acc);border-radius:999px;padding:0 .5rem}
+.fq[open]>summary::after{content:"Dölj"}
+.fn{font-family:var(--f-display);font-weight:700;color:var(--acc);text-align:right;font-variant-numeric:tabular-nums}
+.fqq{font-family:var(--f-display);font-weight:600;font-size:1rem;line-height:1.35}
+.star{color:var(--wait)}
+.fa-wrap{padding:0 0 .9rem 2.8rem}
+.fa{margin:0;background:var(--acc-soft);border-radius:10px;padding:.6rem .8rem;font-size:.97rem}
+.fq .lights{margin-top:.55rem}
+
+/* Del 5 */
+.terms{display:grid;gap:.7rem;margin-top:1rem}
+@media (min-width:640px){.terms{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.term{border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:.8rem .9rem;scroll-margin-top:7.5rem}
+.term h3{font-size:1.15rem;margin:0 0 .3rem}
+.term .def{margin:0 0 .35rem;font-size:.95rem;line-height:1.5}
+.term .tk{margin:0;font-family:var(--f-display);font-size:.9rem;color:var(--muted)}
+.term .tk .hand{font-size:1.15rem}
+.term .lights{margin-top:.6rem}
+.term .lq{display:none}
+.term[data-light="g"]{border-color:var(--go)} .term[data-light="y"]{border-color:var(--wait)} .term[data-light="r"]{border-color:var(--stop)}
+
+/* Kvällen före */
+.hooks{display:grid;gap:.5rem;grid-template-columns:repeat(auto-fill,minmax(13rem,1fr));margin-top:1rem}
+.hooks div{border-radius:10px;padding:.6rem .75rem;font-size:.9rem;line-height:1.4;font-family:var(--f-display);color:var(--muted)}
+.hooks b{display:block;color:var(--ink);font-size:.98rem;margin-bottom:.1rem}
+.k-e{background:var(--moss-soft)} .k-h{background:var(--water-soft)}
+.small-d b{font-size:.95rem}
+.nums{display:grid;gap:.5rem;grid-template-columns:repeat(auto-fill,minmax(9.5rem,1fr));margin:.8rem 0 0}
+.nums div{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:.55rem .7rem}
+.nums dt{font-family:var(--f-display);font-weight:700;font-size:1.3rem;line-height:1.1;font-variant-numeric:tabular-nums}
+.nums dd{margin:.15rem 0 0;font-family:var(--f-display);font-size:.82rem;color:var(--muted);line-height:1.35}
+.foot{font-size:.85rem;color:var(--muted);margin:3rem 0 3rem;border-top:1px solid var(--line);padding-top:1rem}
+.pdflink{margin:0 0 1.5rem}
+.pdflink a{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--f-display);font-weight:600;font-size:.98rem;text-decoration:none;color:var(--on-acc);background:var(--water);border-radius:999px;padding:.6rem 1.1rem;min-height:44px}
+
+/* Förhör */
+.quiz{padding-block:1.75rem 4rem}
+.quiz h2{font-size:2rem;margin:0 0 .3rem}
+.qcontrols{display:grid;gap:.6rem;margin:1rem 0 1.1rem}
+.qparts,.qopts{display:flex;flex-wrap:wrap;gap:.35rem}
+.pill{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:.3rem .8rem;font-family:var(--f-display);font-size:.9rem;cursor:pointer;min-height:36px;font-variant-numeric:tabular-nums}
+.pill[aria-pressed="true"]{background:var(--water);border-color:var(--water);color:var(--on-acc)}
+.qprog{display:grid;gap:.35rem;margin-bottom:.9rem;font-family:var(--f-display);font-size:.92rem}
+.card{min-height:16rem;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:1.25rem 1.2rem;display:flex;flex-direction:column;gap:.6rem;cursor:pointer}
+.card .meta{font-family:var(--f-display);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0}
+.card .front{font-family:var(--f-display);font-weight:700;font-size:1.45rem;line-height:1.25;margin:0;text-wrap:balance}
+.card .ask{font-family:var(--f-display);color:var(--water);font-size:.95rem;margin:0}
+.card .back{border-top:1px dashed var(--line);padding-top:.75rem;display:grid;gap:.6rem;font-size:.97rem}
+.card .back>*{margin:0}
+.card .back .fa,.card .back .knep{margin:0}
+.card .hint{margin-top:auto;font-family:var(--f-display);font-size:.85rem;color:var(--muted)}
+.card .goto{font-family:var(--f-display);font-size:.88rem}
+.qactions{display:flex;gap:.5rem;margin-top:.8rem}
+.qactions .btn{flex:1}
+.btn{font-family:var(--f-display);font-weight:600;font-size:1rem;padding:.7rem .6rem;border-radius:12px;border:1.5px solid var(--ink);background:transparent;cursor:pointer;min-height:48px}
+.btn.primary{background:var(--water);border-color:var(--water);color:var(--on-acc)}
+.btn.r{border-color:var(--stop);color:var(--stop)} .btn.y{border-color:var(--wait);color:var(--ink)} .btn.g{background:var(--go);border-color:var(--go);color:var(--on-acc)}
+.linkbtn{background:none;border:0;color:var(--muted);text-decoration:underline;font-family:var(--f-display);font-size:.88rem;cursor:pointer;margin-top:1.5rem;padding:.4rem 0;min-height:36px}
+.card.done{text-align:center;justify-content:center;align-items:center;cursor:default}
+
+@media (max-width:480px){
+  .item{grid-template-columns:2.3rem minmax(0,1fr);gap:0 .6rem}
+  .num b{font-size:1.1rem}
+  .fa-wrap{padding-left:0}
+  .four{grid-template-columns:4.2rem repeat(2,minmax(0,1fr))}
+}
+@media print{
+  .pdflink{display:none!important}
+  .part-head{break-after:avoid}
+  .part-head+.gk{break-before:avoid}
+  .topbar,#forhor,.lights,.tally,.hi>summary,.challenge details>summary,.fq>summary::after{display:none!important}
+  body{background:#fff;color:#000;font-size:11pt}
+  .item,.term,.challenge,.fq{break-inside:avoid}
+  .part{padding-top:1.5rem}
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="inner">
+    <div class="toprow">
+      <nav class="brand crumbs-sm" aria-label="Du är här"><a href="../../">Sarah</a><span aria-hidden="true">›</span><a href="../">Statsskick</a></nav>
+      <div class="seg" role="group" aria-label="Läge">
+        <button type="button" id="tab-las" aria-pressed="true">Läs</button>
+        <button type="button" id="tab-forhor" aria-pressed="false">Förhör</button>
+      </div>
+    </div>
+    <nav class="partnav" id="partnav" aria-label="Delar">
+      <a href="#del1"><b>1</b>Grundlagar</a>
+      <a href="#del2"><b>2</b>Riksdagen</a>
+      <a href="#del3"><b>3</b>Regeringen</a>
+      <a href="#del4"><b>4</b>Kommun, region, du</a>
+      <a href="#del5"><b>5</b>Högre nivå</a>
+      <a href="#del6"><b>6</b>Begrepp</a>
+      <a href="#kvallen"><b>★</b>Kvällen före</a>
+    </nav>
+  </div>
+</header>
+
+<main id="las">
+<div class="inner">
+<section class="hero" id="start">
+  <p class="eyebrow">Samhällskunskap · Sveriges statsskick · <span style="white-space:nowrap">bokens s. 49–81</span></p>
+  <h1>Från röst <span>till lag</span></h1>
+  <p class="lead">Allt du ska kunna inför provet om hur Sverige styrs. Varje fråga på lärarens lista får ett kort svar för E, ett svar i flera steg för högre betyg och ett minnesknep.</p>
+  <p class="pdflink" id="pdflink"><a href="fran-rost-till-lag.pdf" target="_blank" rel="noopener" download><span aria-hidden="true">↓</span> Ladda ner plugghäftet att skriva ut (PDF)</a></p>
+  <ul class="howto">
+    <li>Läs E-svaret och säg det högt med egna ord. Det är grunden du måste kunna.</li>
+    <li>Fäll ut ”Högre nivå” när E sitter. Där förklaras sambanden i flera steg.</li>
+    <li>Tänd en lampa på varje fråga: grön = kan, gul = osäker, röd = kan inte än. Plugga rött först.</li>
+    <li>Testa dig i Förhör. Lamporna följer med, och kort som lyser grönt försvinner ur högen.</li>
+    <li>Kvällen före provet: läs sista delen. Hela provet får plats på en sida.</li>
+  </ul>
+  <div class="levels">
+    <div><span class="tag tag-e" style="--acc:var(--moss)">E-nivå · grunden</span><br>Det du <b>måste</b> kunna. Kort och exakt, med de viktigaste orden markerade.</div>
+    <div><span class="tag tag-h" style="--acc:var(--plum)">Högre nivå · samband</span><br>Samma sak i <b>flera steg</b>: orsak, följd och nästa följd.</div>
+    <div><span class="hand" style="--acc:var(--ink)">Minnesknep</span><br>En bild eller ramsa som får det att fastna. Ju fånigare, desto bättre.</div>
+  </div>
+  <div class="tally" aria-live="polite">
+    <h2>Dina lampor</h2>
+    <div class="tcount" id="tcount"></div>
+    <div class="tbar" id="tbar"></div>
+    <div class="row">
+      <button type="button" class="pill" id="gom" aria-pressed="false">Göm det som lyser grönt</button>
+      <button type="button" class="pill" id="allhi" aria-pressed="false">Fäll ut alla svar på högre nivå</button>
+    </div>
+    <p class="muted small" style="margin:0">Lamporna sparas bara i den här webbläsaren.</p>
+  </div>
+
+  <h2 class="route-h">Vägen genom provet</h2>
+  <p class="route-sub">Sex delar och en sista kväll. Ta dem i ordning.</p>
+  <ol class="route">
+    <li><a href="#del1"><span class="dot">1</span><span><span class="q">Vilka är spelreglerna?</span><span class="t">Fyra grundlagar, hur de ändras och vad statschefen gör</span></span></a></li>
+    <li><a href="#del2"><span class="dot">2</span><span><span class="q">Vem stiftar lagarna?</span><span class="t">Riksdagen, utskotten, partilinjen och oppositionen</span></span></a></li>
+    <li><a href="#del3"><span class="dot">3</span><span><span class="q">Vem genomför dem?</span><span class="t">Regeringen, statsministern, regeringsbildning och myndigheterna</span></span></a></li>
+    <li><a href="#del4"><span class="dot">4</span><span><span class="q">Vad gör kommunen, regionen och jag?</span><span class="t">Närmast dig i vardagen, och hur du kan påverka</span></span></a></li>
+    <li><a href="#del5"><span class="dot">5</span><span><span class="q">Hur skriver jag för högre betyg?</span><span class="t">Fem frågor med modellsvar: lagens väg, utskott, parlamentarism, riksdag och regering, skydd för demokratin</span></span></a></li>
+    <li><a href="#del6"><span class="dot">6</span><span><span class="q">Kan jag orden?</span><span class="t">44 begrepp med minnesknep</span></span></a></li>
+    <li><a href="#kvallen"><span class="dot">★</span><span><span class="q">Kvällen före provet</span><span class="t">Allt på en sida</span></span></a></li>
+  </ol>
+</section>
+
+<section class="part" id="del1">
+  <div class="part-head"><p class="eyebrow">Del 1</p><h2>Grundlagar och statschef</h2><p class="sub">Vilka är spelreglerna?</p><span class="facit">Lärarens frågor 1–5 · boken s. 49–51</span></div>
+<div class="gk"><span class="hand">Knepet för hela delen</span><p><mark>Spelreglerna står i fyra grundlagar. De är svåra att ändra med flit.</mark></p></div>
+
+
+<article class="item" id="F1" data-card data-group="grund" data-front="Vilka är Sveriges fyra grundlagar?" data-code="F1">
+  <div class="num"><b>F1</b>s.&nbsp;49–50</div>
+  <div class="body">
+    <h3>Vilka är Sveriges fyra grundlagar?</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back>De fyra <b>grundlagarna</b> är <b>Regeringsformen</b> (RF), <b>Successionsordningen</b> (SO), <b>Tryckfrihetsförordningen</b> (TF) och <b>Yttrandefrihetsgrundlagen</b> (YGL). Tillsammans är de Sveriges <mark>konstitution</mark> (författning).</div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> <b>Regera – Ärva – Trycka – Yttra.</b> RF = <i>regera</i> landet. SO = <i>ärva</i> kronan. TF = <i>trycka</i> text. YGL = <i>yttra</i> sig i radio, tv och på nätet. Regeringsformen är viktigast av de fyra.</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary><div class="hi-body"><ol class="chain-n"><li>En <b>grundlag</b> (konstitution, författning) är regelverket för <b>hur landet styrs</b>: vem som får besluta om vad, och vilka <b>fri- och rättigheter</b> medborgarna har.</li><li>Grundlagen fördelar makten mellan de fyra <b>statsorganen</b>: <b>statschef, parlament, regering och domstolar</b>.</li><li>De flesta länder har skrivna grundlagar. <b>Storbritannien</b> är ett undantag: där bygger konstitutionen på praxis (sedvana) och historiska dokument som Magna Charta från 1215.</li></ol></div></details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item" id="F2" data-card data-group="grund" data-front="Vad handlar varje grundlag om?" data-code="F2">
+  <div class="num"><b>F2</b>s.&nbsp;50, bild</div>
+  <div class="body">
+    <h3>Vad handlar varje grundlag om?</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back><div class="tbl-wrap"><table class="mini">
+<tr><td class="sig">RF<br><small>1974/75</small></td><td><b>Regeringsformen</b>: reglerna för <mark>hur Sverige styrs</mark>. Vem som har rätt att fatta beslut, och om vad. Här står också medborgarnas fri- och rättigheter.</td></tr>
+<tr><td class="sig">SO<br><small>1810</small></td><td><b>Successionsordningen</b>: <mark>tronföljden</mark>. Vem som ärver kronan och blir statschef. Sedan 1980 kan även kvinnor ärva tronen.</td></tr>
+<tr><td class="sig">TF<br><small>1766</small></td><td><b>Tryckfrihetsförordningen</b>: rätten att sprida information i <mark>tryckt form</mark>. Innehåller också <b>offentlighetsprincipen</b>. Sverige var först i världen med tryckfrihet i grundlagen.</td></tr>
+<tr><td class="sig">YGL<br><small>1992</small></td><td><b>Yttrandefrihetsgrundlagen</b>: som TF, men för <mark>andra medier</mark> än tryckta: radio, tv och internet.</td></tr>
+</table></div></div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> <b>TF = Tryckt, YGL = Ytterligare medier.</b> Äldst är TF (1766), den var först i världen. Yngst är YGL. Kronan i mitten (SO) är den enda som handlar om släkt.</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary><div class="hi-body"><ol class="chain-n"><li><b>Offentlighetsprincipen</b> (TF): du har rätt att begära ut <b>nästan alla handlingar</b> hos myndigheterna. Dessutom ger <b>meddelarfriheten</b> rätt att lämna information till media.</li><li>Friheten har gränser, den gäller <b>under ansvar inför lagen</b>: man får inte <b>förtala</b> eller sprida lögner om enskilda, inte hetsa mot en folkgrupp och inte avslöja sådant som kan <b>äventyra rikets säkerhet</b>.</li><li>RF skyddar också <b>allmän och lika rösträtt</b> samt yttrande-, informations-, mötes-, demonstrations-, förenings- och religionsfrihet.</li></ol></div></details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item" id="F3" data-card data-group="grund" data-front="Hur ändrar man en grundlag?" data-code="F3">
+  <div class="num"><b>F3</b>s.&nbsp;50, bild</div>
+  <div class="body">
+    <h3>Hur ändrar man en grundlag?</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back>Riksdagen måste fatta <mark>samma beslut två gånger</mark>, med ett <mark>val emellan</mark>. Första beslutet kräver en majoritet (fler än hälften). Ärendet <b>vilandeförklaras</b> tills efter nästa riksdagsval. Sedan måste den <b>nyvalda riksdagen</b> fatta <b>samma beslut igen</b>.</div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> <b>Två lås och ett val.</b> Lås 1: riksdagen röstar ja. Valet: folket får säga sitt. Lås 2: den nya riksdagen röstar ja igen. Bara då öppnas dörren.</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary><div class="hi-body"><ol class="chain-n"><li>Riksdagen fattar ett <b>första beslut</b> om ändringen.</li><li>Ärendet <b>vilandeförklaras</b> (läggs på is) till efter nästa <b>riksdagsval</b>.</li><li>I valet kan <b>väljarna reagera</b>. Partierna måste berätta var de står i frågan.</li><li>Den <b>nyvalda riksdagen</b> måste fatta <b>exakt samma beslut</b>. Säger den nej, blir det ingen ändring.</li></ol></div></details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item" id="F4" data-card data-group="grund" data-front="Varför är grundlagarna svårare att ändra än vanliga lagar?" data-code="F4">
+  <div class="num"><b>F4</b>s.&nbsp;49</div>
+  <div class="body">
+    <h3>Varför är grundlagarna svårare att ändra än vanliga lagar?</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back>Grundlagarna innehåller <b>själva villkoren för demokrati</b>: allmän och lika rösträtt, fri- och rättigheter och hur makten fördelas. De ska <mark>inte kunna avskaffas genom ett snabbt beslut</mark>. En vanlig lag kräver bara <b>ett</b> riksdagsbeslut.</div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> <b>Grundlag = husets fundament. Vanlig lag = en möbel.</b> Möbler flyttar du på en eftermiddag. Fundamentet ändrar du bara om du verkligen har tänkt efter, flera gånger.</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary><div class="hi-body"><ol class="chain-n"><li><b>Vanlig lag:</b> ett beslut av riksdagen med majoritet.</li><li><b>Grundlag:</b> två beslut, med ett val emellan (se F3).</li><li>Det ger <b>tid att tänka efter</b> och gör att väljarna kan säga sitt. Hela resonemanget om skyddet för demokratin hittar du i <b>F20</b>.</li></ol></div></details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item" id="F5" data-card data-group="grund" data-front="Vilka uppgifter har statschefen?" data-code="F5">
+  <div class="num"><b>F5</b>s.&nbsp;50–51, bild</div>
+  <div class="body">
+    <h3>Vilka uppgifter har statschefen?</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back>Statschefen är Sveriges <b>kung eller drottning</b> (monark). Uppgifterna är bara <mark>representativa</mark>: att vara en <b>symbol</b> för Sverige. Det betyder <b>statsbesök</b>, att vara <b>värd för utländska statschefer</b> som kommer hit, och att <b>öppna riksmötet</b>. Statschefen har <b>ingen politisk makt</b>.</div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> <b>Statschefen är landets ansikte, inte dess hjärna.</b> Statschefen = lagets maskot. Det är <b>statsministern</b> som är lagkapten (se F11).</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary><div class="hi-body"><ol class="chain-n"><li>Sverige är en <b>konstitutionell monarki</b>: monarkens makt <b>begränsas av grundlagarna</b>. I praktiken hade kungen förlorat sin makt redan 1917, och i <b>1974 års regeringsform</b> togs även de formella befogenheterna bort.</li><li>Statschefen <b>väljs inte</b> utan <b>ärvs</b> (SO). I en <b>republik</b> väljs statschefen, ofta som <b>president</b>, och en president kan ha mycket makt (t.ex. som regeringschef).</li><li>Monarkier med <b>oinskränkt makt</b> (Saudiarabien, Brunei) räknas <b>inte som demokratier</b>. Därför går det bra att kombinera demokrati med en <b>konstitutionell</b> monarki.</li></ol><div class="box note"><strong>Boken</strong><p>Monarkens enda politiska uppgifter är att öppna riksdagen varje år och att vara ordförande i riksdagens <b>utrikesnämnd</b>. Nuvarande statschef är kung Carl XVI Gustaf (på tronen sedan 1973).</p></div></div></details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+</section>
+<section class="part" id="del2">
+  <div class="part-head"><p class="eyebrow">Del 2</p><h2>Riksdagen</h2><p class="sub">Vem stiftar lagarna?</p><span class="facit">Lärarens frågor 6–9 · boken s. 63–69</span></div>
+<div class="gk"><span class="hand">Knepet för hela delen</span><p><mark>Riksdagen skriver lagarna, håller i plånboken och kollar att regeringen sköter sig.</mark></p></div>
+
+
+<article class="item" id="F6" data-card data-group="riks" data-front="Vilka uppgifter har riksdagen?" data-code="F6">
+  <div class="num"><b>F6</b>s.&nbsp;63–64, bild</div>
+  <div class="body">
+    <h3>Vilka uppgifter har riksdagen?</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back>Riksdagen har tre huvuduppgifter: <b>lagstiftningsmakt</b> (stifta lagar), <b>finansmakt</b> (besluta om statens budget varje år) och <b>kontrollmakt</b> (granska regeringen och förvaltningen). Riksdagen <b>utser också statsminister</b>.</div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> <b>Lagar – Pengar – Koll.</b> Riksdagen är Sveriges <b>styrelse</b>: den skriver spelreglerna, håller i kassan och kollar att verkställande direktören (regeringen) sköter sig.</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary><div class="hi-body"><ol class="chain-n"><li><b>Kontroll av regeringen:</b> <b>konstitutionsutskottet (KU)</b> granskar att regeringens beslut följer grundlagarna. Ledamöterna kan ställa frågor vid <b>frågestund</b> eller skriva längre <b>interpellationer</b>.</li><li><b>Misstroendeförklaring:</b> om riksdagen inte gillar politiken kan den säga att den saknar förtroende. Gäller det ett statsråd måste hen avgå. Gäller det <b>statsministern</b>, avgår <b>hela regeringen</b>.</li><li><b>Kontroll av förvaltningen:</b> <b>Riksrevisionen</b> granskar hur myndigheterna använder skattepengarna. Fyra <b>justitieombudsmän (JO)</b> ser till att myndigheterna följer lagar och förordningar.</li><li>Riksdagen är <b>enkammarsystem</b> med <b>349 ledamöter</b> som väljs vart fjärde år. Den har den <b>högsta politiska makten</b> i Sverige.</li></ol><dl class="nums"><div><dt>349</dt><dd>ledamöter, ett udda tal så att det inte blir lika</dd></div><div><dt>4 år</dt><dd>mellan riksdagsvalen</dd></div></dl></div></details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item" id="F7" data-card data-group="riks" data-front="Varför har riksdagen delat in arbetet i utskott?" data-code="F7">
+  <div class="num"><b>F7</b>s.&nbsp;68, bild</div>
+  <div class="body">
+    <h3>Varför har riksdagen delat in arbetet i utskott?</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back>349 ledamöter kan inte sitta tillsammans och diskutera <b>allt</b>. Därför delas arbetet upp i ca <b>15 utskott</b> med <b>17 ledamöter</b> var, efter <b>sakområde</b> (t.ex. finans, utrikes, utbildning). Alla förslag måste <mark>beredas i ett utskott</mark> innan riksdagen beslutar. Utskottet skriver ett <b>betänkande</b> med sin rekommendation.</div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> <b>Utskott = grupparbete.</b> Klassen delar upp uppgiften, varje grupp blir expert på sin del, och sedan säger gruppen till resten vad den kommit fram till.</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary><div class="hi-body"><ol class="chain-n"><li>Förslagen kommer från <b>regeringen</b> (<b>proposition</b>) eller från riksdagsledamöter (<b>motion</b>). Båda skickas till rätt utskott.</li><li>Ledamöterna i utskottet är sina <b>partiers experter</b> på området. De samlar fakta och kan be om hjälp från myndigheter och experter, eller begära en <b>utredning</b> och <b>remiss</b>.</li><li>Ledamöter som inte håller med majoriteten kan skriva en <b>reservation</b> i betänkandet.</li><li>Först efter betänkandet <b>debatterar och röstar</b> kammaren. Varför det oftast blir lag förklaras i <b>F17</b>.</li></ol></div></details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item" id="F8" data-card data-group="riks" data-front="Vad innebär det att partilinjen är hård i riksdagen?" data-code="F8">
+  <div class="num"><b>F8</b>s.&nbsp;81, bild</div>
+  <div class="body">
+    <h3>Vad innebär det att partilinjen är hård i riksdagen?</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back>Att <mark>partilinjen är hård</mark> betyder att riksdagsledamöterna nästan alltid <b>röstar som deras parti har bestämt</b>, även om de själva tycker något annat. Partigruppen bestämmer hur partiet ställer sig i varje fråga.</div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> <b>Laget går före spelaren.</b> I fotboll följer alla lagets taktik. Den som springer på egen hand förstör för laget.</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary><div class="hi-body"><ol class="chain-n"><li>Varje ledamot sätter sig in i frågan och <b>diskuterar med det egna partiet</b>. Sedan <b>bestämmer partigruppen</b> hur partiet ska rösta.</li><li><b>Fördelar:</b> väljarna vet vad de får när de röstar på ett parti (vi röstar främst på <b>partier</b>, partival), och regeringen kan räkna med stödet.</li><li><b>Nackdelar:</b> ledamöterna riskerar att bli <b>knapptryckare</b>, och det blir mindre plats för egna åsikter.</li><li>Det är en viktig anledning till att <b>utskottens förslag oftast blir lag</b> (F17).</li></ol></div></details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item" id="F9" data-card data-group="riks" data-front="Vad betyder det att vara i opposition?" data-code="F9">
+  <div class="num"><b>F9</b>bild</div>
+  <div class="body">
+    <h3>Vad betyder det att vara i opposition?</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back>Att vara i <mark>opposition</mark> betyder att ett parti <b>inte är med i regeringen</b>. Oppositionen <b>granskar och kritiserar</b> regeringen, lägger <b>egna förslag</b> (motioner) och skriver <b>reservationer</b> när den är emot.</div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> <b>Regeringen har bollen. Oppositionen är motståndarlaget</b> som försöker ta den, senast i nästa val.</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary><div class="hi-body"><ol class="chain-n"><li>Oppositionen använder riksdagens kontrollverktyg: <b>frågestund, interpellation, KU</b> och i sista hand <b>misstroendeförklaring</b>.</li><li>Genom <b>reservationer</b> kan väljare och medier se <b>vilka partier som var emot</b> och vad de ville göra i stället.</li><li>I en demokrati behövs oppositionen: <b>väljarna får ett alternativ</b>, och makten kan <b>bytas ut i valet</b>.</li></ol></div></details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item" id="B1" data-card data-group="riks" data-front="Bonus: hur väljs riksdagen?" data-code="B1">
+  <div class="num"><b>B1</b>bild, s.&nbsp;60–61</div>
+  <div class="body">
+    <h3>Bonus: hur väljs riksdagen?</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back>Sverige har <b>proportionellt valsystem</b>: ett parti med 30 % av rösterna får ca 30 % av platserna. För att komma in krävs <b>4 % av rösterna i hela landet</b> (<mark>spärregeln</mark>), eller <b>12 % i en valkrets</b>.</div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> <b>Riksdagen är en spegel av folket.</b> Röstandelen = platserna. Spärren är dörrvakten som stoppar de allra minsta.</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary><div class="hi-body"><ol class="chain-n"><li>Landet är indelat i <b>29 valkretsar</b>. Först fördelas <b>310 fasta mandat</b>, sedan <b>39 utjämningsmandat</b> för att göra det rättvist.</li><li>Alternativet är <b>majoritetsval</b> (USA, Storbritannien): bara den som vinner valkretsen får platsen, vilket ofta ger <b>två dominerande partier</b>.</li><li>Spärren finns så att riksdagen inte splittras i för många små partier som gör det svårt att fatta beslut.</li></ol><div class="box note"><strong>Obs</strong><p>Det här står inte på lärarens lista för provet. Läs det om du har tid över.</p></div></div></details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+</section>
+<section class="part" id="del3">
+  <div class="part-head"><p class="eyebrow">Del 3</p><h2>Regeringen</h2><p class="sub">Vem genomför besluten?</p><span class="facit">Lärarens frågor 10–12 · boken s. 65–67, 72–73</span></div>
+<div class="gk"><span class="hand">Knepet för hela delen</span><p><mark>Riksdagen bestämmer. Regeringen gör.</mark></p></div>
+
+
+<article class="item" id="F10" data-card data-group="reg" data-front="Vilka uppgifter har regeringen?" data-code="F10">
+  <div class="num"><b>F10</b>s.&nbsp;65–66, bild</div>
+  <div class="body">
+    <h3>Vilka uppgifter har regeringen?</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back>Regeringen <b>styr Sverige</b> och <mark>verkställer</mark> riksdagens beslut. Den <b>föreslår nya lagar</b> (propositioner) och <b>statens budget</b>, <b>genomför riksdagens beslut</b>, är högsta chef för den <b>statliga förvaltningen</b>, ansvarar tillsammans med riksdagen för <b>utrikespolitiken</b> och leder <b>försvarsmakten</b>.</div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> <b>Riksdagen BESTÄMMER. Regeringen GÖR.</b> Riksdagen är styrelsen, regeringen är vd:n. Regeringen kallas <i>verkställande makten</i>.</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary><div class="hi-body"><ol class="chain-n"><li><b>Planera:</b> regeringen gör prognoser och tillsätter utredningar. Där ingår att ge riksdagen förslag (<b>propositioner</b>).</li><li><b>Besluta:</b> vid <b>regeringssammanträden</b> (oftast torsdagar) bestämmer regeringen detaljerna om hur lagarna ska tillämpas, i <b>förordningar</b>. De flesta ärenden avgörs i praktiken i <b>departementen</b>.</li><li><b>Verkställa:</b> det sker genom att leda <b>statsförvaltningen</b>, myndigheterna. Regeringen får <b>inte</b> styra hur en myndighet beslutar i ett enskilt ärende (<b>ministerstyre</b> är förbjudet).</li><li>Regeringen delar upp arbetet: <b>riksdagen</b> fattar de övergripande besluten, regeringen bestämmer <b>mer i detalj</b> hur de ska genomföras. Av de över 30 000 besluten per år går det inte att göra annat.</li></ol></div></details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item" id="F11" data-card data-group="reg" data-front="Vem är chef för regeringen?" data-code="F11">
+  <div class="num"><b>F11</b>s.&nbsp;65–66</div>
+  <div class="body">
+    <h3>Vem är chef för regeringen?</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back><b>Statsministern</b> (i andra länder ofta premiärminister) är <mark>regeringschef</mark> och leder regeringens arbete. Statsministern <b>utser själv</b> de andra ministrarna.</div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> <b>Statsministern är lagkaptenen. Kungen är lagets maskot.</b> Det är alltså <i>inte</i> kungen som är chef för regeringen.</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary><div class="hi-body"><ol class="chain-n"><li>Ministrarna kallas <b>statsråd</b>. De får olika <b>ansvarsområden</b>: utbildningsministern tar hand om skolan, finansministern om statens ekonomi, utrikesministern om utrikespolitiken.</li><li>Varje minister har ett <b>departement</b> med <b>tjänstemän</b> som ger råd, skriver tal och förbereder ärendena.</li></ol><div class="box note"><strong>Kolla själv</strong><p>Namnen byts efter varje val. Ta reda på vem som är <b>statsminister</b> och <b>talman</b> just nu. Provet kan fråga.</p></div></div></details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item" id="F12" data-card data-group="reg" data-front="Hur utses statsråden i regeringen?" data-code="F12">
+  <div class="num"><b>F12</b>s.&nbsp;66, bild</div>
+  <div class="body">
+    <h3>Hur utses statsråden i regeringen?</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back><b>1.</b> Efter valet samtalar <b>talmannen</b> med partiledarna. <b>2.</b> Talmannen <b>föreslår en statsminister</b>. <b>3.</b> Riksdagen röstar: statsministern är vald om <mark>inte en majoritet säger nej</mark>. <b>4.</b> Statsministern <b>utser själv</b> statsråden (ca 20–25).</div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> <b>Talmannen föreslår, riksdagen säger inte nej, statsministern väljer sitt lag.</b></p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary><div class="hi-body"><ol class="chain-n"><li>Det är <b>valresultatet</b> som avgör vilken regering vi får.</li><li>Förkastas talmannens förslag, kan han eller hon <b>föreslå någon annan</b>. Efter <b>fyra nej</b> i rad blir det <b>nyval</b>.</li><li>Ministrarna behöver <b>inte godkännas av riksdagen</b>, men regeringen måste hela tiden ha riksdagens förtroende (<b>parlamentarism</b>, F18).</li></ol></div></details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item" id="T1" data-card data-group="reg" data-front="Extra: olika sorters regeringar" data-code="T1">
+  <div class="num"><b>T1</b>s.&nbsp;67, bild</div>
+  <div class="body">
+    <h3>Extra: olika sorters regeringar</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back><div class="tbl-wrap"><table class="mini">
+<tr><td class="sig">Majoritet</td><td><b>Majoritetsregering</b>: regeringen har <mark>över hälften av platserna</mark> i riksdagen. Den blir <b>stark</b> och kan föra sin egen politik.</td></tr>
+<tr><td class="sig">Minoritet</td><td><b>Minoritetsregering</b>: regeringen har <mark>mindre än hälften</mark> och måste få stöd av andra partier. Den blir ofta <b>svag</b>.</td></tr>
+<tr><td class="sig">Koalition</td><td><b>Koalitionsregering</b>: <mark>flera partier</mark> delar på ministerposterna. (Ett parti ensamt = enpartiregering.)</td></tr>
+<tr><td class="sig">Samling</td><td><b>Samlingsregering</b>: ministrar från <mark>alla partier</mark>, i krig och kriser. Sverige hade en under andra världskriget.</td></tr>
+<tr><td class="sig">Övergång</td><td><b>Övergångsregering</b>: sköter det löpande <mark>medan en ny regering bildas</mark>.</td></tr>
+</table></div></div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> <b>Majoritet = Mäktig. Minoritet = Måste be om hjälp.</b> Koalition = delad kaka. Samling = alla med, när det är krig.</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary><div class="hi-body"><ol class="chain-n"><li>Typerna kan <b>kombineras</b>: en koalition kan vara majoritets- eller minoritetsregering, och likadant med en enpartiregering.</li><li>En <b>stark regering</b> med stort stöd kan själv utforma politiken. En <b>svag regering</b> måste söka stöd hos andra partier, och då <b>flyttas makten mot riksdagen</b>.</li></ol></div></details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item" id="T2" data-card data-group="reg" data-front="Extra: statsförvaltningen, regeringens armar och ben" data-code="T2">
+  <div class="num"><b>T2</b>s.&nbsp;72–73, bild</div>
+  <div class="body">
+    <h3>Extra: statsförvaltningen, regeringens armar och ben</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back><b>Statsförvaltningen</b> (myndigheterna) ser till att besluten från riksdag och regering <b>genomförs</b>. Den finns på tre nivåer: <b>central</b> (t.ex. Skolverket, Försäkringskassan, Socialstyrelsen), <b>regional</b> (länsstyrelsen) och <b>lokal</b> (t.ex. polisen, Arbetsförmedlingen, skattekontor).</div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> <b>Regeringen är hjärnan. Myndigheterna är armar och ben.</b> Hjärnan får inte styra varje fingerrörelse (ministerstyre är förbjudet).</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary><div class="hi-body"><ol class="chain-n"><li>Regeringen styr myndigheterna genom <b>lagar, förordningar och pengar</b> och genom att utse de högsta cheferna.</li><li>Myndigheterna <b>styr</b> (Skolverket ger föreskrifter), <b>utövar myndighet</b> (polisen, Försäkringskassan) och <b>ger service</b> (Arbetsförmedlingen, SMHI).</li><li>Det mesta av den lokala förvaltningen sköts av <b>kommunerna</b>, inte av staten.</li></ol></div></details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+</section>
+<section class="part" id="del4">
+  <div class="part-head"><p class="eyebrow">Del 4</p><h2>Kommun, region och du</h2><p class="sub">Vad gör kommunen och regionen, och hur påverkar jag?</p><span class="facit">Lärarens frågor 13–15 · boken s. 74–77</span></div>
+<div class="gk"><span class="hand">Knepet för hela delen</span><p><mark>Kommunen är vardagen. Regionen är doktorn och bussen. Du kan påverka mer än du tror.</mark></p></div>
+
+
+<article class="item" id="F13" data-card data-group="lokal" data-front="Vilka uppgifter har kommunerna?" data-code="F13">
+  <div class="num"><b>F13</b>s.&nbsp;74–76, bild</div>
+  <div class="body">
+    <h3>Vilka uppgifter har kommunerna?</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back>Sverige har ca <b>290 kommuner</b> med <mark>kommunalt självstyre</mark>: de bestämmer själva över nästan allt utom <b>försvar och utrikespolitik</b>. De <b>måste</b> sköta bl.a. <b>skola, förskola, äldreomsorg, socialtjänst, vatten och avlopp samt renhållning</b>. De <b>får</b> även sköta fritid, kultur, bibliotek, simhall och ishall.</div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> <b>Kommunen är vardagen nära dig</b>: förskolan, skolan, äldreomsorgen, vattnet och soporna. Och den är <b>Sverige i miniformat</b>, med riksdag, regering och utskott i liten skala.</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary><div class="hi-body"><ol class="chain-n"><li><b>Styrning:</b> <b>kommunfullmäktige</b> är kommunens ”riksdag”, <b>kommunstyrelsen</b> dess ”regering” (verkställer besluten) och <b>nämnderna</b> dess ”utskott” där frågorna förbereds.</li><li><b>Pengar:</b> kommunalskatt (ca 19 % av din inkomst enligt boken), <b>statsbidrag</b>, avgifter samt lån och ränteinkomster. Ca 80 % går till sådant kommunen <b>måste</b> göra.</li><li><b>Politiker och tjänstemän:</b> politikerna är mest <b>fritidspolitiker</b>. Kommunens anställda <b>tjänstemän</b> i förvaltningar (t.ex. utbildnings- och socialförvaltning) förbereder och genomför besluten.</li><li><b>Staten utjämnar:</b> rika och fattiga kommuner får olika stora statsbidrag så att skillnaderna inte blir för stora.</li></ol></div></details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item" id="F14" data-card data-group="lokal" data-front="Vilka uppgifter har regionerna?" data-code="F14">
+  <div class="num"><b>F14</b>s.&nbsp;76–77, bild</div>
+  <div class="body">
+    <h3>Vilka uppgifter har regionerna?</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back>Regionerna sköter <mark>hälso- och sjukvård samt tandvård</mark> (ca 85 % av pengarna går dit). Dessutom <b>kollektivtrafik</b>, regional utveckling, stöd till näringsliv, forskning och kultur, samt viss gymnasieutbildning (musik och naturbruk).</div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> <b>Regionen = doktorn och bussen.</b> Sjukvården och kollektivtrafiken är de stora jobben.</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary><div class="hi-body"><ol class="chain-n"><li>Vissa uppgifter, främst <b>sjukvården</b> som är dyr, klarar inte en enskild kommun. Därför finns <b>regioner</b> som täcker större områden.</li><li>Regionerna får pengar från <b>regionskatt</b>, statsbidrag och avgifter, och styrs på samma sätt som kommuner: <b>regionfullmäktige</b> (”riksdag”) beslutar, <b>regionstyrelsen</b> (”regering”) förverkligar och <b>nämnder</b> (t.ex. hälso- och sjukvårdsnämnd) arbetar med sakfrågor.</li><li>Regionen leds av heltidsanställda politiker, <b>regionråd</b>. Invånarna röstar fram dem i valet.</li></ol><div class="box note"><strong>Antal</strong><p>Boken skriver både 20 och 21 regioner. Länen är 21, och regionerna följer ungefär samma gränser som länen.</p></div></div></details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item" id="T3" data-card data-group="lokal" data-front="Extra: samma modell på tre nivåer" data-code="T3">
+  <div class="num"><b>T3</b>s.&nbsp;75, bild</div>
+  <div class="body">
+    <h3>Extra: samma modell på tre nivåer</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back><div class="tbl-wrap"><table class="mini">
+<tr><th></th><th>Staten</th><th>Kommunen</th><th>Regionen</th></tr>
+<tr><td class="sig">Beslutar</td><td>Riksdagen</td><td>Kommun&shy;fullmäktige</td><td>Region&shy;fullmäktige</td></tr>
+<tr><td class="sig">Verkställer</td><td>Regeringen</td><td>Kommun&shy;styrelsen</td><td>Region&shy;styrelsen</td></tr>
+<tr><td class="sig">Bereder</td><td>Utskotten</td><td>Nämnderna</td><td>Nämnderna</td></tr>
+<tr><td class="sig">Hjälp</td><td>Departement, myndigheter</td><td>Förvaltningar</td><td>Förvaltningar</td></tr>
+</table></div></div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> <b>Samma recept, tre storlekar.</b> Lär dig modellen en gång, så kan du den tre gånger.</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary><div class="hi-body"><ol class="chain-n"><li>Alla tre har en <b>beslutande församling</b> som väljs av folket och en <b>verkställande</b> del som genomför besluten.</li><li>Valen till riksdag, region och kommun hålls <b>samtidigt vart fjärde år</b>. Utländska medborgare som bott i Sverige i minst tre år får rösta till kommun och region.</li></ol></div></details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item" id="T4" data-card data-group="lokal" data-front="Extra: länsstyrelsen är inte samma sak som regionen" data-code="T4">
+  <div class="num"><b>T4</b>s.&nbsp;73, bild</div>
+  <div class="body">
+    <h3>Extra: länsstyrelsen är inte samma sak som regionen</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back><b>Länsstyrelsen</b> är en <mark>statlig</mark> myndighet i varje län och <b>lyder under regeringen</b>. Chefen heter <b>landshövding</b>. Den ska se till att nationella mål följs i länet, och sköter bl.a. djurskydd, kommunikationer, fiske, jämställdhet samt räddningstjänst och civilförsvar.</div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> <b>Länsstyrelse = utsänd uppifrån</b> (statens förlängda arm). <b>Region = vald underifrån</b> av invånarna.</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary><div class="hi-body"><ol class="chain-n"><li>Länet styrs ”<b>uppifrån</b>” av staten. Regionen styrs ”<b>underifrån</b>” av politiker som invånarna valt.</li><li>Länsstyrelsen ska också ta tillvara <b>länets intressen</b> gentemot staten.</li></ol></div></details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item" id="F15" data-card data-group="lokal" data-front="Ge exempel på olika sätt att påverka politiska beslut." data-code="F15">
+  <div class="num"><b>F15</b>s.&nbsp;62, 68, 81</div>
+  <div class="body">
+    <h3>Ge exempel på olika sätt att påverka politiska beslut.</h3>
+    <div class="lvl"><span class="tag tag-e">E-nivå · grunden</span><div class="e-svar" data-back><b>Rösta</b> i val · <b>gå med</b> i ett parti eller en förening · <b>skriva</b> insändare · <b>skriva under</b> en namninsamling · <b>demonstrera</b> · <b>kontakta</b> politiker (mejl eller telefon) · <b>opinionsbilda</b> i media och sociala medier.</div></div>
+    <p class="knep" data-back><span class="hand">Minnesknep</span> <b>ROST</b>: <b>R</b>östa, <b>O</b>rganisera dig (parti och förening), <b>S</b>kriv (insändare, namnlista), <b>T</b>ala med politiker (och demonstrera). Och hör av dig, rost sprider sig.</p>
+    <details class="hi"><summary><span class="when-closed">Högre nivå: visa sambanden</span><span class="when-open">Dölj högre nivå</span></summary><div class="hi-body"><ol class="chain-n"><li><b>Valet</b> är det viktigaste: du väljer riksdag, region och kommun vart fjärde år (EU vart femte). Alla myndiga svenska medborgare får rösta.</li><li><b>Mellan valen</b> påverkar du genom att engagera dig i partier och föreningar, kontakta politiker och bilda opinion. Politikerna lyssnar på det som många bryr sig om.</li><li><b>Folkomröstning:</b> politikerna kan fråga folket. I Sverige är de <b>rådgivande</b>, alltså inte bindande. Sex nationella har hållits (1922, 1955, 1957, 1980, 1994, 2003). Efter nejet 1955 infördes ändå högertrafik, 1967.</li><li>Du kan också <b>kryssa en kandidat</b> på valsedeln (personval), men de flesta röstar på partiet (partival).</li></ol></div></details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+</section>
+<section class="part" id="del5">
+  <div class="part-head"><p class="eyebrow">Del 5</p><h2>Högre nivå</h2><p class="sub">Hur skriver jag för högre betyg?</p><span class="facit">Lärarens frågor 16–20 (valfria)</span></div>
+<div class="gk"><span class="hand">Knepet för hela delen</span><p><mark>Förklara <i>varför</i> och <i>vad det leder till</i>, inte bara vad något är.</mark></p></div>
+<p class="intro">Läraren vill se att du förstår <b>sambanden</b>. Så här skiljer sig svaren åt:</p>
+<div class="compare">
+  <div class="cmp e"><p class="cmp-l">E-nivå: ett steg, beskriver</p>
+    <p>Kommunfullmäktige är kommunens riksdag.</p></div>
+  <div class="cmp h"><p class="cmp-l">Högre nivå: flera steg och samband</p>
+    <p><span class="n">1</span>Invånarna röstar fram <b>kommunfullmäktige</b>, <span class="n">2</span>som fattar de viktigaste besluten och utser <b>kommunstyrelsen</b> och nämnderna.
+    <span class="n">3</span>Nämnderna förbereder ärenden och tjänstemännen i förvaltningen genomför dem. <span class="n">4</span>Vill invånarna ha en annan politik kan de <b>byta ut politikerna i nästa val</b>.
+    <span class="n">5</span>Samtidigt sätter <b>staten ramar</b> med lagar och statsbidrag. <span class="n">6</span>Därför är det lokala självstyret både en frihet och begränsat.</p>
+    <p class="legend"><span class="n">1</span>folkvalda <span class="n">2</span>utser <span class="n">3</span>förbereder och genomför <span class="n">4</span>ansvar i valet <span class="n">5</span>motvikt <span class="n">6</span>slutsats</p></div>
+</div>
+<h3 class="h-mid">Kedjeformeln</h3>
+<p class="muted">Knuffa första dominobrickan och berätta om varje bricka som faller.</p>
+<ol class="domino">
+  <li><b>Om …</b><small>orsaken eller förändringen</small></li>
+  <li><b>så …</b><small>första följden</small></li>
+  <li><b>vilket leder till …</b><small>fler följder, minst två steg till</small></li>
+  <li><b>men samtidigt …</b><small>ett annat perspektiv eller en nackdel</small></li>
+  <li><b>därför …</b><small>slutsats</small></li>
+</ol>
+<div class="two">
+  <div class="panel"><h3>Checklista för högre nivå</h3>
+    <ul class="checks">
+      <li><b>Flera steg</b>, minst tre länkar i kedjan</li>
+      <li><b>Förklara varför</b>, inte bara vad</li>
+      <li><b>Jämför</b> (t.ex. parlamentarism och presidentstyre)</li>
+      <li><b>Rätt begrepp</b>: proposition, betänkande, parlamentarism …</li>
+      <li><b>Konkret exempel</b></li>
+      <li><b>Slutsats</b> eller avvägning</li>
+    </ul></div>
+  <div class="panel"><h3>Signalord som visar samband</h3>
+    <p class="signal"><span>eftersom</span><span>vilket leder till</span><span>det gör att</span><span>därför</span><span>å ena sidan</span><span>å andra sidan</span><span>samtidigt</span><span>till skillnad från</span><span>i praktiken</span></p>
+    <p class="muted small">Frågorna 16–20 är valfria, men det är här högre betyg avgörs. Skriv ditt eget svar först och jämför sedan.</p></div>
+</div>
+<h3 class="h-mid">Fem frågor</h3>
+<p class="muted">Tryck på <b>Tänk själv först</b> när du har skrivit eller sagt ditt eget svar.</p>
+
+
+<article class="item challenge" id="F16" data-card data-group="hog" data-front="Hur går ett ärende från förslag till beslut i riksdagen?" data-code="F16">
+  <div class="num"><b>F16</b>högre nivå</div>
+  <div class="body">
+    <p class="goal"><span class="hand">Lärarens mål</span> Beskriva hur ett ärende går från förslag till att det beslutas om i riksdagen.</p>
+    <h3>Hur går ett ärende från förslag till beslut i riksdagen?</h3>
+    <details><summary><span class="when-closed">Tänk själv först. Visa svaren</span><span class="when-open">Dölj svaren</span></summary>
+      <div class="lvl"><span class="tag tag-e">E-svar</span><div class="u-e" data-back>Regeringen lämnar en <b>proposition</b> (eller en ledamot en <b>motion</b>). Ett <b>utskott bereder</b> den och skriver ett <b>betänkande</b>. <b>Kammaren</b> debatterar och röstar. Blir det majoritet för, är det <b>lag</b>, som publiceras i <b>SFS</b> och <b>verkställs av regeringen</b>.</div></div>
+      <div class="lvl"><span class="tag tag-h">Svar på högre nivå</span><div class="u-h"><ol class="chain-n"><li><b>Initiativ:</b> oftast <b>regeringen</b> (proposition), annars en <b>riksdagsledamot</b> (motion). Vi medborgare kan inte lämna förslag direkt, men kan påverka via partier.</li><li><b>Utredning:</b> regeringen tillsätter en <b>kommitté eller särskild utredare</b>. Resultatet publiceras ofta i <b>SOU</b> (Statens offentliga utredningar).</li><li><b>Remiss:</b> förslaget skickas till myndigheter, organisationer och kommuner, som skickar <b>remissvar</b>. Regeringen bearbetar och låter ofta <b>Lagrådet</b> granska.</li><li><b>Proposition</b> lämnas till riksdagen, <b>anmäls i kammaren</b> och skickas till rätt <b>utskott</b>.</li><li><b>Beredning:</b> ledamöterna diskuterar med sitt parti, utskottet frågar experter och myndigheter och söker en majoritet eller kompromiss. Utskottet skriver ett <b>betänkande</b>. Partier som är emot kan lämna en <b>reservation</b>.</li><li><b>Debatt och beslut:</b> kammaren debatterar (främst för att vi ska få veta vad partierna tycker) och <b>röstar</b>: ja, nej eller avstår.</li><li><b>Lag:</b> beslutet publiceras i <b>Svensk författningssamling (SFS)</b>. <b>Regeringen</b> ansvarar för att det <b>verkställs</b>.</li></ol></div></div>
+      <p class="knep" data-back><span class="hand">Minnesknep</span> <b>Husregeln.</b> En förälder får en idé om en ny regel (<i>initiativ</i>). Hen kollar fakta (<i>utredning</i>), frågar syskon och grannar (<i>remiss</i>) och låter någon kontrollera att regeln inte bryter mot husets grundregler (<i>Lagrådet</i>). Så läggs den fram på familjemötet (<i>proposition</i>), en liten grupp förbereder (<i>utskott</i>), alla röstar (<i>kammaren</i>), den skrivs upp på kylskåpet (<i>SFS</i>) och någon ser till att den följs (<i>regeringen</i>).</p>
+      <p class="why" data-back><b>Därför blir det högre nivå:</b> alla steg i rätt ordning · rätt begrepp (proposition, motion, utskott, betänkande, reservation, SFS) · vem som gör vad (regering eller riksdag)</p>
+    </details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item challenge" id="F17" data-card data-group="hog" data-front="Varför kallas utskotten miniriksdagar, och varför blir deras förslag oftast lag?" data-code="F17">
+  <div class="num"><b>F17</b>högre nivå</div>
+  <div class="body">
+    <p class="goal"><span class="hand">Lärarens mål</span> Förklara varför utskotten kallas miniriksdagar och varför deras förslag oftast blir lag, trots bara 17 ledamöter.</p>
+    <h3>Varför kallas utskotten miniriksdagar, och varför blir deras förslag oftast lag?</h3>
+    <details><summary><span class="when-closed">Tänk själv först. Visa svaren</span><span class="when-open">Dölj svaren</span></summary>
+      <div class="lvl"><span class="tag tag-e">E-svar</span><div class="u-e" data-back>Platserna i utskotten fördelas mellan partierna <b>på samma sätt som i riksdagen</b>, så utskotten är <b>små kopior</b> av riksdagen. Därför är <b>majoriteten i utskottet</b> också <b>majoriteten i riksdagen</b>.</div></div>
+      <div class="lvl"><span class="tag tag-h">Svar på högre nivå</span><div class="u-h"><ol class="chain-n"><li><b>Samma fördelning:</b> om ett parti har 30 % av riksdagens platser har det ungefär 30 % i varje utskott.</li><li>Alltså speglar <b>majoriteten i utskottet</b> den som finns i hela riksdagen. Därför brukar de kallas <b>miniriksdagar</b>.</li><li>Dessutom är <b>partilinjen hård</b>: ledamöterna röstar som partiet bestämt, och partigruppen har redan tagit ställning.</li><li>Utskottsledamöterna är <b>partiernas experter</b> på området, så de andra ledamöterna litar på dem.</li><li>Därför är frågan <b>i praktiken redan avgjord i utskottet</b>, och det är <b>ovanligt</b> att kammaren röstar annorlunda. Debatten är till för att väljarna ska se vad partierna tycker.</li></ol></div></div>
+      <p class="knep" data-back><span class="hand">Minnesknep</span> <b>Smaka på soppan.</b> En sked ur grytan smakar som hela grytan, om den är rörd ordentligt. 17 ledamöter är skeden, riksdagen är grytan.</p>
+      <p class="why" data-back><b>Därför blir det högre nivå:</b> samma fördelning som riksdagen · hård partilinje · expertis · slutsats om vad som avgörs var</p>
+    </details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item challenge" id="F18" data-card data-group="hog" data-front="Vad innebär parlamentarism, och vad har den med demokratin att göra?" data-code="F18">
+  <div class="num"><b>F18</b>högre nivå</div>
+  <div class="body">
+    <p class="goal"><span class="hand">Lärarens mål</span> Förklara vad parlamentarism innebär och varför det är viktigt för demokratin.</p>
+    <h3>Vad innebär parlamentarism, och vad har den med demokratin att göra?</h3>
+    <details><summary><span class="when-closed">Tänk själv först. Visa svaren</span><span class="when-open">Dölj svaren</span></summary>
+      <div class="lvl"><span class="tag tag-e">E-svar</span><div class="u-e" data-back><b>Parlamentarism</b> betyder att <mark>regeringen måste ha stöd av en majoritet i riksdagen</mark>. Har den inte det måste den avgå. Det gör att <b>folkets valda</b> i sista hand bestämmer vem som styr.</div></div>
+      <div class="lvl"><span class="tag tag-h">Svar på högre nivå</span><div class="u-h"><ol class="chain-n"><li><b>Folket</b> väljer riksdagen vart fjärde år. Det står i grundlagen att ”all offentlig makt utgår från folket”.</li><li><b>Riksdagen</b> avgör vem som blir <b>statsminister</b>: talmannen föreslår, riksdagen röstar.</li><li>Riksdagen kan <b>avsätta regeringen</b> med en <b>misstroendeförklaring</b> (mer än hälften av ledamöterna). Då måste regeringen avgå.</li><li>Därför måste regeringen hela tiden ta hänsyn till riksdagens majoritet, alltså till <b>folkets företrädare</b>. Det är det som knyter regeringen till folket.</li><li><b>Jämför presidentstyre:</b> presidenten väljs direkt av folket och är både statschef och regeringschef. Presidenten kan inte avsättas av parlamentet.</li><li><b>Följd:</b> en regering med stort stöd blir stark, en med litet stöd blir svag och måste förhandla (F12/T1).</li></ol></div></div>
+      <p class="knep" data-back><span class="hand">Minnesknep</span> <b>Regeringen hyr makten av riksdagen.</b> Hyresvärden (riksdagen) kan säga upp kontraktet när som helst.</p>
+      <p class="why" data-back><b>Därför blir det högre nivå:</b> kopplingen folk → riksdag → regering · att regeringen kan avsättas · jämförelse med presidentstyre</p>
+    </details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item challenge" id="F19" data-card data-group="hog" data-front="Hur förhåller sig riksdagen och regeringen till varandra?" data-code="F19">
+  <div class="num"><b>F19</b>högre nivå</div>
+  <div class="body">
+    <p class="goal"><span class="hand">Lärarens mål</span> Förklara hur riksdagen och regeringen förhåller sig till varandra: hänger ihop, är beroende av varandra men ändå olika.</p>
+    <h3>Hur förhåller sig riksdagen och regeringen till varandra?</h3>
+    <details><summary><span class="when-closed">Tänk själv först. Visa svaren</span><span class="when-open">Dölj svaren</span></summary>
+      <div class="lvl"><span class="tag tag-e">E-svar</span><div class="u-e" data-back>Riksdagen <b>beslutar</b> (lagar och budget). Regeringen <b>föreslår och genomför</b>. Regeringen måste ha riksdagens <b>förtroende</b>.</div></div>
+      <div class="lvl"><span class="tag tag-h">Svar på högre nivå</span><div class="u-h"><ol class="chain-n"><li><b>Olika:</b> riksdagen är <b>lagstiftande</b> (349 folkvalda ledamöter). Regeringen är <b>verkställande</b> (ca 20–25 statsråd). De har <b>olika uppgifter</b> och olika personer.</li><li><b>Hänger ihop:</b> regeringen skriver <b>propositioner</b>, riksdagen <b>beslutar</b> och regeringen <b>genomför</b> beslutet via förvaltningen. Ett och samma ärende går alltså fram och tillbaka mellan dem.</li><li><b>Beroende av varandra:</b> regeringen behöver riksdagens <b>beslut och pengar</b> (lagar, budget) och dess förtroende för att få sitta kvar. Riksdagen behöver regeringen för <b>utredningar, förslag och genomförande</b>. Över 30 000 beslut per år hinner riksdagen inte göra själv.</li><li><b>Ändå kontrollerar</b> riksdagen regeringen (KU, frågor, misstroende), och regeringen kan i sin tur utlysa <b>extraval</b>.</li></ol><div class="tbl-wrap"><table class="mini">
+<tr><th></th><th>Riksdagen</th><th>Regeringen</th></tr>
+<tr><td class="sig">Roll</td><td>Beslutar</td><td>Föreslår och genomför</td></tr>
+<tr><td class="sig">Utses av</td><td>Folket i val</td><td>Statsministern utser ministrarna, riksdagen godkänner statsministern</td></tr>
+<tr><td class="sig">Makt</td><td>Lagstiftande, budget, kontroll</td><td>Verkställande, leder förvaltningen</td></tr>
+</table></div></div></div>
+      <p class="knep" data-back><span class="hand">Minnesknep</span> <b>Styrelsen och vd:n.</b> Styrelsen (riksdagen) bestämmer riktningen och kan byta vd. Vd:n (regeringen) driver bolaget varje dag.</p>
+      <p class="why" data-back><b>Därför blir det högre nivå:</b> tre ord från frågan förklarade var för sig (olika, hänger ihop, beroende) · exempel från båda hållen · begreppen lagstiftande och verkställande</p>
+    </details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+<article class="item challenge" id="F20" data-card data-group="hog" data-front="Varför är det ett skydd för demokratin att grundlagen är svår att ändra?" data-code="F20">
+  <div class="num"><b>F20</b>högre nivå</div>
+  <div class="body">
+    <p class="goal"><span class="hand">Lärarens mål</span> Förklara varför svårigheten att ändra en grundlag är ett skydd för demokratin.</p>
+    <h3>Varför är det ett skydd för demokratin att grundlagen är svår att ändra?</h3>
+    <details><summary><span class="when-closed">Tänk själv först. Visa svaren</span><span class="when-open">Dölj svaren</span></summary>
+      <div class="lvl"><span class="tag tag-e">E-svar</span><div class="u-e" data-back>Grundlagarna innehåller demokratins villkor. Eftersom de är <b>svåra att ändra</b> kan ingen <b>avskaffa demokratin i ett snabbt beslut</b>.</div></div>
+      <div class="lvl"><span class="tag tag-h">Svar på högre nivå</span><div class="u-h"><ol class="chain-n"><li>Grundlagarna skyddar <b>allmän och lika rösträtt</b> samt <b>yttrande-, mötes- och religionsfrihet</b>, alltså det demokratin bygger på.</li><li>Om en <b>vanlig majoritet</b> kunde ändra dem i ett beslut, kunde ett parti som vunnit ett val <b>ta bort rättigheter, tysta oppositionen eller skjuta upp val</b>.</li><li>Kravet på <b>två beslut med ett val emellan</b> ger <b>tid att tänka efter</b>, och <b>väljarna får reagera</b>: partierna måste i valrörelsen berätta vad de vill göra med grundlagen.</li><li>Därmed skyddas <b>minoriteter och oppositionen</b> mot en tillfällig majoritet, och demokratin kan inte avskaffas med ett snabbt majoritetsbeslut.</li><li><b>Avvägning:</b> en nackdel är att det blir <b>svårare att modernisera</b> reglerna. Samhället har ändå valt <b>stabilitet</b> före snabbhet när det gäller de viktigaste spelreglerna.</li></ol></div></div>
+      <p class="knep" data-back><span class="hand">Minnesknep</span> <b>Kassaskåp med två nycklar</b>, och nycklarna delas ut vid två olika tillfällen: före och efter valet.</p>
+      <p class="why" data-back><b>Därför blir det högre nivå:</b> kopplar grundlag → demokratins villkor · konkret hot (snabb majoritet) · skyddet (två beslut + val) · avvägning med nackdel</p>
+    </details>
+    <div class="lights" role="group" aria-label="Kan du det här?"><span class="lq">Kan du det här?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+  </div>
+</article>
+</section>
+<section class="part" id="del6">
+  <div class="part-head"><p class="eyebrow">Del 6</p><h2>Begrepp</h2><p class="sub">Kan jag orden?</p><span class="facit">44 ord · boken s. 79–80</span></div>
+<div class="gk"><span class="hand">Knepet för hela delen</span><p><mark>Ett ord, en bild. Förklara varje ord högt med egna ord.</mark></p></div>
+
+<div class="terms"><div class="term" id="b-statsskick" data-card data-group="begrepp" data-front="Statsskick" data-code="Begrepp">
+  <h3>Statsskick</h3><p class="def" data-back>Sättet ett land styrs på, t.ex. demokrati eller monarki.</p><p class="tk" data-back><span class="hand">Knep</span> Stats-<b>skick</b> = hur staten sköter sig</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-statsorgan" data-card data-group="begrepp" data-front="Statsorgan" data-code="Begrepp">
+  <h3>Statsorgan</h3><p class="def" data-back>De fyra viktigaste delarna av ett lands styre: statschef, parlament, regering och domstolar.</p><p class="tk" data-back><span class="hand">Knep</span> Fyra stolar vid bordet</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-konstitution" data-card data-group="begrepp" data-front="Konstitution (grundlag, författning)" data-code="Begrepp">
+  <h3>Konstitution (grundlag, författning)</h3><p class="def" data-back>Grundläggande regler för hur landet styrs. Sveriges består av fyra grundlagar.</p><p class="tk" data-back><span class="hand">Knep</span> Landets spelregler</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-statschef" data-card data-group="begrepp" data-front="Statschef" data-code="Begrepp">
+  <h3>Statschef</h3><p class="def" data-back>Statens högsta företrädare: kung eller drottning i en monarki, president i en republik.</p><p class="tk" data-back><span class="hand">Knep</span> Landets ansikte</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-monarki" data-card data-group="begrepp" data-front="Monarki" data-code="Begrepp">
+  <h3>Monarki</h3><p class="def" data-back>Statsskick där statschefen ärver sitt ämbete, inom en kung- eller drottningsläkt.</p><p class="tk" data-back><span class="hand">Knep</span> Ärvt</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-konstitutionell-monarki" data-card data-group="begrepp" data-front="Konstitutionell monarki" data-code="Begrepp">
+  <h3>Konstitutionell monarki</h3><p class="def" data-back>Monarki där monarkens makt är begränsad av grundlagen. Så är det i Sverige.</p><p class="tk" data-back><span class="hand">Knep</span> Kronan utan makt</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-republik" data-card data-group="begrepp" data-front="Republik" data-code="Begrepp">
+  <h3>Republik</h3><p class="def" data-back>Statsskick där statschefen väljs, oftast genom val.</p><p class="tk" data-back><span class="hand">Knep</span> Vald</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-president" data-card data-group="begrepp" data-front="President" data-code="Begrepp">
+  <h3>President</h3><p class="def" data-back>Statschef i en republik. Vid presidentstyre är presidenten också regeringschef.</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-parlament" data-card data-group="begrepp" data-front="Parlament (riksdag)" data-code="Begrepp">
+  <h3>Parlament (riksdag)</h3><p class="def" data-back>Folkrepresentation: folkvalda som diskuterar och beslutar om lagar och politik. I Sverige kallad riksdagen.</p><p class="tk" data-back><span class="hand">Knep</span> Folkets talarstol</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-talman" data-card data-group="begrepp" data-front="Talman" data-code="Begrepp">
+  <h3>Talman</h3><p class="def" data-back>Leder riksdagens arbete och föreslår ny statsminister efter valet.</p><p class="tk" data-back><span class="hand">Knep</span> Domaren i kammaren</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-utskott" data-card data-group="begrepp" data-front="Utskott" data-code="Begrepp">
+  <h3>Utskott</h3><p class="def" data-back>Arbetsgrupper i riksdagen som bereder ärendena, ca 15 st med 17 ledamöter.</p><p class="tk" data-back><span class="hand">Knep</span> Grupparbete</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-motion" data-card data-group="begrepp" data-front="Motion" data-code="Begrepp">
+  <h3>Motion</h3><p class="def" data-back>Förslag från en eller flera riksdagsledamöter.</p><p class="tk" data-back><span class="hand">Knep</span> <b>M</b>otion kommer från <b>M</b>edlemmen</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-proposition" data-card data-group="begrepp" data-front="Proposition" data-code="Begrepp">
+  <h3>Proposition</h3><p class="def" data-back>Förslag till riksdagen som kommer från regeringen.</p><p class="tk" data-back><span class="hand">Knep</span> <b>P</b>roposition kommer från <b>P</b>remiärministern</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-betankande" data-card data-group="begrepp" data-front="Betänkande" data-code="Begrepp">
+  <h3>Betänkande</h3><p class="def" data-back>Utskottets skriftliga förslag till riksdagen om hur den ska besluta.</p><p class="tk" data-back><span class="hand">Knep</span> Utskottets ”tänk efter”</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-reservation" data-card data-group="begrepp" data-front="Reservation" data-code="Begrepp">
+  <h3>Reservation</h3><p class="def" data-back>En avvikande mening i betänkandet från dem som inte håller med majoriteten.</p><p class="tk" data-back><span class="hand">Knep</span> ”Jag reserverar mig”</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-remiss" data-card data-group="begrepp" data-front="Remiss" data-code="Begrepp">
+  <h3>Remiss</h3><p class="def" data-back>Ett förslag skickas ut till myndigheter och organisationer, som får lämna synpunkter (remissvar).</p><p class="tk" data-back><span class="hand">Knep</span> Fråga grannarna</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-lagradet" data-card data-group="begrepp" data-front="Lagrådet" data-code="Begrepp">
+  <h3>Lagrådet</h3><p class="def" data-back>Granskar regeringens lagförslag innan de går till riksdagen.</p><p class="tk" data-back><span class="hand">Knep</span> Lag-kollen</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-sou" data-card data-group="begrepp" data-front="SOU (Statens offentliga utredningar)" data-code="Begrepp">
+  <h3>SOU (Statens offentliga utredningar)</h3><p class="def" data-back>Bokserie med rapporter från utredningar som regeringen beställt.</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-votering" data-card data-group="begrepp" data-front="Votering och acklamation" data-code="Begrepp">
+  <h3>Votering och acklamation</h3><p class="def" data-back>Votering är omröstning (ja, nej, avstår). Acklamation är ett muntligt ja utan räkning när ingen säger emot.</p><p class="tk" data-back><span class="hand">Knep</span> Acklamation = ropa ja i kör</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-sfs" data-card data-group="begrepp" data-front="Svensk författningssamling (SFS)" data-code="Begrepp">
+  <h3>Svensk författningssamling (SFS)</h3><p class="def" data-back>Skriftserien där nya lagar publiceras.</p><p class="tk" data-back><span class="hand">Knep</span> Lagarnas anslagstavla</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-frageStund" data-card data-group="begrepp" data-front="Frågestund och interpellation" data-code="Begrepp">
+  <h3>Frågestund och interpellation</h3><p class="def" data-back>Sätt för riksdagsledamöter att ställa frågor till statsråden: frågestund (kort, muntligt) och interpellation (mer omfattande).</p><p class="tk" data-back><span class="hand">Knep</span> Snabbfråga och långfråga</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-misstroende" data-card data-group="begrepp" data-front="Misstroendeförklaring" data-code="Begrepp">
+  <h3>Misstroendeförklaring</h3><p class="def" data-back>Omröstning där riksdagen säger att den saknar förtroende för ett statsråd eller hela regeringen. Om mer än hälften röstar för måste de avgå.</p><p class="tk" data-back><span class="hand">Knep</span> Rött kort</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-ku" data-card data-group="begrepp" data-front="Konstitutionsutskottet (KU)" data-code="Begrepp">
+  <h3>Konstitutionsutskottet (KU)</h3><p class="def" data-back>Riksdagsutskott som granskar att regeringen följer grundlagarna.</p><p class="tk" data-back><span class="hand">Knep</span> Regeringens kontrollant</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-riksrevisionen" data-card data-group="begrepp" data-front="Riksrevisionen" data-code="Begrepp">
+  <h3>Riksrevisionen</h3><p class="def" data-back>Myndighet under riksdagen som granskar hur myndigheterna använder skattepengarna.</p><p class="tk" data-back><span class="hand">Knep</span> Revisorn</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-jo" data-card data-group="begrepp" data-front="Justitieombudsmännen (JO)" data-code="Begrepp">
+  <h3>Justitieombudsmännen (JO)</h3><p class="def" data-back>Riksdagens ombudsmän (fyra) som kontrollerar att myndigheterna följer lagar och förordningar. Dit kan du vända dig om du blivit felbehandlad.</p><p class="tk" data-back><span class="hand">Knep</span> Din advokat mot myndigheter</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-regering" data-card data-group="begrepp" data-front="Regering" data-code="Begrepp">
+  <h3>Regering</h3><p class="def" data-back>Statsorganet som styr landet och verkställer riksdagens beslut.</p><p class="tk" data-back><span class="hand">Knep</span> Vd:n</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-statsminister" data-card data-group="begrepp" data-front="Statsminister" data-code="Begrepp">
+  <h3>Statsminister</h3><p class="def" data-back>Regeringschef i Sverige. Utser de andra ministrarna.</p><p class="tk" data-back><span class="hand">Knep</span> Lagkaptenen</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-statsrad" data-card data-group="begrepp" data-front="Statsråd (minister)" data-code="Begrepp">
+  <h3>Statsråd (minister)</h3><p class="def" data-back>Medlem av regeringen.</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-departement" data-card data-group="begrepp" data-front="Departement" data-code="Begrepp">
+  <h3>Departement</h3><p class="def" data-back>Del av regeringskansliet som hjälper ministrarna: förbereder och efterarbetar regeringsärenden.</p><p class="tk" data-back><span class="hand">Knep</span> Ministerns kansli</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-parlamentarism" data-card data-group="begrepp" data-front="Parlamentarism" data-code="Begrepp">
+  <h3>Parlamentarism</h3><p class="def" data-back>Statsskick där regeringen måste ha parlamentets förtroende för sin politik, annars måste den avgå.</p><p class="tk" data-back><span class="hand">Knep</span> Regeringen hyr makten</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-presidentstyre" data-card data-group="begrepp" data-front="Presidentstyre" data-code="Begrepp">
+  <h3>Presidentstyre</h3><p class="def" data-back>Statsskick där presidenten är både statschef och regeringschef och väljs av folket.</p><p class="tk" data-back><span class="hand">Knep</span> Presidenten har båda hattarna</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-opposition" data-card data-group="begrepp" data-front="Opposition" data-code="Begrepp">
+  <h3>Opposition</h3><p class="def" data-back>Partier som inte är med i regeringen och som granskar och kritiserar den.</p><p class="tk" data-back><span class="hand">Knep</span> Motståndarlaget</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-partilinje" data-card data-group="begrepp" data-front="Hård partilinje" data-code="Begrepp">
+  <h3>Hård partilinje</h3><p class="def" data-back>Ledamöterna röstar som partiet bestämt, inte som de själva tycker.</p><p class="tk" data-back><span class="hand">Knep</span> Laget före spelaren</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-myndighet" data-card data-group="begrepp" data-front="Myndighet" data-code="Begrepp">
+  <h3>Myndighet</h3><p class="def" data-back>Enhet i statsförvaltningen under regeringen, t.ex. Skolverket.</p><p class="tk" data-back><span class="hand">Knep</span> Regeringens armar och ben</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-forvaltning" data-card data-group="begrepp" data-front="Förvaltning" data-code="Begrepp">
+  <h3>Förvaltning</h3><p class="def" data-back>Att sköta något åt någon annan. Statsförvaltningen genomför besluten från riksdag och regering.</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-offentlighetsprincipen" data-card data-group="begrepp" data-front="Offentlighetsprincipen" data-code="Begrepp">
+  <h3>Offentlighetsprincipen</h3><p class="def" data-back>Principen att allmänheten har rätt att ta del av offentliga handlingar.</p><p class="tk" data-back><span class="hand">Knep</span> Glasväggar i huset</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-lan" data-card data-group="begrepp" data-front="Län och länsstyrelse" data-code="Begrepp">
+  <h3>Län och länsstyrelse</h3><p class="def" data-back>Länet är ett statligt förvaltningsområde (21 st). Länsstyrelsen är statens organ i länet med landshövding som chef.</p><p class="tk" data-back><span class="hand">Knep</span> Utsänd uppifrån</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-kommun" data-card data-group="begrepp" data-front="Kommun" data-code="Begrepp">
+  <h3>Kommun</h3><p class="def" data-back>Område med lokalt självstyre. Sköter bl.a. skola, socialtjänst och renhållning. Ca 290 st.</p><p class="tk" data-back><span class="hand">Knep</span> Vardagen nära</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-kommunfullmaktige" data-card data-group="begrepp" data-front="Kommunfullmäktige" data-code="Begrepp">
+  <h3>Kommunfullmäktige</h3><p class="def" data-back>Kommunens ”riksdag”, där de viktigaste besluten fattas.</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-kommunstyrelse" data-card data-group="begrepp" data-front="Kommunstyrelse" data-code="Begrepp">
+  <h3>Kommunstyrelse</h3><p class="def" data-back>Kommunens ”regering”. Leder verksamheten och lämnar budgetförslag.</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-namnd" data-card data-group="begrepp" data-front="Nämnd" data-code="Begrepp">
+  <h3>Nämnd</h3><p class="def" data-back>Arbetsgrupp för ett sakområde i kommuner och regioner, t.ex. socialnämnd.</p><p class="tk" data-back><span class="hand">Knep</span> Kommunens utskott</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-region" data-card data-group="begrepp" data-front="Region" data-code="Begrepp">
+  <h3>Region</h3><p class="def" data-back>Område med regionalt självstyre, t.ex. för sjukvård och kollektivtrafik. Styrs av regionfullmäktige och regionstyrelse.</p><p class="tk" data-back><span class="hand">Knep</span> Doktorn och bussen</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-sjalvstyre" data-card data-group="begrepp" data-front="Lokalt och regionalt självstyre" data-code="Begrepp">
+  <h3>Lokalt och regionalt självstyre</h3><p class="def" data-back>Rätten att besluta i vissa frågor på lokal eller regional nivå.</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div><div class="term" id="b-folkomrostning" data-card data-group="begrepp" data-front="Folkomröstning" data-code="Begrepp">
+  <h3>Folkomröstning</h3><p class="def" data-back>Omröstning där folket svarar direkt på en fråga. I Sverige är den rådgivande.</p><p class="tk" data-back><span class="hand">Knep</span> Rådgivande = politikerna kan ändå göra tvärtom</p><div class="lights" role="group" aria-label="Kan du ordet?"><span class="lq">Kan du ordet?</span><button type="button" data-v="g" aria-pressed="false"><i></i>Kan</button><button type="button" data-v="y" aria-pressed="false"><i></i>Osäker</button><button type="button" data-v="r" aria-pressed="false"><i></i>Kan inte</button></div>
+</div></div>
+</section>
+
+<section class="part" id="kvallen">
+  <div class="part-head"><p class="eyebrow">★ Sista kvällen</p><h2>Kvällen före provet</h2><p class="sub">Kan du förklara varje ruta högt på 20 sekunder? Då är du redo.</p></div>
+
+<div class="hooks">
+  <div class="k-e"><b>Regera – Ärva – Trycka – Yttra</b>RF, SO, TF, YGL: de fyra grundlagarna.</div>
+  <div class="k-e"><b>Två lås och ett val</b>Grundlag: samma beslut två gånger, val emellan.</div>
+  <div class="k-e"><b>Landets ansikte, inte hjärna</b>Statschefen: symbol, statsbesök, öppnar riksmötet. Ingen makt.</div>
+  <div class="k-e"><b>Lagar – Pengar – Koll</b>Riksdagens tre uppgifter: lagstifta, budget, kontroll.</div>
+  <div class="k-e"><b>Utskott = grupparbete</b>Ca 15 utskott, 17 ledamöter, bereder alla förslag.</div>
+  <div class="k-e"><b>Laget före spelaren</b>Hård partilinje: ledamöterna röstar som partiet bestämt.</div>
+  <div class="k-e"><b>Motståndarlaget</b>Opposition: inte med i regeringen. Granskar och kritiserar.</div>
+  <div class="k-e"><b>Riksdagen BESTÄMMER, regeringen GÖR</b>Vd:n och styrelsen. Regeringen föreslår och genomför.</div>
+  <div class="k-e"><b>Lagkaptenen och maskoten</b>Statsminister = regeringschef. Kung = statschef.</div>
+  <div class="k-e"><b>Talmannen föreslår</b>Riksdagen säger inte nej. Statsministern väljer sitt lag. Fyra nej = nyval.</div>
+  <div class="k-e"><b>Doktorn och bussen</b>Region: sjukvård och kollektivtrafik. Kommun: skola, omsorg, vatten, sopor.</div>
+  <div class="k-e"><b>ROST</b>Rösta, Organisera dig, Skriv, Tala med politiker.</div>
+  <div class="k-h"><b>Husregeln</b>Lagens väg: idé → utredning → remiss → proposition → utskott → röstning → SFS → verkställs.</div>
+  <div class="k-h"><b>Smaka på soppan</b>Utskotten speglar riksdagen, så utskottets majoritet = riksdagens majoritet.</div>
+  <div class="k-h"><b>Regeringen hyr makten</b>Parlamentarism: regeringen måste ha riksdagens förtroende.</div>
+  <div class="k-h"><b>Styrelsen och vd:n</b>Riksdagen och regeringen: olika, sammanhängande, beroende.</div>
+  <div class="k-h"><b>Kassaskåp med två nycklar</b>Svår grundlag skyddar demokratin mot ett snabbt majoritetsbeslut.</div>
+</div>
+
+<h3 class="h-mid">Makttrappan</h3>
+<div class="tarta" style="max-width:30rem">
+  <div class="lag top" style="width:40%"><b>Folket</b>röstar vart fjärde år</div>
+  <div class="lag mid" style="width:62%"><b>Riksdagen</b>stiftar lagar, budget, kontroll. Utser statsminister</div>
+  <div class="lag mid" style="width:82%"><b>Regeringen</b>föreslår och genomför. Leder förvaltningen</div>
+  <div class="lag bot"><b>Myndigheter, kommuner, regioner</b>genomför besluten ute i landet</div>
+</div>
+
+<h3 class="h-mid">Siffror som är bra att kunna</h3>
+<dl class="nums">
+  <div><dt>4</dt><dd>grundlagar</dd></div>
+  <div><dt>349</dt><dd>riksdagsledamöter, val vart 4:e år</dd></div>
+  <div><dt>ca 15 × 17</dt><dd>utskott och ledamöter i varje</dd></div>
+  <div><dt>20–25</dt><dd>statsråd i regeringen</dd></div>
+  <div><dt>4 nej</dt><dd>på statsminister = nyval</dd></div>
+  <div><dt>ca 290</dt><dd>kommuner</dd></div>
+  <div><dt>21</dt><dd>län och regioner</dd></div>
+  <div><dt>4 % / 12 %</dt><dd>spärren: i landet / i en valkrets</dd></div>
+  <div><dt>6</dt><dd>nationella folkomröstningar, rådgivande</dd></div>
+  <div><dt>1766</dt><dd>tryckfrihet i grundlagen, först i världen</dd></div>
+</dl>
+<div class="box note" style="margin-top:1.2rem"><strong>Kolla själv</strong><p>Efter valet 2026 kan <b>statsminister</b> och <b>talman</b> ha bytts. Ta reda på vilka som gäller nu.</p></div>
+  <p class="intro">Lycka till! Du har gjort jobbet, nu ska du bara plocka fram det.</p>
+</section>
+
+<p class="foot">Byggd från lärarens lista ”Sveriges statsskick – inför provet”, lärarens frågor 1–20, hennes bilder och bokens kapitel 3 ”Demokratiska statsskick – Sverige ett exempel” (s. 49–81). Sidhänvisningarna gäller boken. ”Bild” betyder lärarens bilder. Namn på personer i ämbeten ändras efter val, så kolla dem själv.</p>
+</div>
+</main>
+
+<section id="forhor" class="quiz" hidden>
+  <div class="inner">
+    <h2>Förhör</h2>
+    <p class="muted">Säg svaret högt innan du vänder kortet. Röda kort kommer först, sedan gula. Kort som lyser grönt försvinner ur högen.</p>
+    <div class="qcontrols">
+      <div class="qparts" id="qparts" role="group" aria-label="Välj urval"></div>
+      <div class="qopts"><button type="button" class="pill" id="qshuf">Blanda</button></div>
+    </div>
+    <div class="qprog"><span id="qcount"></span><div class="tbar"><i class="g" id="qbar"></i></div></div>
+    <div class="card" id="qcard" tabindex="0" role="button" aria-live="polite"></div>
+    <div class="qactions" id="qactions"></div>
+    <button type="button" class="linkbtn" id="qreset">Släck lamporna i urvalet</button>
+  </div>
+</section>
+
+<script>
+(function(){
+  var KEY='statsskick-lampor-v1', L={};
+  try{ L=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){ L={}; }
+  function save(){ try{ localStorage.setItem(KEY, JSON.stringify(L)); }catch(e){} }
+  var cards=[].slice.call(document.querySelectorAll('[data-card]'));
+  function paint(el){
+    var v=L[el.id]||'';
+    if(v) el.setAttribute('data-light', v); else el.removeAttribute('data-light');
+    el.querySelectorAll('.lights button').forEach(function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-v')===v ? 'true':'false'); });
+  }
+  function setLight(id, v){ if(v) L[id]=v; else delete L[id]; save(); var el=document.getElementById(id); if(el) paint(el); tally(); }
+  cards.forEach(paint);
+  document.addEventListener('click', function(e){
+    var b=e.target.closest('#las .lights button'); if(!b) return;
+    var c=b.closest('[data-card]'); var v=b.getAttribute('data-v');
+    setLight(c.id, L[c.id]===v ? '' : v);
+  });
+
+  /* Lampräknare */
+  var tc=document.getElementById('tcount'), tb=document.getElementById('tbar');
+  function tally(){
+    var n={g:0,y:0,r:0}; cards.forEach(function(c){ var v=L[c.id]; if(n[v]!=null) n[v]++; });
+    var tot=cards.length, none=tot-n.g-n.y-n.r;
+    tc.innerHTML='<span class="g"><i></i>'+n.g+' kan</span><span class="y"><i></i>'+n.y+' osäker</span><span class="r"><i></i>'+n.r+' kan inte</span><span class="o"><i></i>'+none+' omarkerade av '+tot+'</span>';
+    tb.innerHTML='<i class="g" style="width:'+(n.g/tot*100)+'%"></i><i class="y" style="width:'+(n.y/tot*100)+'%"></i><i class="r" style="width:'+(n.r/tot*100)+'%"></i>';
+  }
+  tally();
+  var gom=document.getElementById('gom');
+  gom.addEventListener('click', function(){ var on=!document.body.classList.contains('gom'); document.body.classList.toggle('gom', on); gom.setAttribute('aria-pressed', on?'true':'false'); });
+  var allHi=document.getElementById('allhi');
+  allHi.addEventListener('click', function(){ var open=allHi.getAttribute('aria-pressed')!=='true'; document.querySelectorAll('#las details.hi').forEach(function(d){ d.open=open; }); allHi.setAttribute('aria-pressed', open?'true':'false'); });
+  window.addEventListener('beforeprint', function(){ document.querySelectorAll('#las details').forEach(function(d){ d.open=true; }); });
+
+  /* Läs / Förhör */
+  var las=document.getElementById('las'), quiz=document.getElementById('forhor'), nav=document.getElementById('partnav');
+  var tL=document.getElementById('tab-las'), tF=document.getElementById('tab-forhor');
+  function mode(m, setHash){
+    las.hidden = m!=='las'; quiz.hidden = m!=='forhor'; nav.hidden = m!=='las';
+    tL.setAttribute('aria-pressed', m==='las'); tF.setAttribute('aria-pressed', m==='forhor');
+    if(m==='forhor') build();
+    if(setHash){ try{ history.replaceState(null,'', m==='forhor' ? '#forhor' : '#start'); }catch(e){} window.scrollTo(0,0); }
+  }
+  tL.addEventListener('click', function(){ mode('las', true); });
+  tF.addEventListener('click', function(){ mode('forhor', true); });
+
+  var links={}; nav.querySelectorAll('a').forEach(function(a){ links[a.getAttribute('href').slice(1)]=a; });
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(ents){
+      ents.forEach(function(e){
+        if(!e.isIntersecting) return;
+        Object.keys(links).forEach(function(k){ links[k].classList.toggle('on', k===e.target.id); });
+        var a=links[e.target.id]; if(a){ try{ nav.scrollTo({left:a.offsetLeft-12, behavior:'auto'}); }catch(err){ nav.scrollLeft=a.offsetLeft-12; } }
+      });
+    },{rootMargin:'-35% 0px -60% 0px'});
+    document.querySelectorAll('.part').forEach(function(s){ io.observe(s); });
+  }
+
+  /* Förhör */
+  var GROUPS=[['alla','Alla'],['grund','Grundlagar'],['riks','Riksdagen'],['reg','Regeringen'],['lokal','Kommun, region, du'],['hog','Högre nivå'],['begrepp','Begrepp']];
+  var GNAME={grund:'Grundlagar och statschef',riks:'Riksdagen',reg:'Regeringen',lokal:'Kommun, region och påverkan',hog:'Högre nivå',begrepp:'Begrepp'};
+  var all=cards.map(function(el){
+    var back=document.createElement('div');
+    el.querySelectorAll('[data-back]').forEach(function(n){ var c=n.cloneNode(true); c.removeAttribute('data-back'); c.querySelectorAll('.fig,.figrow .fig-kol,.figrow .fig-mid,svg').forEach(function(f){ f.remove(); }); back.appendChild(c); });
+    return { id:el.id, group:el.getAttribute('data-group'), code:el.getAttribute('data-code'), front:el.getAttribute('data-front'), back:back.innerHTML };
+  });
+  var group='alla', shuffled=false, deck=[], i=0, shown=false, resetArmed=false;
+  var card=document.getElementById('qcard'), acts=document.getElementById('qactions'), qparts=document.getElementById('qparts');
+  var qshuf=document.getElementById('qshuf'), qcount=document.getElementById('qcount'), qreset=document.getElementById('qreset');
+  GROUPS.forEach(function(g){
+    var b=document.createElement('button'); b.type='button'; b.className='pill'; b.textContent=g[1];
+    b.setAttribute('aria-pressed', g[0]==='alla');
+    b.addEventListener('click', function(){ group=g[0]; qparts.querySelectorAll('button').forEach(function(x){ x.setAttribute('aria-pressed', x===b); }); build(); });
+    qparts.appendChild(b);
+  });
+  qshuf.addEventListener('click', function(){ shuffled=true; build(); });
+  qreset.addEventListener('click', function(){
+    if(!resetArmed){ resetArmed=true; qreset.textContent='Tryck igen för att släcka alla lampor i urvalet'; setTimeout(function(){ resetArmed=false; qreset.textContent='Släck lamporna i urvalet'; }, 4000); return; }
+    pool().forEach(function(c){ delete L[c.id]; var el=document.getElementById(c.id); if(el) paint(el); });
+    save(); tally(); resetArmed=false; qreset.textContent='Släck lamporna i urvalet'; build();
+  });
+  function pool(){ return all.filter(function(c){ return group==='alla' || c.group===group; }); }
+  function build(){
+    deck=pool().filter(function(c){ return L[c.id]!=='g'; });
+    var w={r:0,y:1,'':2}; deck.sort(function(a,b){ return (w[L[a.id]||'']) - (w[L[b.id]||'']); });
+    if(shuffled){ for(var k=deck.length-1;k>0;k--){ var j=Math.floor(Math.random()*(k+1)); var t=deck[k]; deck[k]=deck[j]; deck[j]=t; } }
+    i=0; shown=false; render();
+  }
+  function el(tag, cls, txt){ var e=document.createElement(tag); if(cls) e.className=cls; if(txt!=null) e.textContent=txt; return e; }
+  function btn(txt, cls, fn){ var b=el('button','btn '+(cls||''),txt); b.type='button'; b.addEventListener('click', function(ev){ ev.stopPropagation(); fn(); }); return b; }
+  function render(){
+    var p=pool(), g=p.filter(function(c){ return L[c.id]==='g'; }).length;
+    qcount.textContent='Grönt på '+g+' av '+p.length+' kort';
+    document.getElementById('qbar').style.width=(p.length? Math.round(g/p.length*100):0)+'%';
+    card.innerHTML=''; acts.innerHTML=''; card.classList.remove('done');
+    if(!deck.length || i>=deck.length){
+      card.classList.add('done');
+      var left=p.filter(function(c){ return L[c.id]!=='g'; }).length;
+      if(left===0){ card.appendChild(el('p','front','Allt lyser grönt!')); card.appendChild(el('p','muted','Byt urval eller släck lamporna och kör igen.')); }
+      else { card.appendChild(el('p','front','Varvet är klart')); card.appendChild(el('p','muted', left+' kort kvar som inte lyser grönt.')); acts.appendChild(btn('Kör ett varv till','primary', function(){ shuffled=true; build(); })); }
+      return;
+    }
+    var c=deck[i], cur=L[c.id];
+    card.appendChild(el('p','meta', c.code+' · '+GNAME[c.group]+' · '+(i+1)+' av '+deck.length+(cur==='r'?' · röd':cur==='y'?' · gul':'')));
+    card.appendChild(el('p','front', c.front));
+    if(shown){
+      var back=el('div','back'); back.innerHTML=c.back;
+      var go=el('a','goto','Läs hela svaret i Läs-läget'); go.href='#'+c.id;
+      go.addEventListener('click', function(ev){ ev.preventDefault(); ev.stopPropagation(); mode('las', false); try{ history.replaceState(null,'','#'+c.id); }catch(e){} var t=document.getElementById(c.id); if(t){ if(t.tagName==='DETAILS') t.open=true; t.scrollIntoView(); } });
+      back.appendChild(go);
+      card.appendChild(back);
+      acts.appendChild(btn('Kan inte','r', function(){ next('r'); }));
+      acts.appendChild(btn('Osäker','y', function(){ next('y'); }));
+      acts.appendChild(btn('Kan','g', function(){ next('g'); }));
+    } else {
+      card.appendChild(el('p','ask', c.group==='begrepp' ? 'Förklara ordet högt med egna ord.' : 'Säg svaret högt innan du vänder kortet.'));
+      card.appendChild(el('p','hint','Tryck på kortet för att vända det'));
+      acts.appendChild(btn('Visa svaret','primary', reveal));
+    }
+  }
+  function reveal(){ if(!shown && deck.length && i<deck.length){ shown=true; render(); } }
+  function next(v){ var c=deck[i]; setLight(c.id, v); i++; shown=false; render(); }
+  card.addEventListener('click', function(e){ if(e.target.closest('a')) return; reveal(); });
+  card.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); reveal(); } });
+
+  if(location.hash==='#forhor') mode('forhor', false);
+  else if(location.hash.length>1){ var t=document.getElementById(location.hash.slice(1)); if(t && t.tagName==='DETAILS') t.open=true; }
+})();
+</script>
+</body>
+</html>
